@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Host", "App.Host\App.Host.csproj", "{0092D203-84E5-4CAE-8A43-F8E8C842C7DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Assemblies", "03.Assemblies", "{0E6D169C-CEBC-4A99-8B0B-5348D2E7675A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Modules.Base.Shared", "..\PROXYSUBMODULES\App.Modules.Base.Shared\App.Modules.Base.Shared.csproj", "{2EC2AA45-E1C9-4C63-8CFE-7A171BA91E39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Modules.Base.Infrastructure", "..\PROXYSUBMODULES\App.Modules.Base.Infrastructure\App.Modules.Base.Infrastructure.csproj", "{35D34EC9-0297-4F77-86D5-8CDAE3E37BDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Modules.Base.Domain", "..\PROXYSUBMODULES\App.Modules.Base.Domain\App.Modules.Base.Domain.csproj", "{4FBB63F5-12BD-4DC5-837B-CCBF2676C781}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Modules.Base.Infrastructure.Data.EF", "..\PROXYSUBMODULES\App.Modules.Base.Infrastructure.Data.EF\App.Modules.Base.Infrastructure.Data.EF.csproj", "{72096151-673C-4C93-B2FB-6A5D6812FCB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Modules.Base.Presentation.Web", "..\PROXYSUBMODULES\App.Modules.Base.Presentation.Web\App.Modules.Base.Presentation.Web.csproj", "{3FFBF351-09FF-4340-A07A-E44D937E25DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Modules.Base.Application", "..\PROXYSUBMODULES\App.Modules.Base.Application\App.Modules.Base.Application.csproj", "{4701B0EE-6A3C-4AD5-806A-CF0F7C7357E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Presentation", "02.Presentation", "{66C09FA7-DE92-4C0C-B1F9-BFDE0A632652}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Host", "01.Host", "{E01F3999-D0ED-4D46-9E8F-DAD726FC7897}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Modules.Base.Shared.Contracts", "..\PROXYSUBMODULES\App.Modules.Base.Shared.Contracts\App.Modules.Base.Shared.Contracts.csproj", "{8ED86AC0-D180-48A8-8D52-4236A724DF6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0092D203-84E5-4CAE-8A43-F8E8C842C7DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0092D203-84E5-4CAE-8A43-F8E8C842C7DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0092D203-84E5-4CAE-8A43-F8E8C842C7DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0092D203-84E5-4CAE-8A43-F8E8C842C7DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC2AA45-E1C9-4C63-8CFE-7A171BA91E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC2AA45-E1C9-4C63-8CFE-7A171BA91E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC2AA45-E1C9-4C63-8CFE-7A171BA91E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC2AA45-E1C9-4C63-8CFE-7A171BA91E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D34EC9-0297-4F77-86D5-8CDAE3E37BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D34EC9-0297-4F77-86D5-8CDAE3E37BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D34EC9-0297-4F77-86D5-8CDAE3E37BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D34EC9-0297-4F77-86D5-8CDAE3E37BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBB63F5-12BD-4DC5-837B-CCBF2676C781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBB63F5-12BD-4DC5-837B-CCBF2676C781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBB63F5-12BD-4DC5-837B-CCBF2676C781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBB63F5-12BD-4DC5-837B-CCBF2676C781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72096151-673C-4C93-B2FB-6A5D6812FCB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72096151-673C-4C93-B2FB-6A5D6812FCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72096151-673C-4C93-B2FB-6A5D6812FCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72096151-673C-4C93-B2FB-6A5D6812FCB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FFBF351-09FF-4340-A07A-E44D937E25DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFBF351-09FF-4340-A07A-E44D937E25DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFBF351-09FF-4340-A07A-E44D937E25DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFBF351-09FF-4340-A07A-E44D937E25DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4701B0EE-6A3C-4AD5-806A-CF0F7C7357E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4701B0EE-6A3C-4AD5-806A-CF0F7C7357E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4701B0EE-6A3C-4AD5-806A-CF0F7C7357E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4701B0EE-6A3C-4AD5-806A-CF0F7C7357E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED86AC0-D180-48A8-8D52-4236A724DF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED86AC0-D180-48A8-8D52-4236A724DF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED86AC0-D180-48A8-8D52-4236A724DF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED86AC0-D180-48A8-8D52-4236A724DF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0092D203-84E5-4CAE-8A43-F8E8C842C7DB} = {E01F3999-D0ED-4D46-9E8F-DAD726FC7897}
+		{2EC2AA45-E1C9-4C63-8CFE-7A171BA91E39} = {0E6D169C-CEBC-4A99-8B0B-5348D2E7675A}
+		{35D34EC9-0297-4F77-86D5-8CDAE3E37BDD} = {0E6D169C-CEBC-4A99-8B0B-5348D2E7675A}
+		{4FBB63F5-12BD-4DC5-837B-CCBF2676C781} = {0E6D169C-CEBC-4A99-8B0B-5348D2E7675A}
+		{72096151-673C-4C93-B2FB-6A5D6812FCB5} = {0E6D169C-CEBC-4A99-8B0B-5348D2E7675A}
+		{3FFBF351-09FF-4340-A07A-E44D937E25DB} = {66C09FA7-DE92-4C0C-B1F9-BFDE0A632652}
+		{4701B0EE-6A3C-4AD5-806A-CF0F7C7357E6} = {0E6D169C-CEBC-4A99-8B0B-5348D2E7675A}
+		{8ED86AC0-D180-48A8-8D52-4236A724DF6C} = {0E6D169C-CEBC-4A99-8B0B-5348D2E7675A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51902CC9-1E45-4A42-B5FD-EC056C81D3FE}
+	EndGlobalSection
+EndGlobal
