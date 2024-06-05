@@ -54,7 +54,7 @@ jobs:
       # ======================================================================
       # see: https://gist.github.com/ausfestivus/04e55c7d80229069bf3bc75870630ec8
       AZURE_LOCATION_ID: australiacentral
-      AZURE_LOCATION_ID_ALT: southeastasia
+      # AZURE_LOCATION_ID_ALT: southeastasia
     secrets:  # inherit
       # AZURE Subcription & Access Params:
       AZURE_SUBSCRIPTION_ID: ${{secrets.NP_AZURE_SUBSCRIPTION_ID}}
