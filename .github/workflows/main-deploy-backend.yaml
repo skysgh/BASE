@@ -44,7 +44,7 @@ jobs:
       # ======================================================================
       SRC_REPO_GITHUB_USER_AND_REPO_NAME: ${{github.repository}}
       SRC_REPO_BRANCH: "main"
-      SRC_REPO_SOURCE_ENTRY_FOLDER: "SOURCE/SOMETHING/TODO/..."
+      SRC_REPO_SOURCE_ENTRY_FOLDER: "SOURCE/App.Host"
       # ======================================================================
       # LIB PARAMETERS
       # ======================================================================
