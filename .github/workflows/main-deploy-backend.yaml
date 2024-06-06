@@ -63,5 +63,7 @@ jobs:
       DB_ADMIN_NAME: ${{secrets.DB_ADMIN_NAME}}
       DB_ADMIN_PWD: ${{secrets.DB_ADMIN_PWD}}
       GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      # NET APP:
+      APP_NAME: "App.Host"
 
       
