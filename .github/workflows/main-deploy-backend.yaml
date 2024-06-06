@@ -56,7 +56,7 @@ jobs:
       AZURE_LOCATION_ID: australiacentral
       # AZURE_LOCATION_ID_ALT: southeastasia
       # NET APP:
-        APP_NAME: "App.Host"      
+      APP_NAME: "App.Host"      
     secrets:  # inherit
       # AZURE Subcription & Access Params:
       AZURE_SUBSCRIPTION_ID: ${{secrets.NP_AZURE_SUBSCRIPTION_ID}}
