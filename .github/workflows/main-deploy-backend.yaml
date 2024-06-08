@@ -43,7 +43,10 @@ jobs:
       # SRC PARAMETERS
       # ======================================================================
       SRC_REPO_GITHUB_USER_AND_REPO_NAME: ${{github.repository}}
-      SRC_REPO_BRANCH: "main"
+      # github.ref is the whole name ('refs/head/main')
+      # github.ref_name is the short name
+      SRC_REPO_BRANCH: ${{github.ref}}
+      SRC_REPO_BRANCH_NAME: ${{github.ref_name}}
       SRC_REPO_SOURCE_ENTRY_FOLDER: "SOURCE/App.Host"
       # ======================================================================
       # LIB PARAMETERS
