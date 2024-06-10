@@ -24,9 +24,9 @@ namespace App.Host
             }
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
-            app.UseAuthorization();
-
+            //app.UseAuthorization();
 
             app.MapControllers();
 
