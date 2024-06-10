@@ -23,6 +23,7 @@ namespace App.Host
                 app.UseSwaggerUI();
             }
 
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
