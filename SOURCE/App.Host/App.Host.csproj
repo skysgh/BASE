@@ -6,7 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>App.Host.Program</StartupObject>
   </PropertyGroup>
-
 	
 	
   <ItemGroup>
