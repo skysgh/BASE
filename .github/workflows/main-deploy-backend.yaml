@@ -47,7 +47,7 @@ jobs:
       # github.ref_name is the short name
       SRC_REPO_BRANCH: ${{github.ref}}
       SRC_REPO_BRANCH_NAME: ${{github.ref_name}}
-      SRC_REPO_SOURCE_ENTRY_FOLDER: "."
+      SRC_REPO_SOURCE_ENTRY_FOLDER: "SOURCE"
       # ======================================================================
       # LIB PARAMETERS
       # ======================================================================
@@ -60,6 +60,7 @@ jobs:
       # AZURE_LOCATION_ID_ALT: southeastasia
       # NET APP:
       APP_NAME: "App.Host"
+      DOTNET_FRAMEWORK_VERSION: "8.0"
     secrets:  # inherit
       # AZURE Subcription & Access Params:
       AZURE_SUBSCRIPTION_ID: ${{secrets.NP_AZURE_SUBSCRIPTION_ID}}
