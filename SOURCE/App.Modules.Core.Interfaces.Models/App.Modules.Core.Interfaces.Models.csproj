@@ -21,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\App.Modules.Core.Shared.Contracts\App.Modules.Core.Shared.Contracts.csproj" />
+    <ProjectReference Include="..\App.Modules.Core.Substrate.Contracts\App.Modules.Core.Substrate.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

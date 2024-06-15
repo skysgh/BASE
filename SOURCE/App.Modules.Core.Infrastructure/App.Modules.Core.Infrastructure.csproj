@@ -25,8 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\App.Modules.Core.Shared.Contracts\App.Modules.Core.Shared.Contracts.csproj" />
-    <ProjectReference Include="..\App.Modules.Core.Shared\App.Modules.Core.Shared.csproj" />
+    <ProjectReference Include="..\App.Modules.Core.Substrate.Contracts\App.Modules.Core.Substrate.Contracts.csproj" />
+    <ProjectReference Include="..\App.Modules.Core.Substrate\App.Modules.Core.Substrate.csproj" />
   </ItemGroup>
 
   <ItemGroup>
