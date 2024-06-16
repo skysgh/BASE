@@ -1,6 +1,6 @@
-namespace App.Base.Shared.Services
+namespace App.Modules.Core.Substrate.Services
 {
-    using App.Modules.Core.Shared.Contracts.Lifecycles;
+    using App.Modules.Core.Substrate.Lifecycles;
 
     /// <summary>
     /// Contract for all Application Services, no matter what module
