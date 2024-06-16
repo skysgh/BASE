@@ -1,6 +1,8 @@
 ﻿namespace App.Base.Shared.Models.Entities
 {
     using System;
+    using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
     /// <summary>
     /// System entity (not exposed to the system's exterior) for

@@ -2,7 +2,7 @@
 namespace App.Base.Shared.Models.Entities.Base
 {
     using System;
-    using App.Base.Shared.Models.Contracts;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
 
     /// <summary>

@@ -1,4 +1,6 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+
+namespace App.Base.Shared.Models.Entities
 {
     /// <summary>
     /// System entity (not exposed to the system's exterior) for

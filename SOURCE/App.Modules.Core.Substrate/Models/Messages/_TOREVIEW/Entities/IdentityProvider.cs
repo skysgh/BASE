@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace App.Base.Shared.Models.Entities
 {
     using App.Base.Shared.Factories;
+    using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
     /// <summary>
     /// TODO: Describe better

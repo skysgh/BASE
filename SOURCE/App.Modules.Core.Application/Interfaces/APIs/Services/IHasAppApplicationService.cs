@@ -1,4 +1,4 @@
-﻿using App.Modules.Core.Shared.Services;
+﻿using App.Modules.Core.Substrate.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

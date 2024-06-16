@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Contract for Models (eg System models or DTO Message models) that

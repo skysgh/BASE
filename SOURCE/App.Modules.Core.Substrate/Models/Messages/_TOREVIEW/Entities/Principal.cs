@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// System entity (not exposed to the system's exterior) for

@@ -1,11 +1,11 @@
 ﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
 {
-    using App.Base.Shared.Models;
     using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.Models.Contracts;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    
+
     /// <summary>
     /// A Group of Roles
     /// </summary>

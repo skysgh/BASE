@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Contract for Reference data
@@ -19,8 +19,8 @@
     /// </list>
     /// </para>
     /// </summary>
-    public interface IHasReferenceDataOfNoIdEnabledTitleDescImgUrlDisplayHints : 
-        IHasEnabled, 
+    public interface IHasReferenceDataOfNoIdEnabledTitleDescImgUrlDisplayHints :
+        IHasEnabled,
         IHasTitleAndDescriptionAndImageUrlAndDisplayHints
     {
 

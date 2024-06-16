@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Timestamp to apply to Records

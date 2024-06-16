@@ -1,6 +1,7 @@
 ﻿namespace App.Base.Shared.Models.Entities
 {
     using System;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// Abstract base class for system entities

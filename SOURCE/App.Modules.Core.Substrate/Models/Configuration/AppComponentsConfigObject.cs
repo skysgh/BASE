@@ -1,6 +1,7 @@
 ﻿using App.Base.Shared.Attributes;
 using App.Base.Shared.Constants;
 using App.Modules.Core.Shared.Constants;
+using App.Modules.Core.Substrate.Models.Contracts;
 
 namespace App.Base.Shared.Models.Configuration
 {

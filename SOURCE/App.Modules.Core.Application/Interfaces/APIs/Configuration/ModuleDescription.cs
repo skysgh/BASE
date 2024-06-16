@@ -1,4 +1,4 @@
-﻿using App.Modules.Core.Shared.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts2;
 
 namespace App.Modules.Core.Application.Interfaces.APIs.Configuration
 {

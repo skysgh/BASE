@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.Models.Contracts.Enums
 {
     /// <summary>
     /// Enumeration of Trace Level.

@@ -1,4 +1,6 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+
+namespace App.Base.Shared.Models.Entities
 {
     /// <summary>
     /// TODO: Improve documentation

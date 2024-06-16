@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
     using App.Base.Shared.Factories;
-    using App.Base.Shared.Models;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// DTO for <c>SecurityProfilePermission</c>

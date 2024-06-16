@@ -1,6 +1,7 @@
 ﻿namespace App.Base.Shared.Models.Messages
 {
     using App.Base.Shared.Factories;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// A model to hold the results of a 

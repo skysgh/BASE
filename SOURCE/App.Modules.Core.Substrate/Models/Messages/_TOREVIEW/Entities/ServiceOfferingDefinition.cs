@@ -1,4 +1,5 @@
 ﻿using App.Base.Shared.Models.Entities.Base;
+using App.Modules.Core.Substrate.Models.Contracts;
 using System;
 
 namespace App.Base.Shared.Models.Entities

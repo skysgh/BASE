@@ -1,4 +1,5 @@
 ﻿using App.Base.Shared.Models.Entities.Base;
+using App.Modules.Core.Substrate.Models.Contracts;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 

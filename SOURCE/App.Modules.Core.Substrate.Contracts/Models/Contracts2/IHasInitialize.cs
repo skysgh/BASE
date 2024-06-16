@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Contracts
+﻿namespace App.Modules.Core.Substrate.Models.Contracts2
 {
 
     /// <summary>

@@ -2,6 +2,7 @@
 {
     using System;
     using App.Base.Shared.Attributes;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// An immutable host configuration object 

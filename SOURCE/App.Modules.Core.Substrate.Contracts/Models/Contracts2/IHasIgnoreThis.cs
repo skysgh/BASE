@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Contracts
+namespace App.Modules.Core.Substrate.Models.Contracts2
 {
     /// <summary>
     /// Contract that can be attached to classes 

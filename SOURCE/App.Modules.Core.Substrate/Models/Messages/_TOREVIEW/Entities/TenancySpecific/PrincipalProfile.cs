@@ -3,7 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-     
+    using App.Modules.Core.Substrate.Models.Contracts;
+
     /// <summary>
     /// The profile (not same as Security Profile) of a Principal.
     /// </summary>

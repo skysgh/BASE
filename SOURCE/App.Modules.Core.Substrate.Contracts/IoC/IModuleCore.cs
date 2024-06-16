@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Modules.Core.Shared.IoC
+namespace App.Modules.Core.Substrate.IoC
 {
 
     /// <summary>

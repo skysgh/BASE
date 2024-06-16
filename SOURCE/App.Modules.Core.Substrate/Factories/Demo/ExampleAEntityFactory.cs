@@ -1,5 +1,6 @@
 ﻿using App.Base.Shared.Attributes;
 using App.Base.Shared.Models.Entities.Demos;
+using App.Modules.Core.Substrate.Models.Contracts.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace App.Base.Domain.Services.Implementations
         {
             var result = new ExampleAEntity()
             {
-                RecordState = Shared.Models.Entities.RecordPersistenceState.Active,
+                RecordState = RecordPersistenceState.Active,
                 Id = index.ToGuid(),
                 Title = "Some Displayable Text",
                 Description = "Some Description of the item...blah, blah...",

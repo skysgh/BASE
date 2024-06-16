@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Core.Shared.Contracts.Models.Contracts
+﻿namespace App.Modules.Core.Substrate.Models.Contracts2
 {
     /// <summary>
     /// Configuration Information used to 

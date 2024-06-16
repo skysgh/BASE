@@ -1,10 +1,9 @@
-﻿using App.Base.Shared.Models;
-
-namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
+﻿namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
     using System;
     using App.Base.Shared.Models.Entities;
     using App.Base.Shared.Models.Entities.TenancySpecific;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// API DTO for system 

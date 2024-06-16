@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Contract to add information to Hint

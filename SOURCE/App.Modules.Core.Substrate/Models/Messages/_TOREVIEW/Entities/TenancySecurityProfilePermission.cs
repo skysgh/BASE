@@ -1,7 +1,7 @@
 ﻿namespace App.Base.Shared.Models.Entities
 {
-    using App.Base.Shared.Models;
     using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// A Permission to assign to a Tenancy Security Profile

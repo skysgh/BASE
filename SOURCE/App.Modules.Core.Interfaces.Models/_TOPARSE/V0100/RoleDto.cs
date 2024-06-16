@@ -1,9 +1,8 @@
-using App.Base.Shared.Models;
-
 namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
     using System;
-    using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
     /// <summary>
     /// An API DTO 

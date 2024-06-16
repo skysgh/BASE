@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Contract to add display Hinting
@@ -11,9 +11,9 @@
     /// </list>
     /// </para>
     /// </summary>
-    public interface IHasDisplayHints:
+    public interface IHasDisplayHints :
         IHasDisplayOrderHint,
         IHasDisplayStyleHintNullable
-        { }
+    { }
 
 }

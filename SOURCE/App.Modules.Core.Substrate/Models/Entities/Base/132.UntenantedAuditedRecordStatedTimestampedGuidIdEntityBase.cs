@@ -3,6 +3,7 @@
     using System;
     using System.Runtime.Serialization;
     using App.Base.Shared.Factories;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// <para>

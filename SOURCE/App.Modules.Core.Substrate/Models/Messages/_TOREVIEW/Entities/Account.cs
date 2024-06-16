@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using App.Modules.Core.Substrate.Models.Contracts;
 
 namespace App.Base.Shared.Models.Entities
 {

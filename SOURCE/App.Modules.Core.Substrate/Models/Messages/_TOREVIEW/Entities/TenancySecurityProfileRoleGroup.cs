@@ -1,11 +1,11 @@
 ﻿namespace App.Base.Shared.Models.Entities
 {
-    using App.Base.Shared.Models;
     using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.Models.Contracts;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    
+
     /// <summary>
     /// A nestable Group of Roles,
     /// attachable to a Tenancy Security Profile.

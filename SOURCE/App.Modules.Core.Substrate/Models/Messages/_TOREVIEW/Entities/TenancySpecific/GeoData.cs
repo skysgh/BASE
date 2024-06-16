@@ -1,4 +1,5 @@
 using App.Modules.Core.Shared.Models.Messages._TOREVIEW.Entities.Contracts;
+using App.Modules.Core.Substrate.Models.Contracts;
 
 namespace App.Base.Shared.Models.Entities.TenancySpecific
 {

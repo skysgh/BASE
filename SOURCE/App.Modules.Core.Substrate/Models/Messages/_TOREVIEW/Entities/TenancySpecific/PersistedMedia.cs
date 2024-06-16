@@ -1,6 +1,7 @@
 ﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
 {
     using System;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     ///     A file persisted

@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Contracts
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// <para>
@@ -13,9 +13,9 @@
     /// </summary>
     /// <typeparam name="TValue">The type of the value.</typeparam>
     public interface IHasReferenceDataOfGuidIdEnabledTitleDescImgUrlKeyGenValueDisplayHints<TValue> :
-        IHasReferenceDataOfGuidIdEnabledTitleDescImgUrlDisplayHints, 
+        IHasReferenceDataOfGuidIdEnabledTitleDescImgUrlDisplayHints,
         IHasKeyGenericValue<TValue>
-        where TValue: struct //int
+        where TValue : struct //int
     {
 
     }

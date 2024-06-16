@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using App.Base.Shared.Models;
+using App.Modules.Core.Substrate.Models.Contracts;
 
-namespace App.Modules.Core.Shared.Contracts.Models.Contracts
+namespace App.Modules.Core.Substrate.Models.Contracts2
 {
     /// <summary>
     /// Contract for a Configuration object that 

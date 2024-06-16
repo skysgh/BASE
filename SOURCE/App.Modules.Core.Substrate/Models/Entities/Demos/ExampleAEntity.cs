@@ -1,5 +1,7 @@
 ﻿using App.Base.Shared.Attributes;
 using App.Base.Shared.Factories;
+using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
 namespace App.Base.Shared.Models.Entities.Demos
 {

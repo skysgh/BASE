@@ -1,6 +1,6 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
-    using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
     /// <summary>
     /// Contract for assigning a State to a Record.

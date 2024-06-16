@@ -3,6 +3,7 @@ namespace App.Base.Shared.Models.Entities
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// An untenanted (ie, Universal/App) Navigation route entry.

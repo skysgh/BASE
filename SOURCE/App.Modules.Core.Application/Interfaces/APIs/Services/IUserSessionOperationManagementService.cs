@@ -4,8 +4,8 @@
     /// A Contract for an
     /// Application Service
     /// to Manage 
-    /// <see cref="SessionDto"/> 
-    /// <see cref="SessionOperationDto"/>s.
+    /// <c>SessionDto</c> 
+    /// <c>SessionOperationDto</c>s.
     /// </summary>
     public interface IUserSessionOperationManagementService : IHasAppBaseApplicationService
     {

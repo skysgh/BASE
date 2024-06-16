@@ -4,6 +4,8 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Runtime.Serialization;
+    using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
     /// <summary>
     /// Abstract base class of entities.

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace App.Base.Shared.Models
+namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Url of an image to associate to this list item.

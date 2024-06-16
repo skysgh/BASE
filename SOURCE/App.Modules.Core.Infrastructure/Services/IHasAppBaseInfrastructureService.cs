@@ -1,8 +1,8 @@
 ﻿namespace App.Modules.Core.Infrastructure.NewFolder.Services
 {
     using App.Base.Shared.Contracts;
-    using App.Base.Shared.Services;
-    using App.Modules.Core.Shared.Contracts.Lifecycles;
+    using App.Modules.Core.Substrate.Lifecycles;
+    using App.Modules.Core.Substrate.Services;
 
     /// <summary>
     /// Contract for all System Base Infrastructure Services.

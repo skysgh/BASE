@@ -1,9 +1,9 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// 
     /// </summary>
-    public interface IHasTimestampRecordState:
+    public interface IHasTimestampRecordState :
         IHasTimestamp,
         IHasRecordState
     {

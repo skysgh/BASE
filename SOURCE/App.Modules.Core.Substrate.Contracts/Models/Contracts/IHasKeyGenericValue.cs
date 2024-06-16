@@ -1,4 +1,4 @@
-namespace App.Base.Shared.Models
+namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Contract to apply to models that need
@@ -14,7 +14,7 @@ namespace App.Base.Shared.Models
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface IHasKeyGenericValue<T> : IHasKey, IHasGenericValue<T>
-        
+
     {
     }
 }

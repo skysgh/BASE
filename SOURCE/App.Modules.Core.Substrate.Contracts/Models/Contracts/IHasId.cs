@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Contract to assign Typed Ids to entities.
@@ -12,7 +12,7 @@
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface IHasId<T>
-        //where T  /*No: because string is not a struct : struct */
+    //where T  /*No: because string is not a struct : struct */
     {
         /// <summary>
         /// Gets or sets the identifier.

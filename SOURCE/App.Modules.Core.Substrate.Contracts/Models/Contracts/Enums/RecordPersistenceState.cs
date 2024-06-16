@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.Models.Contracts.Enums
 
 {
     /// <summary>
@@ -36,7 +36,7 @@
         /// Record is to dispose (but Undeletable back to another state)
         /// </summary>
         ToDispose = 16 /*Garbage*/,
-       
+
         /// <summary>
         /// Record is disposed. 
         /// Cannot be restored to another state.

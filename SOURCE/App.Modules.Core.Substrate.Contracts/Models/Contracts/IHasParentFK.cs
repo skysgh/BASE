@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace App.Base.Shared.Models
+namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// <para>

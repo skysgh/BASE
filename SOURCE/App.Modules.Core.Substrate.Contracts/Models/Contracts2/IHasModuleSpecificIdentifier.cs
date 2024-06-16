@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using App.Modules.Core.Shared.IoC;
+using App.Modules.Core.Substrate.IoC;
 
-namespace App.Base.Shared.Contracts
+namespace App.Modules.Core.Substrate.Models.Contracts2
 {
     /// <summary>
     /// <para>

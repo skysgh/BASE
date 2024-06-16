@@ -3,6 +3,7 @@ namespace App.Base.Shared.Models.Messages
 {
     using System;
     using App.Base.Shared.Factories;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// A record of a configuration step that was undertaken.

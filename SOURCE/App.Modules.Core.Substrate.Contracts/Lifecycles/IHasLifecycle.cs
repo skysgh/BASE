@@ -1,6 +1,6 @@
-namespace App.Modules.Core.Shared.Contracts.Lifecycles
+namespace App.Modules.Core.Substrate.Lifecycles
 {
-    using App.Base.Shared.Services;
+    using App.Modules.Core.Substrate.Services;
 
     /// <summary>
     /// A non-functional interface to hint 

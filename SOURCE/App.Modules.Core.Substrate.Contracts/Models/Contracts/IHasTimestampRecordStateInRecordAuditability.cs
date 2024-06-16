@@ -1,11 +1,12 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// 
     /// </summary>
-    public interface IHasTimestampRecordStateInRecordAuditability:
+    public interface IHasTimestampRecordStateInRecordAuditability :
         IHasTimestampRecordState,
-        IHasInRecordAuditability{ 
+        IHasInRecordAuditability
+    {
     }
 
 

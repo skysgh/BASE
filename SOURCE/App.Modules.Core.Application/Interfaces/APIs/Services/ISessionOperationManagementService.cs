@@ -11,7 +11,7 @@ namespace App.Modules.Core.Application.Interfaces.APIs.Services
     /// Contract for an 
     /// Application Service
     /// to manage
-    /// <see cref="SessionOperationDto"/>
+    /// <c>SessionOperationDto</c>
     /// entities.
     /// </summary>
     public interface ISessionOperationManagementService : IHasAppBaseApplicationService

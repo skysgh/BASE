@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     using System;
 
@@ -18,7 +18,7 @@
     /// <c>IHasInRecordAuditabilityNullable.</c>
     /// </para>
     /// </summary>
-    public interface IHasInRecordAuditability 
+    public interface IHasInRecordAuditability
     {
         /// <summary>
         ///     Gets or sets the created on.

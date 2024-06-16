@@ -1,11 +1,10 @@
-﻿using App.Base.Shared.Models;
-
-namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
+﻿namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// DTO for a <see cref="Session"/>

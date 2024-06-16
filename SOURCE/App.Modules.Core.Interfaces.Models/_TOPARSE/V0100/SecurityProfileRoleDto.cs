@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using App.Base.Shared.Factories;
-    using App.Base.Shared.Models;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// DTO for <c>SecurityProfileRole</c>

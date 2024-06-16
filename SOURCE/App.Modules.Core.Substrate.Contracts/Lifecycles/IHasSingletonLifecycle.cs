@@ -1,4 +1,4 @@
-namespace App.Modules.Core.Shared.Contracts.Lifecycles
+namespace App.Modules.Core.Substrate.Lifecycles
 {
     /// <summary>
     /// A Singleton version of <see cref="IHasLifecycle"/>.

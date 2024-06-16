@@ -1,6 +1,4 @@
-﻿
-
-namespace App.Base.Shared.Contracts
+﻿namespace App.Modules.Core.Substrate.Models.Contracts2
 {
     /// <summary>
     /// Contract applied to Demo entities, DTOs and Controllers

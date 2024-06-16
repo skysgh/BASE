@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
+using App.Modules.Core.Substrate.Models.Contracts;
 
 namespace App.Base.Shared.Models.Entities
 {

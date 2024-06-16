@@ -1,5 +1,6 @@
 ﻿using App.Base.Shared.Attributes;
 using App.Base.Shared.Models.Entities.Demos;
+using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
 namespace App.Base.Shared.Factories.Demo
 {
@@ -24,7 +25,7 @@ namespace App.Base.Shared.Factories.Demo
             ExampleBReferenceTypeEntity categoryRecord = new()
             {
                 //Timestamp
-                RecordState = Models.Entities.RecordPersistenceState.Active,
+                RecordState = RecordPersistenceState.Active,
                 Id = (100 + index).ToGuid(),
                 CreatedByPrincipalId = "{P-whatever}",
                 CreatedOnUtc = DateTime.UtcNow,

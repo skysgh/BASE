@@ -1,8 +1,7 @@
-﻿using App.Base.Shared.Models;
-
-namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
+﻿namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
     using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.Models.Contracts;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;

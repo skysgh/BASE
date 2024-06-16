@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace App.Base.Shared.Models.Entities
 {
     using System.Collections.ObjectModel;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// A single element within a Navigation Map used by user interfaces.

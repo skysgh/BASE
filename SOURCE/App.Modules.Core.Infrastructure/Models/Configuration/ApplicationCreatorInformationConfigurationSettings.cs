@@ -2,6 +2,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
 {
     using System;
     using App.Base.Shared.Attributes;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
     /// An immutable host configuration object 
@@ -12,8 +13,8 @@ namespace App.Base.Shared.Models.ConfigurationSettings
     /// retrieved from the Host Settings.
     /// </para>
     /// </summary>
-    /// <seealso cref="App.Base.Shared.Models.IHasName" />
-    /// <seealso cref="App.Base.Shared.Models.IHasDescription" />
+    /// <seealso cref="Modules.Core.Substrate.Models.Contracts.IHasName" />
+    /// <seealso cref="Modules.Core.Substrate.Models.Contracts.IHasDescription" />
     public class ApplicationCreatorInformationConfigurationSettings : IHostSettingsBasedConfigurationObject,  IHasName, IHasDescription
     {
 

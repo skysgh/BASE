@@ -2,6 +2,7 @@
 {
     using System;
     using App.Base.Shared.Factories;
+    using App.Modules.Core.Substrate.Models.Contracts;
 
 
     /// <summary>
