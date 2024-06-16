@@ -1,9 +1,9 @@
 ﻿
 
-// namespace App.Base.Shared.Models.Configuration.AppHost
+// namespace App.Modules.Core.Substrate.Models.Configuration.AppHost
 // {
-//     using App.Base.Shared.Attributes;
-//     using App.Base.Shared.Models.ConfigurationSettings;
+//     using App.Modules.Core.Substrate.tmp.Attributes;
+//     using App.Modules.Core.Substrate.Models.ConfigurationSettings;
 
 //     public class Service02Configuration: IHostSettingsBasedConfigurationObject
 //     {

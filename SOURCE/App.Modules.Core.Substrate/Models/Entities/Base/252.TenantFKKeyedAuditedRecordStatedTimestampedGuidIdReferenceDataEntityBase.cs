@@ -1,6 +1,6 @@
 using App.Modules.Core.Substrate.Models.Contracts;
 
-namespace App.Base.Shared.Models.Entities.Base
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     /// <summary>
     /// 
@@ -22,7 +22,7 @@ namespace App.Base.Shared.Models.Entities.Base
     /// 
     /// </summary>
     public abstract class TenantFKKeyedAuditedRecordStatedTimestampedGuidIdReferenceDataKeyGenValueEntityBase
-        : UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataKeyGenValueEntityBase<Guid>, 
+        : UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataKeyGenValueEntityBase<Guid>,
    IHasTenantFK
     {
 

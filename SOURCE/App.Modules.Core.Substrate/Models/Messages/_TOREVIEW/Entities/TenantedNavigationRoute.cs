@@ -1,26 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System.Collections.ObjectModel;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     /// A single element within a Navigation Map used by user interfaces.
     /// <see cref="NavigationRoute"/>.
     /// </summary>
-    public class TenantedNavigationRoute 
-        : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, 
-        IHasGuidId, 
-        IHasOwnerFK, 
+    public class TenantedNavigationRoute
+        : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase,
+        IHasGuidId,
+        IHasOwnerFK,
         IHasTitleAndDescriptionAndImageUrlAndDisplayHints
     {
 
         /// <summary>
         /// Whether the route is enabled.
         /// </summary>
-        public bool Enabled {get; set;}
+        public bool Enabled { get; set; }
         // Class Not even used not sure what this was supposed to be
 
         /// <summary>
@@ -37,7 +38,7 @@ namespace App.Base.Shared.Models.Entities
         /// A description of the Route.
         /// </summary>
         public string Description { get; set; }
-/// <inheritdoc/>
+        /// <inheritdoc/>
 
 
         public string ImageUrl { get; set; }
@@ -55,10 +56,11 @@ namespace App.Base.Shared.Models.Entities
         /// <summary>
         /// Child/nested routes.
         /// </summary>
-        public ICollection<TenantedNavigationRoute> Chilldren {
+        public ICollection<TenantedNavigationRoute> Chilldren
+        {
             get
             {
-                return _children ?? (_children = new Collection<TenantedNavigationRoute>());
+                return _children ??= new Collection<TenantedNavigationRoute>();
             }
         }
 

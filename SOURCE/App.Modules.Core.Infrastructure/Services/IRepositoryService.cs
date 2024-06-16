@@ -3,8 +3,8 @@
 //    using System;
 //    using System.Linq;
 //    using System.Linq.Expressions;
-//    using App.Base.Shared.Models;
-//    using App.Base.Shared.Models.Contracts;
+//    using App.Modules.Core.Substrate.Models;
+//    using App.Modules.Core.Substrate.Models.Contracts;
 
 //    /// <summary>
 //    /// Specifies how objects being loaded into the context are merged with objects already in the context.

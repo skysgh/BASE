@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Messages
+﻿namespace App.Modules.Core.Substrate.Models.Messages
 {
     /// <summary>
     /// Model of the response from a malware check.

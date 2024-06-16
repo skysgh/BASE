@@ -1,6 +1,6 @@
-﻿//namespace App.Base.Shared.Models.Entities
+﻿//namespace App.Modules.Core.Substrate.Models.Entities
 //{
-//    using App.Base.Shared.Factories;
+//    using App.Modules.Core.Substrate.Factories;
 
 //    public class ReferenceDataBase : UntenantedTimestampedAuditedRecordStatedGuidIdEntityBase, IHasEnabled, IHasIsResourced,
 //        IHasKeyValue<string>, IHasDisplayOrderHint

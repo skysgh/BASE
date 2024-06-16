@@ -1,13 +1,14 @@
-﻿using App.Base.Shared.Attributes;
-using App.Base.Shared.Models.Entities.Demos;
-using App.Modules.Core.Substrate.Models.Contracts.Enums;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.ExtensionMethods;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Demos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
-namespace App.Base.Domain.Services.Implementations
+namespace App.Modules.Core.Substrate.tmp.Factories.Demo
 {
     /// <summary>
     /// Static Factory to develop simple

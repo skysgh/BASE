@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
@@ -13,7 +13,7 @@
     /// Can't repeat this enough. Use an external 3rd party IdP.
     /// </para>
     /// </summary>
-    public class PrincipalMembershipInfo: IHasGuidId, IHasTimestamp, IHasRecordState
+    public class PrincipalMembershipInfo : IHasGuidId, IHasTimestamp, IHasRecordState
     {
         // If the info in your app is valuable to someone, 
         // it's never an issue of if. It's an issue of when.
@@ -40,7 +40,7 @@
         /// Service User Name
         /// </summary>
         public string UserName { get; set; }
-        
+
         /// <summary>
         /// Credential used by User
         /// </summary>

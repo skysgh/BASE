@@ -1,8 +1,9 @@
-﻿using App.Base.Shared.Attributes;
-using App.Base.Shared.Models.Entities.Demos;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.ExtensionMethods;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Demos;
 using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
-namespace App.Base.Shared.Factories.Demo
+namespace App.Modules.Core.Substrate.tmp.Factories.Demo
 {
     /// <summary>
     /// Static Factory to develop simple
@@ -13,7 +14,7 @@ namespace App.Base.Shared.Factories.Demo
     [ForDemoOnly]
     internal static class ExampleCEntityFactory
     {
-        
+
         /// <summary>
         /// Static method to build a
         /// <see cref="ExampleBReferenceTypeEntity"/>

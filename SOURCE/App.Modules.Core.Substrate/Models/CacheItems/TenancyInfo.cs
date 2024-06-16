@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.CacheItems
+namespace App.Modules.Core.Substrate.tmp.Models.CacheItems
 {
     /// <summary>
     /// Cacheable information about a Tenancy

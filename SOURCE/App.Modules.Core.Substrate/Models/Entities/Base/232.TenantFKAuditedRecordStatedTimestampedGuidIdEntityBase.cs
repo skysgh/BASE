@@ -1,8 +1,8 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     using System;
-    using App.Base.Shared.Factories;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Factories;
 
 
     /// <summary>
@@ -31,7 +31,7 @@
         UntenantedAuditedRecordStatedTimestampedCustIdEntityBase<Guid>,
         IHasTenantFK,
         IHasGuidId
-        
+
     {
         /// <summary>
         /// Gets or sets the FK of the Tenancy this mutable model belongs to.
@@ -43,7 +43,7 @@
         /// </summary>
         protected TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase()
         {
-            this.Id = GuidFactory.NewGuid();
+            Id = GuidFactory.NewGuid();
         }
 
 

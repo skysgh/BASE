@@ -1,8 +1,6 @@
-﻿
-using App.Base.Shared.Models.Contracts;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
 
-namespace App.Base.Shared.Models.Entities.Base
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     /// <summary>
     /// 
@@ -32,7 +30,7 @@ namespace App.Base.Shared.Models.Entities.Base
     /// <typeparam name="TId"></typeparam>
     public abstract class UntenantedAuditedRecordStatedTimestampedCustomIdReferenceDataEntityBase<TId> :
         UntenantedAuditedRecordStatedTimestampedCustIdEntityBase<TId>,
-        /*Enherited: IHasId<Guid>, IHasTimestamp, IHasInRecordAuditability, IHasRecordState*/
+       /*Enherited: IHasId<Guid>, IHasTimestamp, IHasInRecordAuditability, IHasRecordState*/
        IHasReferenceDataOfGenericIdEnabledTitleDescImgUrlDisplayHints<TId>
         where TId : struct
     {
@@ -48,22 +46,22 @@ namespace App.Base.Shared.Models.Entities.Base
 
 
 
-/// <inheritdoc/>
+        /// <inheritdoc/>
         public virtual bool Enabled { get; set; }
-/// <inheritdoc/>
+        /// <inheritdoc/>
 
-        public virtual string Title { get; set; } = String.Empty;
-/// <inheritdoc/>
+        public virtual string Title { get; set; } = string.Empty;
+        /// <inheritdoc/>
 
-        public virtual string Description { get; set; } = String.Empty;
+        public virtual string Description { get; set; } = string.Empty;
 
         /// <inheritdoc/>
 
-        public virtual string ImageUrl { get; set; } = String.Empty;    
-/// <inheritdoc/>
+        public virtual string ImageUrl { get; set; } = string.Empty;
+        /// <inheritdoc/>
 
         public virtual int DisplayOrderHint { get; set; }
-/// <inheritdoc/>
+        /// <inheritdoc/>
 
         public virtual string? DisplayStyleHint { get; set; }
     }

@@ -1,9 +1,9 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     using System;
     using System.Runtime.Serialization;
-    using App.Base.Shared.Factories;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Factories;
 
     /// <summary>
     /// <para>
@@ -29,17 +29,17 @@
     /// 
     /// </summary>
     [DataContract]
-    public abstract class UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase : 
+    public abstract class UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase :
         UntenantedAuditedRecordStatedTimestampedCustIdEntityBase<Guid>,
-        IHasGuidId 
-        /*Enherited: IHasId<Guid>, IHasTimestamp, IHasInRecordAuditability, IHasRecordState*/
+        IHasGuidId
+    /*Enherited: IHasId<Guid>, IHasTimestamp, IHasInRecordAuditability, IHasRecordState*/
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase"/> class.
         /// </summary>
         protected UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase()
         {
-            this.Id = GuidFactory.NewGuid();
+            Id = GuidFactory.NewGuid();
         }
-   }
+    }
 }

@@ -1,7 +1,8 @@
-﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     ///     Optional attributes to associate to the
@@ -9,7 +10,7 @@
     /// </summary>
     public class PersistedMediaProperty :
         TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase,
-        IHasOwnerFK, 
+        IHasOwnerFK,
         IHasKeyGenericValue<string>,
         IHasTagNullable
     {

@@ -1,16 +1,18 @@
-using App.Modules.Core.Shared.Models.Messages._TOREVIEW.Entities.Contracts;
 using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
-namespace App.Base.Shared.Models.Entities.TenancySpecific
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
 
     /// <summary>
     /// A Tenancy-specific record of Geodata.
     /// </summary>
-    public class GeoData : 
-        TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, 
-        IHasTitleAndDescription, 
-        IHasLatitudeAndLongitude, 
+    public class GeoData :
+        TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase,
+        IHasTitleAndDescription,
+        IHasLatitudeAndLongitude,
         IHasGenericValue<decimal?>
     {
         /// <summary>

@@ -1,9 +1,10 @@
 ﻿
 
-namespace App.Base.Shared.Models.Configuration.AppHost
+namespace App.Modules.Core.Substrate.Models.Configuration.AppHost
 {
-    using App.Base.Shared.Attributes;
-    using App.Base.Shared.Models.ConfigurationSettings;
+    using App.Modules.Core.Substrate.Models.ConfigurationSettings;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// Configurer for the <c>IScaniiMalwareService</c>
@@ -29,7 +30,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationMalwareDetectionClientId)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationMalwareDetectionClientId)]
         public string? Key
         {
             get; set;
@@ -42,7 +43,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationMalwareDetectionClientSecret)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationMalwareDetectionClientSecret)]
         public string? Secret
         {
             get; set;
@@ -52,7 +53,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// Base Url of Service
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationMalwareDetectionBaseUri)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationMalwareDetectionBaseUri)]
         public string? BaseUri
         {
             get; set;
@@ -63,7 +64,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// Misc Config. Handler expected to know how to use.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationMalwareDetectionClientMiscConfig)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationMalwareDetectionClientMiscConfig)]
         public string? MiscConfig
         {
             get; set;

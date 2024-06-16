@@ -1,7 +1,7 @@
 ﻿namespace App.Modules.Core.Infrastructure.NewFolder.Services
 {
-    using App.Base.Shared.Services;
     using App.Modules.Core.Substrate.Models.Contracts.Enums;
+    using App.Modules.Core.Substrate.Services;
 
     /// <summary>
     /// Contract for an Infrastructure Service to 

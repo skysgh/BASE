@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Modules.Core.Shared.Outcomes
+namespace App.Modules.Core.Substrate.tmp.Outcomes
 {
     /// <summary>
     /// TODO: Define
     /// </summary>
-    public enum SystemInUseQualities {
+    public enum SystemInUseQualities
+    {
 
         /// <summary>
         /// No value set.

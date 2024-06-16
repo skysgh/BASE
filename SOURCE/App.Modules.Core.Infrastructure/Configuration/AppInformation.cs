@@ -1,5 +1,4 @@
-﻿using App.Base.Shared.Models.Messages;
-using App.Modules.Core.Shared.Models.Messages;
+﻿using App.Modules.Core.Substrate.tmp.Models.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;

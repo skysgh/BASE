@@ -1,7 +1,8 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts.Enums;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     /// System entity (not exposed to the system's exterior) for
@@ -21,7 +22,7 @@
     /// </para>
     /// 
     /// </summary>
-    public class ExceptionRecord : 
+    public class ExceptionRecord :
         // Entity has Id and other attributes due to inheriting from:
         UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase
     {
@@ -38,7 +39,7 @@
         /// The display Description of the Event.
         /// </summary>
         public string Description { get; set; }
-        
+
         /// <summary>
         /// A PI cleansed copy of full stack at the time of the event.
         /// </summary>

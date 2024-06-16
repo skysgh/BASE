@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
@@ -30,7 +30,7 @@
     public abstract class TenantFKAuditedRecordStatedTimestampedCustomIdEntityBase<TId> :
         UntenantedAuditedRecordStatedTimestampedCustIdEntityBase<TId>,
         IHasTenantFK
-        where TId: struct
+        where TId : struct
     {
 
         /// <summary>
@@ -40,7 +40,7 @@
         {
             //REMEMBER: As not a Guid ID Must be provided somehow...
         }
-/// <inheritdoc/>
+        /// <inheritdoc/>
 
         public virtual Guid TenantFK { get; set; }
     }

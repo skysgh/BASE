@@ -1,7 +1,7 @@
 ﻿namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
     using System;
 
     /// <summary>

@@ -1,14 +1,15 @@
-﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     /// A Claim belonging to the Profile belonging to the Principal.
     /// </summary>
-    public class PrincipalProfileClaim 
-        : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, 
-        IHasRecordState, 
+    public class PrincipalProfileClaim
+        : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase,
+        IHasRecordState,
         IHasOwnerFK
     {
         /// <summary>

@@ -1,7 +1,7 @@
-﻿using App.Base.Shared.Attributes;
-using App.Base.Shared.Models.Entities.Base;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
-namespace App.Base.Shared.Models.Entities.Demos
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Demos
 {
     /// <summary>
     /// A demonstration of a Reference Type Entity
@@ -9,7 +9,7 @@ namespace App.Base.Shared.Models.Entities.Demos
     /// <see cref="ExampleBEntity"/>
     /// </summary>
     [ForDemoOnly]
-    public class ExampleBReferenceTypeEntity : 
+    public class ExampleBReferenceTypeEntity :
         UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataEntityBase
     {
 

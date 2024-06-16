@@ -1,15 +1,15 @@
-﻿using App.Base.Shared.Attributes;
-using App.Base.Shared.Constants;
-using App.Modules.Core.Shared.Constants;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Constants;
+using App.Modules.Core.Substrate.tmp.ExtensionMethods;
 
-namespace App.Base.Shared.Models.Configuration
+namespace App.Modules.Core.Substrate.tmp.Models.Configuration
 {
     /// <summary>
     /// Configuration object to host
     /// all Base App Settings.
     /// </summary>
-    [Alias(AppConfiguration.Name)]
+    [Alias(Name)]
     public class AppConfiguration : IConfigurationObject
     {
 
@@ -19,8 +19,8 @@ namespace App.Base.Shared.Models.Configuration
         ///  TODO: HACK.
         /// </para>
         /// </summary>
-        public static AppConfiguration Instance 
-            { get; private set; } 
+        public static AppConfiguration Instance
+        { get; private set; }
             = new AppConfiguration();
 
 
@@ -66,16 +66,17 @@ namespace App.Base.Shared.Models.Configuration
         /// </summary>
         public void Initialise()
         {
-            if (this.Environments.Defaults.Length == 0)
+            if (Environments.Defaults.Length == 0)
             {
-                this.Environments.Defaults =
+                Environments.Defaults =
                 [
-                    "bt","dt","st","ut","ct","tr","pp",this.Environments.ProductionEnvironmentId
+                    "bt","dt","st","ut","ct","tr","pp",Environments.ProductionEnvironmentId
                 ];
             }
-            if (this.Medias.Defaults.Length == 0) {
-                this.Medias.Defaults = [
-                    this.Medias.WWWMediaId, "media"
+            if (Medias.Defaults.Length == 0)
+            {
+                Medias.Defaults = [
+                    Medias.WWWMediaId, "media"
                 ];
             }
         }
@@ -89,7 +90,7 @@ namespace App.Base.Shared.Models.Configuration
     /// <see cref="Directories"/>
     /// </para>
     /// </summary>
-    [Alias(Hosting.Name)]
+    [Alias(Name)]
     public class Hosting : IConfigurationObject
     {
         /// <summary>
@@ -113,7 +114,7 @@ namespace App.Base.Shared.Models.Configuration
     /// for detailing AppConfiguration
     /// specific to Environments
     /// </summary>
-    [Alias(Environments.Name)]
+    [Alias(Name)]
     public class Environments : IConfigurationObject
     {
         /// <summary>
@@ -156,7 +157,7 @@ namespace App.Base.Shared.Models.Configuration
     /// Collection of settings regarding
     /// routing media
     /// </summary>
-    [Alias(Medias.Name)]
+    [Alias(Name)]
     public class Medias : IConfigurationObject
     {
 
@@ -260,7 +261,7 @@ namespace App.Base.Shared.Models.Configuration
     /// Collection of Settings regarding
     /// System Capabilities
     /// </summary>
-    [Alias(Capabilities.Name)]
+    [Alias(Name)]
     public class Capabilities : IConfigurationObject
     {
         /// <summary>
@@ -288,7 +289,7 @@ namespace App.Base.Shared.Models.Configuration
     /// <summary>
     /// 
     /// </summary>
-    [Alias(MultiTenancies.Name)]
+    [Alias(Name)]
     public class MultiTenancies : IConfigurationObject, IHasEnabled
     {
         /// <summary>
@@ -342,7 +343,7 @@ namespace App.Base.Shared.Models.Configuration
     /// <summary>
     /// 
     /// </summary>
-    [Alias(Directories.Name)]
+    [Alias(Name)]
     public class Directories : IConfigurationObject
     {
 

@@ -1,7 +1,9 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts.Enums;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
 
     /// <summary>
@@ -59,18 +61,18 @@
         /// </summary>
         public virtual bool IsRead
         {
-            get => this.DateTimeReadUtc.HasValue;
+            get => DateTimeReadUtc.HasValue;
             set
             {
                 if (value == false)
                 {
-                    this.DateTimeReadUtc = null;
+                    DateTimeReadUtc = null;
                 }
                 else
                 {
-                    if (!this.DateTimeReadUtc.HasValue)
+                    if (!DateTimeReadUtc.HasValue)
                     {
-                        this.DateTimeReadUtc = DateTime.UtcNow;
+                        DateTimeReadUtc = DateTime.UtcNow;
                     }
                 }
             }

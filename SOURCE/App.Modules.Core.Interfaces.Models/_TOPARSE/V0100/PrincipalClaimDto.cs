@@ -31,7 +31,7 @@
         /// <summary>
         /// The unique key of the claim 
         /// </summary>
-        public virtual string Key { get; set; }
+        public virtual string Key { get; set; } = string.Empty;
 
         /// <summary>
         /// The FK of the parent Principal
@@ -49,6 +49,6 @@
         /// <summary>
         /// The Claim's Value.
         /// </summary>
-        public virtual string Value { get; set; }
+        public virtual string Value { get; set; } = string.Empty;
     }
 }

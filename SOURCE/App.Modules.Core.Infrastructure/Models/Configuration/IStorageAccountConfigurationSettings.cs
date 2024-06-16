@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.ConfigurationSettings
+﻿namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     /// <summary>
     /// The contract for configuring cloud Storage 

@@ -1,9 +1,10 @@
 ﻿
 
-namespace App.Base.Shared.Models.Configuration.AppHost
+namespace App.Modules.Core.Substrate.Models.Configuration.AppHost
 {
-    using App.Base.Shared.Attributes;
-    using App.Base.Shared.Models.ConfigurationSettings;
+    using App.Modules.Core.Substrate.Models.ConfigurationSettings;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// An example of a remote Service Configuration package.
@@ -18,7 +19,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationService01ClientId)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationService01ClientId)]
         public string? Key
         {
             get; set;
@@ -31,7 +32,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationService01ClientSecret)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationService01ClientSecret)]
         public string? Secret
         {
             get; set;
@@ -42,7 +43,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// Base Uri of the service.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationService01BaseUri)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationService01BaseUri)]
         public string? BaseUri
         {
             get; set;
@@ -53,7 +54,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// Misc config, Handler expected to know how to use.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationService01MiscConfig)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationService01MiscConfig)]
         public string? MiscConfig
         {
             get; set;

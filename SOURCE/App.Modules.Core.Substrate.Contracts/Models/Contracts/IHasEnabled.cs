@@ -1,6 +1,4 @@
-﻿using App.Base.Shared.Models.Entities;
-
-namespace App.Modules.Core.Substrate.Models.Contracts
+﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
     /// <summary>
     /// Contract to apply to models

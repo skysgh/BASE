@@ -1,5 +1,5 @@
-﻿using App.Base.Shared.Models.CacheItems;
-using App.Modules.Core.Infrastructure.NewFolder.Services;
+﻿using App.Modules.Core.Infrastructure.NewFolder.Services;
+using App.Modules.Core.Substrate.tmp.Models.CacheItems;
 
 
 namespace App.Modules.Core.Infrastructure.NewFolder.Services.Implementations

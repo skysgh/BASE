@@ -1,6 +1,7 @@
-﻿namespace App.Base.Shared.Models.ConfigurationSettings
+﻿namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
-    using App.Base.Shared.Attributes;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// TODO: Better documentation
@@ -11,7 +12,7 @@
         /// TODO: Better documentation
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreDemoMode)]
+        [Alias(ConfigurationKeys.AppCoreDemoMode)]
         public bool DemoMode
         {
             get; set;

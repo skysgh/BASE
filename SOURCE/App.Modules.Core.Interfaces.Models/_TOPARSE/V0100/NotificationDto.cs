@@ -3,6 +3,8 @@
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
     using App.Modules.Core.Substrate.Models.Contracts.Enums;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
     /// <summary>
     /// API DTO for system 

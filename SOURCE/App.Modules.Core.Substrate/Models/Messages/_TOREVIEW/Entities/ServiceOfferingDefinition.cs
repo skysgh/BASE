@@ -1,8 +1,8 @@
-﻿using App.Base.Shared.Models.Entities.Base;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 using System;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     ///  System entity (not exposed to the system's exterior) for
@@ -24,7 +24,7 @@ namespace App.Base.Shared.Models.Entities
         /// <summary>
         ///  The child <see cref="ServiceDefinition"/>
         /// </summary>
-        public virtual ServiceDefinition Service {get;set;}
+        public virtual ServiceDefinition Service { get; set; }
 
         /// <summary>
         /// The number of Principals the Service Offering allows.

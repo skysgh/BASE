@@ -1,6 +1,9 @@
-﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     using System;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
     /// <summary>
     /// A descriptor of Media uploaded by end users (to a StorageAccount)
@@ -17,12 +20,12 @@
         /// Use an Enum as DataClassification is shared across Bounded DbContexts
         /// </para>
         /// </summary>
-        public virtual NZDataClassification DataClassificationFK {get; set;} /* Unclassified or not determines whether external scanning services can be invoked or not */
+        public virtual NZDataClassification DataClassificationFK { get; set; } /* Unclassified or not determines whether external scanning services can be invoked or not */
 
         /// <summary>
         /// Get the Data classification
         /// </summary>
-        public virtual DataClassification DataClassification {get; set;}
+        public virtual DataClassification DataClassification { get; set; }
 
         /// <summary>
         /// Get when the media was uploaded.
@@ -42,7 +45,7 @@
         /// <summary>
         /// the name the file had on the uploader's machine
         /// </summary>
-        public virtual string SourceFileName { get; set; } =string.Empty;
+        public virtual string SourceFileName { get; set; } = string.Empty;
         /// <summary>
         /// unique hash of the stream for faster reference later
         /// </summary>

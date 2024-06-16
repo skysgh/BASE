@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace App.Base.Shared.Attributes
+namespace App.Modules.Core.Substrate.tmp.Attributes
 {
     /// <summary>
     /// Attribute to uniquely Key Types
@@ -13,7 +13,7 @@ namespace App.Base.Shared.Attributes
         /// <param name="key"></param>
         public KeyAttribute(string key)
         {
-            this.Key = key;
+            Key = key;
         }
 
         /// <summary>

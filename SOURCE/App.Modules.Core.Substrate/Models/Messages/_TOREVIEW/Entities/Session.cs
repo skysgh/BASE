@@ -1,9 +1,10 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     ///  System entity (not exposed to the system's exterior) for
@@ -25,13 +26,13 @@
         /// <summary>
         /// Constructor
         /// </summary>
-        public Session():base()
+        public Session() : base()
         {
             // By default, until overridden 
             // when hydrated by EF from a db
             // record:
             Enabled = true;
-            
+
         }
 
         /// <summary>
@@ -48,7 +49,7 @@
         /// </summary>
         public virtual string? UniqueIdentifier
         {
-            get => !string.IsNullOrWhiteSpace(_uniqueId) ? _uniqueId : this.Id.ToString();
+            get => !string.IsNullOrWhiteSpace(_uniqueId) ? _uniqueId : Id.ToString();
             set => _uniqueId = value;
         }
 
@@ -70,22 +71,19 @@
         // NO: public Guid TenantFK { get; set; }
 
 
-            /// <summary>
-            /// Gets a collection of all <see cref="SessionOperation"/>s
-            /// performed by the <see cref="Principal"/> during this 
-            /// <see cref="Session"/>.
-            /// </summary>
+        /// <summary>
+        /// Gets a collection of all <see cref="SessionOperation"/>s
+        /// performed by the <see cref="Principal"/> during this 
+        /// <see cref="Session"/>.
+        /// </summary>
         public virtual ICollection<SessionOperation> Operations
         {
             get
             {
-                if (this._operations == null)
-                {
-                    this._operations = new Collection<SessionOperation>();
-                }
-                return this._operations;
+                _operations ??= new Collection<SessionOperation>();
+                return _operations;
             }
-            set => this._operations = value;
+            set => _operations = value;
         }
         private ICollection<SessionOperation>? _operations;
 

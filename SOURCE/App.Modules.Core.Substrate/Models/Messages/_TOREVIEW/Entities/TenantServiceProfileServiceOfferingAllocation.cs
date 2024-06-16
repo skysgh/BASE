@@ -1,6 +1,8 @@
 ﻿using System;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     /// The Complex Joint Object used to Assign ServiceOfferings to a TenantServiceIdentity, directly, 

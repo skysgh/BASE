@@ -1,6 +1,7 @@
-﻿namespace App.Base.Shared.Models.ConfigurationSettings
+﻿namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
-    using App.Base.Shared.Attributes;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// An immutable host configuration object 
@@ -13,14 +14,14 @@
         /// Attach the debugger to Code First
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreCodeFirstAttachDebuggerToPSSeeding)]
+        [Alias(ConfigurationKeys.AppCoreCodeFirstAttachDebuggerToPSSeeding)]
         public bool CodeFirstAttachDebugger { get; set; }
 
         /// <summary>
         /// Include Demo records when seeding.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreCodeFirstSeedIncludeDemoEntries)]
+        [Alias(ConfigurationKeys.AppCoreCodeFirstSeedIncludeDemoEntries)]
         public bool CodeFirstSeedDemoStuff { get; set; }
 
     }

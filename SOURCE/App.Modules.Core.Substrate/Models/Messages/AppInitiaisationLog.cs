@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Modules.Core.Shared.Models.Messages
+namespace App.Modules.Core.Substrate.tmp.Models.Messages
 {
     /// <summary>
     /// Running Log of what has been instantiated 

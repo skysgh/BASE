@@ -1,8 +1,9 @@
-namespace App.Base.Shared.Models.ConfigurationSettings
+namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     using System;
-    using App.Base.Shared.Attributes;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// An immutable host configuration object 
@@ -13,8 +14,8 @@ namespace App.Base.Shared.Models.ConfigurationSettings
     /// retrieved from the Host Settings.
     /// </para>
     /// </summary>
-    /// <seealso cref="Modules.Core.Substrate.Models.Contracts.IHasName" />
-    /// <seealso cref="Modules.Core.Substrate.Models.Contracts.IHasDescription" />
+    /// <seealso cref="Contracts.IHasName" />
+    /// <seealso cref="Contracts.IHasDescription" />
     public class ApplicationCreatorInformationConfigurationSettings : IHostSettingsBasedConfigurationObject,  IHasName, IHasDescription
     {
 
@@ -51,7 +52,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationCreatorName)]
+        [Alias(ConfigurationKeys.AppCoreApplicationCreatorName)]
         public string Name
         {
             get { return _name; }
@@ -62,7 +63,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// The Description of the System Creator.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationCreatorDescription)]
+        [Alias(ConfigurationKeys.AppCoreApplicationCreatorDescription)]
         public string Description
         {
             get { return _description; }
@@ -76,7 +77,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationCreatorSiteUrl)]
+        [Alias(ConfigurationKeys.AppCoreApplicationCreatorSiteUrl)]
         public string SiteUrl
         {
             get { return _siteUrl; }
@@ -87,7 +88,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// The Url for the System Creator's ContactUs page.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationCreatorContactUrl)]
+        [Alias(ConfigurationKeys.AppCoreApplicationCreatorContactUrl)]
         public string ContactUrl
         {
             get { return _contactUrl; }

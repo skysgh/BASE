@@ -1,5 +1,4 @@
-﻿using App.Core.Infrastructure.Initialization.DependencyResolution;
-
+﻿
 namespace App.Host.ECSD.DependencyResolution
 {
     public class StructureMapDependencyScopeFactory

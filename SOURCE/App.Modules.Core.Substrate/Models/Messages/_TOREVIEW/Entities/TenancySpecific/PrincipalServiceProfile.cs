@@ -1,12 +1,12 @@
-﻿using App.Base.Shared.Models.Entities;
-using App.Base.Shared.Models.Entities.TenancySpecific;
+﻿using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Entities.TenancySpecific
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
 
 
@@ -20,7 +20,8 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
     /// to the 
     /// </para>
     /// </summary>
-    public class PrincipalServiceProfile : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase {
+    public class PrincipalServiceProfile : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase
+    {
 
 
 
@@ -41,7 +42,8 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
         /// up to multiple.
         /// </para>
         /// </summary>
-        public virtual ICollection<PrincipalServiceProfileServicePlanAllocation> ServicePlans { 
+        public virtual ICollection<PrincipalServiceProfileServicePlanAllocation> ServicePlans
+        {
             get { return _servicePlans ?? (_servicePlans = new Collection<PrincipalServiceProfileServicePlanAllocation>()); }
         }
         ICollection<PrincipalServiceProfileServicePlanAllocation>? _servicePlans;
@@ -55,11 +57,15 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
         /// associated to this <see cref="PrincipalServiceProfile"/>.
         /// </para>
         /// </summary>
-        public virtual ICollection<PrincipalServiceProfileServiceOfferingAllocation> Services {
-            get { 
-                return _services ?? 
-                    (_services 
-                    = new Collection<PrincipalServiceProfileServiceOfferingAllocation>()); } }
+        public virtual ICollection<PrincipalServiceProfileServiceOfferingAllocation> Services
+        {
+            get
+            {
+                return _services ??
+                    (_services
+                    = new Collection<PrincipalServiceProfileServiceOfferingAllocation>());
+            }
+        }
         ICollection<PrincipalServiceProfileServiceOfferingAllocation>? _services;
 
     }

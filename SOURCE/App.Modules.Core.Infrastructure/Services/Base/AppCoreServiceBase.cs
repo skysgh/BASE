@@ -1,6 +1,5 @@
 ﻿namespace App.Modules.Core.Infrastructure.NewFolder.Services.Base
 {
-    using App.Base.Shared.Contracts;
     using App.Modules.Core.Infrastructure.NewFolder.Services;
 
     /// <summary>

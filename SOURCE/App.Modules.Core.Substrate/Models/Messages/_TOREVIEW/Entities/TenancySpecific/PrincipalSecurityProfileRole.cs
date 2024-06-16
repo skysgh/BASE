@@ -1,7 +1,7 @@
-﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
 
@@ -17,18 +17,20 @@
         /// <summary>
         /// Get/Set the Title
         /// </summary>
-        public string Title { get; set; }=string.Empty;
+        public string Title { get; set; } = string.Empty;
         /// <summary>
         /// Get/Set the Description
         /// </summary>
-        public string Description { get; set; }= string.Empty;  
+        public string Description { get; set; } = string.Empty;
 
         /// <summary>
         /// The Collection of Permissions assigned to this role.
         /// </summary>
-        public ICollection<PrincipalSecurityProfilePermission> Permissions { get
+        public ICollection<PrincipalSecurityProfilePermission> Permissions
+        {
+            get
             {
-                return _permissions ?? (_permissions = new Collection<PrincipalSecurityProfilePermission>());
+                return _permissions ??= new Collection<PrincipalSecurityProfilePermission>();
             }
             set
             {
@@ -55,7 +57,7 @@
         {
             get
             {
-                return _permissionsAssignments ?? (_permissionsAssignments = new Collection<PrincipalSecurityProfileRolePrincipalSecurityProfilePermissionAssignment>());
+                return _permissionsAssignments ??= new Collection<PrincipalSecurityProfileRolePrincipalSecurityProfilePermissionAssignment>();
             }
             set
             {

@@ -1,5 +1,4 @@
-﻿
-namespace App.Base.Infrastructure.Constants.IDA
+﻿namespace App.Modules.Core.Substrate.tmp.Constants.IDA
 {
     /// <summary>
     /// Class of static strings used to 

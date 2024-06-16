@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;

@@ -5,7 +5,7 @@
     using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
     /// <summary>
-    /// DTO for a <see cref="TenantProperty"/>
+    /// DTO for a <c>TenantProperty</c>
     /// </summary>
     [Serializable]
     public class TenantPropertyDto  /* Avoid CONTRACTS on DTOs: UNDUE RISK OF INADVERTENT CHANGE */ : IHasGuidId, IHasTenantFK, IHasRecordState

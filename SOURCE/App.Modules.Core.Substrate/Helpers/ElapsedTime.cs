@@ -1,5 +1,4 @@
-﻿
-namespace App
+﻿namespace App.Modules.Core.Substrate.tmp.Helpers
 {
     /// <summary>
     /// A Disposable class to help with logging the durations of operations.
@@ -29,22 +28,24 @@ namespace App
         /// </summary>
         public ElapsedTime()
         {
-            this.Start = DateTimeOffset.UtcNow;
+            Start = DateTimeOffset.UtcNow;
         }
 
         /// <summary>
         /// Sets <see cref="End"/>
         /// </summary>
-        public void Stop (){
-            this.End = DateTimeOffset.UtcNow;   
+        public void Stop()
+        {
+            End = DateTimeOffset.UtcNow;
         }
-        
+
         /// <summary>
         /// The elapsed time since this class was created.
         /// </summary>
         public TimeSpan Elapsed
         {
-            get {
+            get
+            {
                 DateTimeOffset now;
                 if (End != null)
                 {
@@ -54,11 +55,11 @@ namespace App
                 {
                     now = DateTimeOffset.UtcNow;
                 }
-                return now.Subtract(this.Start); 
+                return now.Subtract(Start);
             }
         }
 
-        
+
 
         /// <summary>
         /// Textual representation of the elapsed time.

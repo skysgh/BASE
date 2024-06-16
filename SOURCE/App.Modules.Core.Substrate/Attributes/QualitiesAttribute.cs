@@ -1,11 +1,11 @@
-﻿using App.Modules.Core.Shared.Outcomes;
+﻿using App.Modules.Core.Substrate.tmp.Outcomes;
 
-namespace App.Base.Shared.Attributes
+namespace App.Modules.Core.Substrate.tmp.Attributes
 {
     /// <summary>
     /// The System, Data, In Use Qualities addressed.
     /// </summary>
-    /// <seealso cref="System.Attribute" />
+    /// <seealso cref="Attribute" />
     [AttributeUsage(AttributeTargets.All)]
     public class QualitiesAttribute : Attribute
     {
@@ -30,13 +30,13 @@ namespace App.Base.Shared.Attributes
         /// <param name="systemInUseQualities"></param>
 #pragma warning disable IDE0079 // Remove unnecessary suppression
 #pragma warning disable IDE0290 // Use primary constructor
-        public QualitiesAttribute(SystemQualities  systemQualities, SystemDataQualities systemDataQualities, SystemInUseQualities systemInUseQualities)
+        public QualitiesAttribute(SystemQualities systemQualities, SystemDataQualities systemDataQualities, SystemInUseQualities systemInUseQualities)
 #pragma warning restore IDE0290 // Use primary constructor
 #pragma warning restore IDE0079 // Remove unnecessary suppression
         {
-            this.SystemQualities = systemQualities;
-            this.SystemDataQualities = systemDataQualities; 
-            this.SystemInUseQualities = systemInUseQualities;   
+            SystemQualities = systemQualities;
+            SystemDataQualities = systemDataQualities;
+            SystemInUseQualities = systemInUseQualities;
         }
     }
 

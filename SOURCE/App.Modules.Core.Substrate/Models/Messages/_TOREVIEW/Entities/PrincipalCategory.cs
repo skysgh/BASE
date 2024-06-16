@@ -1,7 +1,6 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using App.Base.Shared.Models.Entities;
-    using App.Base.Shared.Models.Entities.Base;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     /// System entity (not exposed to the system's exterior) for

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using App.Base.Shared.Factories;
     using App.Modules.Core.Substrate.Models.Contracts;
     using App.Modules.Core.Substrate.Models.Contracts.Enums;
+    using App.Modules.Core.Substrate.tmp.Factories;
 
     /// <summary>
     /// TODO: Describe better
@@ -39,7 +39,8 @@ namespace App.Base.Shared.Models.Entities
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public string Key { get; set; }
+        public string Key { get; set; } = string.Empty;
+
         /// <summary>
         /// TODO: Describe better
         /// </summary>

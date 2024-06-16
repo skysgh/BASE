@@ -1,5 +1,4 @@
-﻿
-namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums
 {
     /// <summary>
     /// <para>
@@ -11,10 +10,10 @@ namespace App.Base.Shared.Models.Entities
         /// <summary>
         /// Not initialised
         /// </summary>
-        Undefined=0,
+        Undefined = 0,
         /// <summary>
         /// Don't know how to categorise it.
         /// </summary>
-        Uncategorized=1
+        Uncategorized = 1
     }
 }

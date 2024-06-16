@@ -1,7 +1,8 @@
-﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     ///     A file persisted
@@ -72,10 +73,10 @@
         {
             get
             {
-                this._size = this.Value?.Length ?? 0;
-                return this._size;
+                _size = Value?.Length ?? 0;
+                return _size;
             }
-            protected set => this._size = value;
+            protected set => _size = value;
         }
 
         /// <summary>
@@ -101,7 +102,7 @@
         ///     Gets or sets the content id that needs to be set if you want to
         ///     embed the file in a message.
         /// </summary>
-        public virtual string ContentId { get; set; }=string.Empty;
+        public virtual string ContentId { get; set; } = string.Empty;
 
 
         /// <summary>
@@ -128,10 +129,10 @@
                 if (string.IsNullOrWhiteSpace(value))
                 {
                     // ReSharper disable LocalizableElement
-                    throw new ArgumentException("String is Null or Empty.", nameof(this.Value));
+                    throw new ArgumentException("String is Null or Empty.", nameof(Value));
                     // ReSharper restore LocalizableElement
                 }
-                this._name = value;
+                _name = value;
             }
         }
 
@@ -148,6 +149,6 @@
         ///     </para>
         /// </summary>
         /// <value>The value.</value>
-        public virtual byte[] Value { get; set; } = new byte[0];
+        public virtual byte[] Value { get; set; } = [];
     }
 }

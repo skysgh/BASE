@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Core.Shared.Models.Messages._TOREVIEW.Entities.Contracts
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Contracts
 {
     /// <summary>
     /// Contract for models that define their 

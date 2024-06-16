@@ -1,7 +1,9 @@
 ﻿using System;
 using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
 
-namespace App.Base.Shared.Models.Entities.TenancySpecific
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     /// <summary>
     /// A Complex Joint Object between a <see cref="PrincipalServiceProfile"/>
@@ -22,8 +24,9 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
     /// 
     /// </para>
     /// </summary>
-    public class PrincipalServiceProfileServicePlanAllocation : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, IHasEnabled, IHasParentFK {
-         
+    public class PrincipalServiceProfileServicePlanAllocation : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, IHasEnabled, IHasParentFK
+    {
+
 
         /// <summary>
         /// An allocation can be disabled (eg: Payment not received).
@@ -72,12 +75,12 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
         public virtual int ServicePlanQuantity { get; set; }
 
 
-    
 
 
 
 
-        
+
+
         /// <summary>
         /// Constructor of the Joint object
         /// </summary>

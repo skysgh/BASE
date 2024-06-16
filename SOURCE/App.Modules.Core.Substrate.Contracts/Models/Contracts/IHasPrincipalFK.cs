@@ -1,6 +1,5 @@
 ﻿namespace App.Modules.Core.Substrate.Models.Contracts
 {
-    using App.Base.Shared.Models.Entities;
     using System;
 
     /// <summary>

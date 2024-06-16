@@ -1,9 +1,10 @@
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     /// An untenanted (ie, Universal/App) Navigation route entry.
@@ -69,7 +70,7 @@ namespace App.Base.Shared.Models.Entities
         {
             get
             {
-                return this._children ?? (this._children = new Collection<NavigationRoute>());
+                return _children ??= new Collection<NavigationRoute>();
             }
         }
 

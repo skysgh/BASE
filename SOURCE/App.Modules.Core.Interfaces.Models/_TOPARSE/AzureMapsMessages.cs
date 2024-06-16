@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace App.Base.Shared.Models.Messages
+namespace App.Modules.Core.Substrate.Models.Messages
 {
 
     /// <summary>

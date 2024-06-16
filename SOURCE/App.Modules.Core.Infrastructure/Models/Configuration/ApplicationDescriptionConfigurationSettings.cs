@@ -1,8 +1,9 @@
-﻿namespace App.Base.Shared.Models.ConfigurationSettings
+﻿namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     using System;
-    using App.Base.Shared.Attributes;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// An immutable host configuration object 
@@ -40,7 +41,7 @@
         /// The name.
         /// </value>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias (Constants.ConfigurationKeys.AppCoreApplicationName)]
+        [Alias (ConfigurationKeys.AppCoreApplicationName)]
         public string Name { get;set; }
 
         /// <summary>
@@ -50,7 +51,7 @@
         /// The description.
         /// </value>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationDescription)]
+        [Alias(ConfigurationKeys.AppCoreApplicationDescription)]
         public string Description { get;set; }
     }
 }

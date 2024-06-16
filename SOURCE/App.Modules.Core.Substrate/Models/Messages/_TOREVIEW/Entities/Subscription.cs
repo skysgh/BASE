@@ -1,7 +1,7 @@
-﻿//using App.Base.Shared.Models.Entities.Enums;
+﻿//using App.Modules.Core.Substrate.Models.Entities.Enums;
 //using System;
 
-//namespace App.Base.Shared.Models.Entities
+//namespace App.Modules.Core.Substrate.Models.Entities
 //{
 //    /// <summary>
 //    /// <para>

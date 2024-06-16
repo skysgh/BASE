@@ -1,9 +1,11 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
     /// <summary>
     /// System entity (not exposed to the system's exterior) for
@@ -82,13 +84,10 @@
         {
             get
             {
-                if (this._logins == null)
-                {
-                    this._logins = new Collection<PrincipalLogin>();
-                }
-                return this._logins;
+                _logins ??= new Collection<PrincipalLogin>();
+                return _logins;
             }
-            set => this._logins = value;
+            set => _logins = value;
         }
         private ICollection<PrincipalLogin>? _logins;
 
@@ -101,13 +100,10 @@
         {
             get
             {
-                if (this._tags == null)
-                {
-                    this._tags = new Collection<PrincipalTag>();
-                }
-                return this._tags;
+                _tags ??= new Collection<PrincipalTag>();
+                return _tags;
             }
-            set => this._tags = value;
+            set => _tags = value;
         }
         private ICollection<PrincipalTag>? _tags;
 
@@ -122,13 +118,10 @@
         {
             get
             {
-                if (this._properties == null)
-                {
-                    this._properties = new Collection<PrincipalProperty>();
-                }
-                return this._properties;
+                _properties ??= new Collection<PrincipalProperty>();
+                return _properties;
             }
-            set => this._properties = value;
+            set => _properties = value;
         }
         private ICollection<PrincipalProperty>? _properties;
 
@@ -141,13 +134,10 @@
         {
             get
             {
-                if (this._claims == null)
-                {
-                    this._claims = new Collection<PrincipalClaim>();
-                }
-                return this._claims;
+                _claims ??= new Collection<PrincipalClaim>();
+                return _claims;
             }
-            set => this._claims = value;
+            set => _claims = value;
         }
         private ICollection<PrincipalClaim>? _claims;
 
@@ -163,13 +153,10 @@
         {
             get
             {
-                if (this._roles == null)
-                {
-                    this._roles = new Collection<SystemRole>();
-                }
-                return this._roles;
+                _roles ??= new Collection<SystemRole>();
+                return _roles;
             }
-            set => this._roles = value;
+            set => _roles = value;
         }
         private ICollection<SystemRole>? _roles;
 

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using App.Base.Shared.Attributes;
-using App.Base.Shared.Constants;
+using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Constants;
 
-namespace App.Base.Shared.Models.ConfigurationSettings
+namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     /// <summary>
     /// TODO: Describe
@@ -43,7 +43,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         {
             get
             {
-                if (!string.IsNullOrEmpty(this._serviceIdentifier) && !this._serviceIdentifier.EndsWith("/"))
+                if (!string.IsNullOrEmpty(this._serviceIdentifier) && !this._serviceIdentifier.EndsWith('/'))
                 {
                     //Ensure it ends with a slash, so that it can be easily 
                     // joined up with Scope.

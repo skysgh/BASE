@@ -1,4 +1,4 @@
-﻿//using App.Base.Shared.Models.Entities;
+﻿//using App.Modules.Core.Substrate.Models.Entities;
 
 //namespace App.Modules.Core.Infrastructure.NewFolder.Services
 //{

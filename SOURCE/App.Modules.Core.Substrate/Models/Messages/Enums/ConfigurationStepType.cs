@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Messages
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages.Enums
 {
     /// <summary>
     /// Enumeration of ConfigurationStep types.

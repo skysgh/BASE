@@ -1,9 +1,11 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
 
     /// <summary>
@@ -77,8 +79,8 @@
         /// </summary>
         public virtual ICollection<TenantProperty> Properties
         {
-            get => this._properties ?? (this._properties = new Collection<TenantProperty>());
-            set => this._properties = value;
+            get => _properties ??= [];
+            set => _properties = value;
         }
         private ICollection<TenantProperty>? _properties;
 
@@ -89,13 +91,10 @@
         {
             get
             {
-                if (this._claims == null)
-                {
-                    this._claims = new Collection<TenantClaim>();
-                }
-                return this._claims;
+                _claims ??= new Collection<TenantClaim>();
+                return _claims;
             }
-            set => this._claims = value;
+            set => _claims = value;
         }
         private ICollection<TenantClaim>? _claims;
 

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
     using System.Collections.ObjectModel;
 
     /// <summary>
@@ -76,7 +76,7 @@ namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
         {
             get
             {
-                return _children ?? (_children = new Collection<NavigationRouteDto>());
+                return _children ??= new Collection<NavigationRouteDto>();
             }
         }
 

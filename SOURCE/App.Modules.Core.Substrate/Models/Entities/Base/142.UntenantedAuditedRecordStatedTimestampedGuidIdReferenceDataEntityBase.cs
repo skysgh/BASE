@@ -1,8 +1,6 @@
-﻿
-namespace App.Base.Shared.Models.Entities.Base
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     using System;
-    using App.Base.Shared.Factories;
     using App.Modules.Core.Substrate.Models.Contracts;
 
     /// <summary>
@@ -36,7 +34,7 @@ namespace App.Base.Shared.Models.Entities.Base
         /// <summary>
         /// Constructor
         /// </summary>
-        protected UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataEntityBase():base()
+        protected UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataEntityBase() : base()
         {
         }
 

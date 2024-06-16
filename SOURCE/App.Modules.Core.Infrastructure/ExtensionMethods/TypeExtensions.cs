@@ -6,8 +6,8 @@ namespace App
     using System;
     using System.Linq;
     using System.Reflection;
-    using App.Base.Shared.Attributes;
-    using App.Base.Shared.Models.Configuration;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Models.Configuration;
 
     /// <summary>
     /// Extensions to Types.

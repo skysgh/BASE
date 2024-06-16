@@ -1,6 +1,6 @@
-﻿using App.Base.Shared.Models.Configuration;
+﻿using App.Modules.Core.Substrate.tmp.Models.Configuration;
 
-namespace App.Base.Shared.Models.ConfigurationSettings
+namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     /// <summary>
     /// Contract for objects that will be passed through the 

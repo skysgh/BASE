@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Messages
+namespace App.Modules.Core.Substrate.tmp.Models.Messages
 {
     /// <summary>
     /// Running Log of what has been instantiated 
@@ -23,7 +23,7 @@ namespace App.Base.Shared.Models.Messages
         /// </summary>
         /// <param name="level"></param>
         /// <param name="message"></param>
-        public void Log (LogLevel level, string message)
+        public void Log(LogLevel level, string message)
         {
             Journal.Add($"{level}: {message}");
         }
@@ -51,12 +51,12 @@ namespace App.Base.Shared.Models.Messages
         /// <summary>
         /// Services found
         /// </summary>
-        public List<ImplementationDetails> Services { get; set; }=[];
+        public List<ImplementationDetails> Services { get; set; } = [];
 
         /// <summary>
         /// ObjectMapping Maps
         /// </summary>
-        public List<ImplementationDetails> ObjectMapDefinitions { get; set; }=[];
+        public List<ImplementationDetails> ObjectMapDefinitions { get; set; } = [];
 
         /// <summary>
         /// OData Model Definitions
@@ -90,18 +90,18 @@ namespace App.Base.Shared.Models.Messages
 
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    public class ImplementationDetails
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        public Type Interface { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public Type Implementation { get; set; }
-    }
+    ///// <summary>
+    ///// 
+    ///// </summary>
+    //public class ImplementationDetails
+    //{
+    //    /// <summary>
+    //    /// 
+    //    /// </summary>
+    //    public Type Interface { get; set; }
+    //    /// <summary>
+    //    /// 
+    //    /// </summary>
+    //    public Type Implementation { get; set; }
+    //}
 }

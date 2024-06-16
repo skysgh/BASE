@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Core.Shared.Initialisation
+﻿namespace App.Modules.Core.Substrate.tmp.Initialisation
 {
     /// <summary>
     /// Class implemented by Configurers
@@ -17,6 +17,6 @@
         /// <summary>
         /// Perform the configuration expected of this Configurer.
         /// </summary>
-        void Configure(); 
+        void Configure();
     }
 }

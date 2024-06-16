@@ -1,7 +1,8 @@
-﻿using App.Base.Shared.Attributes;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Constants;
 
 
-namespace App.Base.Shared.Models.ConfigurationSettings
+namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     /// <summary>
     /// Configuration Settings for configuring the GeoIPService
@@ -15,7 +16,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationGeoIPServiceClientId)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationGeoIPServiceClientId)]
         public string? ClientId
         {
             get; set;
@@ -28,7 +29,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationGeoIPServiceClientSecret)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationGeoIPServiceClientSecret)]
         public string? Secret
         {
             get; set;
@@ -39,7 +40,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// Url of the remote service.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationGeoIPServiceBaseUri)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationGeoIPServiceBaseUri)]
         public string? BaseUri
         {
             get; set;
@@ -50,7 +51,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// Misc configuration that can be used to configure the service.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationGeoIPServiceClientMiscConfig)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationGeoIPServiceClientMiscConfig)]
         public string? MiscConfig
         {
             get; set;

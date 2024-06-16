@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.ConfigurationSettings
+﻿namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     /// <summary>
     /// Contract for objects that will be passed through the 

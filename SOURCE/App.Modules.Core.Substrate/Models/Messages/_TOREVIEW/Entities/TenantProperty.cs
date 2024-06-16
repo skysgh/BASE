@@ -1,14 +1,15 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     ///  System entity (not exposed to the system's exterior) for
     /// a property of a <see cref="Tenant"/> in the system.
     /// </summary>
-    public class TenantProperty 
-        : UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase, 
+    public class TenantProperty
+        : UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase,
         IHasOwnerFK,
         //NO: IHasTenantFK,
         IHasKeyGenericValue<string>

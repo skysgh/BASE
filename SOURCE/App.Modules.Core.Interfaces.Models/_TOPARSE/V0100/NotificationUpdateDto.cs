@@ -1,5 +1,5 @@
-﻿using App.Base.Shared.Models.Entities;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
 using System;
 
 

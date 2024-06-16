@@ -1,11 +1,11 @@
-﻿using App.Base.Shared.Models.Entities;
+﻿using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
 
 
@@ -19,7 +19,8 @@ namespace App.Base.Shared.Models.Entities
     /// to the 
     /// </para>
     /// </summary>
-    public class TenantServiceProfile : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase {
+    public class TenantServiceProfile : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase
+    {
 
 
         // Not needed: Already part of the base class:
@@ -39,7 +40,8 @@ namespace App.Base.Shared.Models.Entities
         /// up to multiple.
         /// </para>
         /// </summary>
-        public virtual ICollection<TenantServiceProfileServicePlanAllocation> ServicePlans { 
+        public virtual ICollection<TenantServiceProfileServicePlanAllocation> ServicePlans
+        {
             get { return _servicePlans ?? (_servicePlans = new Collection<TenantServiceProfileServicePlanAllocation>()); }
         }
         ICollection<TenantServiceProfileServicePlanAllocation>? _servicePlans;
@@ -53,8 +55,10 @@ namespace App.Base.Shared.Models.Entities
         /// associated to this <see cref="TenantServiceProfile"/>.
         /// </para>
         /// </summary>
-        public virtual ICollection<TenantServiceProfileServiceOfferingAllocation> Services {
-            get { return _services ?? (_services = new Collection<TenantServiceProfileServiceOfferingAllocation>()); } }
+        public virtual ICollection<TenantServiceProfileServiceOfferingAllocation> Services
+        {
+            get { return _services ?? (_services = new Collection<TenantServiceProfileServiceOfferingAllocation>()); }
+        }
         ICollection<TenantServiceProfileServiceOfferingAllocation>? _services;
 
     }

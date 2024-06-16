@@ -1,7 +1,8 @@
-﻿namespace App.Base.Shared.Models.Messages
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages
 {
-    using App.Base.Shared.Factories;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Factories;
+    using App.Modules.Core.Substrate.tmp.Models.Messages.Enums;
 
     /// <summary>
     /// A model to hold the results of a 
@@ -12,8 +13,8 @@
     /// </summary>
     public class ConfigurationTestStepSummary : IHasGuidId
     {
-        private string title=String.Empty;
-        private string description=String.Empty;
+        private string title = string.Empty;
+        private string description = string.Empty;
 
         /// <summary>
         /// Note than although this model is not persisted in 
@@ -22,7 +23,7 @@
         /// </summary>
         public ConfigurationTestStepSummary()
         {
-            this.Id = GuidFactory.NewGuid();
+            Id = GuidFactory.NewGuid();
         }
         /// <summary>
         /// TODO: Describe
@@ -46,10 +47,10 @@
         /// <summary>
         /// TODO: Describe
         /// </summary>
-        public string Title { get => title; set => title = value ?? String.Empty; }
+        public string Title { get => title; set => title = value ?? string.Empty; }
         /// <summary>
         /// TODO: Describe
         /// </summary>
-        public string Description { get => description; set => description = value??String.Empty; }
+        public string Description { get => description; set => description = value ?? string.Empty; }
     }
 }

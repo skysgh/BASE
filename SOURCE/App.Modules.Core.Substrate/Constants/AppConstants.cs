@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using App.Modules.Core.Shared.Constants;
 
-namespace App.Base.Shared.Constants
+namespace App.Modules.Core.Substrate.tmp.Constants
 {
     /// <summary>
     /// Collection of constants related to

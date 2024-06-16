@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Messages
+namespace App.Modules.Core.Substrate.Models.Messages
 {
     /// <summary>
     /// A model of geo coordinates.

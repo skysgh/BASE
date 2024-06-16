@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using App.Modules.Core.Substrate.Models.Contracts;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     /// <summary>
     /// <para>
@@ -30,7 +30,7 @@ namespace App.Base.Shared.Models.Entities
     /// </summary>
     /// <typeparam name="TId">The type of the identifier.</typeparam>
     [DataContract]
-    public abstract class UntenantedAuditedRecordStatedTimestampedCustIdEntityBase<TId> : 
+    public abstract class UntenantedAuditedRecordStatedTimestampedCustIdEntityBase<TId> :
         UntenantedAuditedRecordStatedTimestampedNoneIdEntityBase,
         IHasId<TId>
         /* Inherited:  IHasTimestamp, IHasInRecordAuditability, IHasRecordState */

@@ -1,8 +1,9 @@
-﻿using App.Base.Shared.Attributes;
-using App.Base.Shared.Models.Entities.Demos;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.ExtensionMethods;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Demos;
 using App.Modules.Core.Substrate.Models.Contracts.Enums;
 
-namespace App.Base.Shared.Factories.Demo
+namespace App.Modules.Core.Substrate.tmp.Factories.Demo
 {
 
 
@@ -28,21 +29,22 @@ namespace App.Base.Shared.Factories.Demo
             ExampleBReferenceTypeEntity categoryRecord = ExampleCEntityFactory.Build(index);
 
 
-            var result = new ExampleBEntity() {
+            var result = new ExampleBEntity()
+            {
                 //Timestamp
                 RecordState = RecordPersistenceState.Active,
                 Id = index.ToGuid(),
                 CreatedByPrincipalId = "{P-whatever}",
-                CreatedOnUtc=DateTime.UtcNow,
-                LastModifiedByPrincipalId="{P-whatever}",
-                LastModifiedOnUtc=DateTime.UtcNow, 
+                CreatedOnUtc = DateTime.UtcNow,
+                LastModifiedByPrincipalId = "{P-whatever}",
+                LastModifiedOnUtc = DateTime.UtcNow,
                 //DeletedByPrincipalId  
                 //DeletedOnUtc
-                 Title="Some Title...",
-                 Description="Some Description...",
+                Title = "Some Title...",
+                Description = "Some Description...",
                 //----- 
-                SingleProperty= categoryRecord,
-                 SinglePropertyFK=categoryRecord.Id,
+                SingleProperty = categoryRecord,
+                SinglePropertyFK = categoryRecord.Id,
                 //----- 
             };
 

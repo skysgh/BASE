@@ -8,7 +8,7 @@ namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
     /// <summary>
     /// API DTO for system 
-    /// <see cref="GeoInformation"/>
+    /// <c>GeoInformation</c>
     /// </summary>
     public class GeoInformationDto
     {

@@ -1,7 +1,7 @@
-﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
@@ -9,11 +9,11 @@
     /// <summary>
     /// A Group of Roles
     /// </summary>
-    public class PrincipalSecurityProfileRoleGroup 
-        :TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase , 
-        IHasTitle, 
-        IHasTitleAndDescription, 
-        IHasParentFKNullable, 
+    public class PrincipalSecurityProfileRoleGroup
+        : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase,
+        IHasTitle,
+        IHasTitleAndDescription,
+        IHasParentFKNullable,
         IHasParentNullable<PrincipalSecurityProfileRoleGroup>
     {
         /// <summary>
@@ -41,7 +41,7 @@
         {
             get
             {
-                return _accountGroups ?? (_accountGroups = new Collection<PrincipalSecurityProfileRoleGroup>());
+                return _accountGroups ??= [];
             }
             set
             {

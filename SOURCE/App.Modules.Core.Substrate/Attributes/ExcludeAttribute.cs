@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Attributes
+namespace App.Modules.Core.Substrate.tmp.Attributes
 {
 
     /// <summary>
     /// Attribute to exclude something from being processed
     /// (ie, ignored)
     /// </summary>
-    [System.AttributeUsage(System.AttributeTargets.All, Inherited = true, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.All, Inherited = true, AllowMultiple = true)]
     public class ExcludeAttribute : Attribute
     {
         // See the attribute guidelines at 

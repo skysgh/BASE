@@ -1,7 +1,8 @@
 ﻿using System;
 using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     /// System entity (not exposed to the system's exterior) for
@@ -11,9 +12,9 @@ namespace App.Base.Shared.Models.Entities
     /// When an IdP sends back the response, it has to be correlated back to a System Principal.
     /// That's done via this object.
     /// </summary>
-    public class PrincipalLogin : 
-        UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase, 
-        IHasEnabled , 
+    public class PrincipalLogin :
+        UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase,
+        IHasEnabled,
         IHasOwnerFK
     {
 

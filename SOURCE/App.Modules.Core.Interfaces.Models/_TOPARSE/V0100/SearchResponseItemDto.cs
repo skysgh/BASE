@@ -1,7 +1,7 @@
 ﻿namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
     /// <summary>
-    /// API DTO for internal <see cref="SearchResponseItem"/>
+    /// API DTO for internal <c>SearchResponseItem</c>
     /// </summary>
     public class SearchResponseItemDto  /* Avoid CONTRACTS on DTOs: UNDUE RISK OF INADVERTENT CHANGE */  //: IHasGuidId, IHasRecordState
     {

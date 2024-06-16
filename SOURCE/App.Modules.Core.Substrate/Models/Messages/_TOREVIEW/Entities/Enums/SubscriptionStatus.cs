@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Entities.Enums
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums
 {
     /// <summary>
     /// <para>
@@ -15,7 +15,7 @@ namespace App.Base.Shared.Models.Entities.Enums
         /// <summary>
         /// Undefined/Not set.
         /// </summary>
-        Undefined =0,
+        Undefined = 0,
 
 
         /// <summary>

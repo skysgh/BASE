@@ -1,9 +1,10 @@
 ﻿
 
-namespace App.Base.Shared.Models.Configuration.AppHost
+namespace App.Modules.Core.Substrate.Models.Configuration.AppHost
 {
-    using App.Base.Shared.Attributes;
-    using App.Base.Shared.Models.ConfigurationSettings;
+    using App.Modules.Core.Substrate.Models.ConfigurationSettings;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// A Service Configuration package for the SMTP service.
@@ -16,7 +17,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// </summary>
         // Make sure this kind of secrets are not gotten from AppSettings.
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationSmtpServiceClientId)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationSmtpServiceClientId)]
         public string? Key
         {
             get; set;
@@ -29,7 +30,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationSmtpServiceClientSecret)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationSmtpServiceClientSecret)]
         public string? Secret
         {
             get; set;
@@ -40,7 +41,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// The url for web service
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationSmtpServiceBaseUri)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationSmtpServiceBaseUri)]
         public string? BaseUri
         {
             get; set;
@@ -50,7 +51,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// THe port to use. 
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationSmtpServicePort)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationSmtpServicePort)]
         public int? Port
         {
             get; set;
@@ -60,7 +61,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// Setup up the default source email adddress to use when sending out email.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationSmtpServiceFrom)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationSmtpServiceFrom)]
         public string? From
         {
             get; set;
@@ -70,7 +71,7 @@ namespace App.Base.Shared.Models.Configuration.AppHost
         /// Additional configuration of misc kind (handler expected to know how to decode/use)
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSettingsViaDeploymentPipeline)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationSmtpServiceClientMiscConfig)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationSmtpServiceClientMiscConfig)]
         public string? MiscConfig
         {
             get; set;

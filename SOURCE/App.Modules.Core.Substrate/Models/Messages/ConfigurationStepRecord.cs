@@ -1,9 +1,9 @@
-﻿
-namespace App.Base.Shared.Models.Messages
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages
 {
     using System;
-    using App.Base.Shared.Factories;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Factories;
+    using App.Modules.Core.Substrate.tmp.Models.Messages.Enums;
 
     /// <summary>
     /// A record of a configuration step that was undertaken.
@@ -15,7 +15,7 @@ namespace App.Base.Shared.Models.Messages
         ConfigurationStepType _type = ConfigurationStepType.Undefined;
         private string _description = string.Empty;
         private string _title = string.Empty;
-        private DateTimeOffset _dateTime= DateTimeOffset.MinValue;
+        private DateTimeOffset _dateTime = DateTimeOffset.MinValue;
         private ConfigurationStepStatus _status = ConfigurationStepStatus.Undefined;
 
 
@@ -28,7 +28,7 @@ namespace App.Base.Shared.Models.Messages
         /// </summary>
         public ConfigurationStepRecord()
         {
-            this.Id = GuidFactory.NewGuid();
+            Id = GuidFactory.NewGuid();
         }
 
         /// <summary>

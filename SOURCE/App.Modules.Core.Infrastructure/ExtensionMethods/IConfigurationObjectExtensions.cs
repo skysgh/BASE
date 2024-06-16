@@ -1,4 +1,4 @@
-﻿//using App.Base.Shared.Models.Configuration;
+﻿//using App.Modules.Core.Substrate.Models.Configuration;
 //using App.Modules.Core.Shared._TOPARSE.Models.Configuration;
 //using JasperFx.Core.Reflection;
 //using System;

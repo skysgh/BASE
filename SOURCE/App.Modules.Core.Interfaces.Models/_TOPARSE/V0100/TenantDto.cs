@@ -1,7 +1,7 @@
 ﻿namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
@@ -20,7 +20,7 @@
         private string? _displayName;
         private bool _isDefault;
         private ICollection<TenantPropertyDto> _properties = new Collection<TenantPropertyDto>();
-        private DataClassificationDto _dataClassification = new DataClassificationDto();
+        private DataClassificationDto _dataClassification = new();
 
 
         /// <summary>
@@ -61,10 +61,7 @@
         {
             get
             {
-                if (_properties == null)
-                {
-                    _properties = new Collection<TenantPropertyDto>();
-                }
+                _properties ??= new Collection<TenantPropertyDto>();
                 return _properties;
             }
             set => _properties = value;
@@ -77,10 +74,7 @@
         {
             get
             {
-                if (_claims == null)
-                {
-                    _claims = new Collection<TenantClaimDto>();
-                }
+                _claims ??= new Collection<TenantClaimDto>();
                 return _claims;
             }
             set => _claims = value;

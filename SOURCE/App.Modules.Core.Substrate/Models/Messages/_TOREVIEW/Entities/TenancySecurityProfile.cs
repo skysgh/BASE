@@ -1,5 +1,5 @@
-﻿using App.Base.Shared.Models.Entities;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     ///  System entity (not exposed to the system's exterior) for
@@ -38,7 +38,7 @@ namespace App.Base.Shared.Models.Entities
         {
             get
             {
-                return _accountGroups ?? (_accountGroups = new Collection<TenancySecurityProfileRoleGroup>());
+                return _accountGroups ??= new Collection<TenancySecurityProfileRoleGroup>();
             }
             set
             {
@@ -59,7 +59,7 @@ namespace App.Base.Shared.Models.Entities
         {
             get
             {
-                return _roles ?? (_roles = new Collection<TenancySecurityProfileAccountRole>());
+                return _roles ??= new Collection<TenancySecurityProfileAccountRole>();
             }
             set
             {
@@ -80,7 +80,7 @@ namespace App.Base.Shared.Models.Entities
         {
             get
             {
-                return _permissionsAssignments ?? (_permissionsAssignments = new Collection<TenancySecurityProfileTenancySecurityProfilePermissionAssignment>());
+                return _permissionsAssignments ??= new Collection<TenancySecurityProfileTenancySecurityProfilePermissionAssignment>();
             }
             set
             {

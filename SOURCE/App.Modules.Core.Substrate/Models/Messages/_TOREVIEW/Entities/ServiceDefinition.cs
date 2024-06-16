@@ -1,7 +1,7 @@
-﻿using App.Base.Shared.Models.Entities.Base;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     ///// <summary>
     ///// The optional limits associated to a
@@ -46,17 +46,18 @@ namespace App.Base.Shared.Models.Entities
     /// The individual Services offered on this platform.
     /// Makes up the Service Catalogue.
     /// </summary>
-    public class ServiceDefinition : UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataEntityBase, IHasKey {
+    public class ServiceDefinition : UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataEntityBase, IHasKey
+    {
 
         //There isn't much that can be said about a service.
-        
+
         /// <summary>
         /// The unique Key for this Service Definition.
         /// </summary>
-        public virtual string Key { get; set; }
+        public virtual string Key { get; set; } = string.Empty;
 
         //The underlying fields provide a means to render a Title, Description  and Icon.
-        
+
         // Note that this Definition class does not 
         // define any constraints/limits. 
         // That's defined within 

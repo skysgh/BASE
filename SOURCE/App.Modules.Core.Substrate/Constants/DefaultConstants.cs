@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Modules.Core.Shared.Constants
+namespace App.Modules.Core.Substrate.tmp.Constants
 {
     /// <summary>
     /// Collection of default constants
@@ -81,15 +81,7 @@ namespace App.Modules.Core.Shared.Constants
         /// "Tenancies"
         /// </summary>
         public const string Tenancies = "Tenancies";
-        /// <summary>
-        /// "Id"
-        /// </summary>
-        public const string Id = "Id";
 
-        /// <summary>
-        /// "Fk"
-        /// </summary>
-        public const string Fk = "Fk";
 
         /// <summary>
         /// "Session"
@@ -101,6 +93,85 @@ namespace App.Modules.Core.Shared.Constants
         /// </summary>
         public const string User = "User";
 
+        /// <summary>
+        /// The client
+        /// </summary>
+        public const string Client = "Client";
 
+
+        /// <summary>
+        /// "Id"
+        /// </summary>
+        public const string Id = "Id";
+
+        /// <summary>
+        /// "Timestamp"
+        /// </summary>
+        public const string Timestamp = "Timestamp";
+
+        /// <summary>
+        /// "Enabled"
+        /// </summary>
+        public const string Enabled = "Enabled";
+
+        /// <summary>
+        /// "Enabled"
+        /// </summary>
+        public const string State = "State";
+
+        /// <summary>
+        /// "Fk"
+        /// </summary>
+        public const string Fk = "Fk";
+
+        /// <summary>
+        /// "Id"
+        /// </summary>
+        public const string Uri = "Uri";
+
+        /// <summary>
+        /// "Id"
+        /// </summary>
+        public const string Utc = "Utc";
+
+        /// <summary>
+        /// "Created"
+        /// </summary>
+        public const string Created = "Created";
+
+        /// <summary>
+        /// "Updated"
+        /// </summary>
+        public const string Updated = "Updated";
+
+        /// <summary>
+        /// "Updated"
+        /// </summary>
+        public const string Deleted = "Deleted";
+
+        /// <summary>
+        /// "Name"
+        /// </summary>
+        public const string Name = "Name";
+
+        /// <summary>
+        /// "Key"
+        /// </summary>
+        public const string Key = "Key";
+
+        /// <summary>
+        /// "Value"
+        /// </summary>
+        public const string Value = "Value";
+
+        /// <summary>
+        /// "Title"
+        /// </summary>
+        public const string Title = "Title";
+
+        /// <summary>
+        /// "Title"
+        /// </summary>
+        public const string Description = "Description";
     }
 }

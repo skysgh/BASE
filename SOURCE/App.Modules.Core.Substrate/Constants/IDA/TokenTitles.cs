@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Infrastructure.Constants.IDA
+namespace App.Modules.Core.Substrate.tmp.Constants.IDA
 {
     /// <summary>
     /// Class of const strings related to working

@@ -1,6 +1,7 @@
-﻿namespace App.Base.Shared.Models.ConfigurationSettings
+﻿namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
-    using App.Base.Shared.Attributes;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// An immutable host configuration object 
@@ -14,14 +15,14 @@
         /// The unique string key to identify app in Insights.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationAzureApplicationInsightsInstrumentationKey)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationAzureApplicationInsightsInstrumentationKey)]
         public string? Key { get; set; }
 
         /// <summary>
         /// Get/Set whether to use the service.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIntegrationAzureApplicationInsightsInstrumentationKeyEnabled)]
+        [Alias(ConfigurationKeys.AppCoreIntegrationAzureApplicationInsightsInstrumentationKeyEnabled)]
         public bool Enabled { get; set; }
     }
 }

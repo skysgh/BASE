@@ -1,9 +1,9 @@
-﻿using App.Base.Shared.Attributes;
-using App.Base.Shared.Factories;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
 using App.Modules.Core.Substrate.Models.Contracts.Enums;
+using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Factories;
 
-namespace App.Base.Shared.Models.Entities.Demos
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Demos
 {
     /// <summary>
     /// Internal Simple (no Children) Demo Entity
@@ -30,7 +30,7 @@ namespace App.Base.Shared.Models.Entities.Demos
         public RecordPersistenceState RecordState { get; set; }
 
         /// <inheritdoc/>
-        public bool Enabled {get;set;}
+        public bool Enabled { get; set; }
 
         /// <inheritdoc/>
         public string Title { get; set; }

@@ -1,4 +1,4 @@
-namespace App.Base.Shared.Attributes
+namespace App.Modules.Core.Substrate.tmp.Attributes
 {
     using System;
 
@@ -13,7 +13,7 @@ namespace App.Base.Shared.Attributes
         /// <param name="roles"></param>
         public RoleSecuredDtoModelAttributeAttribute(string roles)
         {
-            this.Roles = roles;
+            Roles = roles;
         }
 
         /// <summary>

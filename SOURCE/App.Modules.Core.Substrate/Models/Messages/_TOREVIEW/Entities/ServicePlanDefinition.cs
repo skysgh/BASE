@@ -1,9 +1,9 @@
-﻿using App.Base.Shared.Models.Entities.Base;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     ///  System entity (not exposed to the system's exterior) for
@@ -19,7 +19,7 @@ namespace App.Base.Shared.Models.Entities
     /// specific to a single <see cref="TenantServiceProfile"/>
     /// </para>
     /// </summary>
-    public class ServicePlanDefinition : UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataEntityBase , IHasKey
+    public class ServicePlanDefinition : UntenantedAuditedRecordStatedTimestampedGuidIdReferenceDataEntityBase, IHasKey
     {
         /// <summary>
         /// The (indexed) unique Key for this ServicePlan
@@ -53,14 +53,14 @@ namespace App.Base.Shared.Models.Entities
         /// </para>
         /// </summary>
         public virtual decimal CostPerYear { get; set; }
-        
+
         /// <summary>
         /// The collection of Services that are part of this 
         /// Plan ('Free', 'Small', 'Enterprise', etc.)
         /// </summary>
         public virtual ICollection<ServiceOfferingDefinition> ServiceAllocations
         {
-            get { return _services ?? (_services = new Collection<ServiceOfferingDefinition>()); }
+            get { return _services ??= new Collection<ServiceOfferingDefinition>(); }
         }
         ICollection<ServiceOfferingDefinition>? _services;
 

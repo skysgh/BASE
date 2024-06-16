@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Configuration
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Configuration
 {
     /// <summary>
     /// A (generally) singleton configuration object used 

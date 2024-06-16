@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums
 {
     /// <summary>
     /// The types of Assignment of Permissions, etc.
@@ -8,7 +8,7 @@
         /// <summary>
         /// 
         /// </summary>
-        Undefined=0,
+        Undefined = 0,
         /// <summary>
         /// Assignment is added.
         /// </summary>

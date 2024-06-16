@@ -3,8 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
 
     /// <summary>
     /// DTO for a <see cref="Session"/>
@@ -42,10 +42,7 @@
         {
             get
             {
-                if (_operations == null)
-                {
-                    _operations = new Collection<SessionOperationDto>();
-                }
+                _operations ??= new Collection<SessionOperationDto>();
                 return _operations;
             }
             set => _operations = value;

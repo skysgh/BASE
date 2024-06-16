@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Messages
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages.Enums
 {
     /// <summary>
     /// The completion state of the Configuration Step
@@ -8,22 +8,22 @@
         /// <summary>
         /// Undefined.
         /// </summary>
-        Undefined =0,
+        Undefined = 0,
         /// <summary>
         /// Display the settings as neutral/ongoing.
         /// </summary>
-        White=1,
+        White = 1,
         /// <summary>
         /// Display as green/ok
         /// </summary>
-        Green=2,
+        Green = 2,
         /// <summary>
         /// Display as orange. Has warnings
         /// </summary>
-        Orange=3,
+        Orange = 3,
         /// <summary>
         /// Display as red. Has errors.
         /// </summary>
-        Red=4,
+        Red = 4,
     }
 }

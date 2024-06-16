@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Attributes
+﻿namespace App.Modules.Core.Substrate.tmp.Attributes
 {
 
     /// <summary>

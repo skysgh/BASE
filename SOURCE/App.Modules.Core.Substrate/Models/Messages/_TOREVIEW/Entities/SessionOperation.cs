@@ -1,7 +1,8 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     using System;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     ///  System entity (not exposed to the system's exterior) for
@@ -10,8 +11,8 @@
     /// Usually, one Operation per Request.
     /// </para>
     /// </summary>
-    public class SessionOperation : 
-        UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase, 
+    public class SessionOperation :
+        UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase,
         IHasOwnerFK
     {
         /// <summary>

@@ -1,7 +1,8 @@
 ﻿using System;
 using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
-namespace App.Base.Shared.Models.Entities
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     /// A Complex Joint Object between a <see cref="TenantServiceProfile"/>
@@ -22,7 +23,8 @@ namespace App.Base.Shared.Models.Entities
     /// 
     /// </para>
     /// </summary>
-    public class TenantServiceProfileServicePlanAllocation : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, IHasEnabled {
+    public class TenantServiceProfileServicePlanAllocation : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, IHasEnabled
+    {
 
 
         /// <summary>
@@ -72,12 +74,12 @@ namespace App.Base.Shared.Models.Entities
         public virtual int ServicePlanQuantity { get; set; }
 
 
-    
 
 
 
 
-        
+
+
         /// <summary>
         /// Constructor of the Joint object
         /// </summary>

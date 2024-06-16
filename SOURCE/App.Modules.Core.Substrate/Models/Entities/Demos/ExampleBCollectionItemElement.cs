@@ -1,12 +1,13 @@
-﻿using App.Base.Shared.Attributes;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using App.Modules.Core.Substrate.Models.Contracts;
 
-namespace App.Base.Shared.Models.Entities.Demos
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Demos
 {
     /// <summary>
     /// Example of an Item in a list that belongs
@@ -24,7 +25,7 @@ namespace App.Base.Shared.Models.Entities.Demos
         /// Gets the FK of the owner of this 
         /// collection item.
         /// </summary>
-        public Guid OwnerFK { get; set; }   
+        public Guid OwnerFK { get; set; }
 
         /// <inheritdoc/>
         public string Title { get; set; }

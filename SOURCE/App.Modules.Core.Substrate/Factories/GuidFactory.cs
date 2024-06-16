@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Factories
+﻿namespace App.Modules.Core.Substrate.tmp.Factories
 {
     using System;
 
@@ -43,7 +43,7 @@
     /// </summary>
     public class GuidFactory
     {
-        private static readonly Random _random = new Random();
+        private static readonly Random _random = new();
 
         /// <summary>
         /// Constructor

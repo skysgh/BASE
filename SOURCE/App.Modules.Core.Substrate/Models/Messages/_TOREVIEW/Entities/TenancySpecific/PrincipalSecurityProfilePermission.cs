@@ -1,7 +1,7 @@
-﻿namespace App.Base.Shared.Models.Entities.TenancySpecific
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     /// A Permission that can be assigned directly to a Security Profile.
@@ -11,7 +11,7 @@
         /// <summary>
         /// It's title
         /// </summary>
-        public string Title { get; set; }=string.Empty;
+        public string Title { get; set; } = string.Empty;
 
         /// <summary>
         /// It's Description

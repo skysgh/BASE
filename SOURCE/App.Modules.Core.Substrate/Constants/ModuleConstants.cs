@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Constants
+namespace App.Modules.Core.Substrate.tmp.Constants
 {
     /// <summary>
     /// Constants for this logical module.

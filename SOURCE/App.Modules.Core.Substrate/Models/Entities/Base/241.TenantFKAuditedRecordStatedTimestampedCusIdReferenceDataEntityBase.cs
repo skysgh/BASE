@@ -1,8 +1,6 @@
-namespace App.Base.Shared.Models.Entities.Base
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     using System;
-    using App.Base.Shared.Factories;
-    using App.Base.Shared.Models.Contracts;
     using App.Modules.Core.Substrate.Models.Contracts;
 
 
@@ -26,7 +24,7 @@ namespace App.Base.Shared.Models.Entities.Base
     /// </para>    
     /// 
     /// </summary>
-    public abstract class TenantFKAuditedRecordStatedTimestampedCustIdReferenceDataEntityBase<TId> 
+    public abstract class TenantFKAuditedRecordStatedTimestampedCustIdReferenceDataEntityBase<TId>
         : UntenantedAuditedRecordStatedTimestampedCustomIdReferenceDataEntityBase<TId>,
         IHasTenantFK
         where TId : struct

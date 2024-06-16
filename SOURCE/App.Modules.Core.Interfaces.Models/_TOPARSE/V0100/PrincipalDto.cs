@@ -57,10 +57,7 @@
         {
             get
             {
-                if (_roles == null)
-                {
-                    _roles = new Collection<RoleDto>();
-                }
+                _roles ??= new Collection<RoleDto>();
                 return _roles;
             }
             set => _roles = value;
@@ -73,10 +70,7 @@
         {
             get
             {
-                if (_logins == null)
-                {
-                    _logins = new Collection<PrincipalLoginDto>();
-                }
+                _logins ??= new Collection<PrincipalLoginDto>();
                 return _logins;
             }
             set => _logins = value;
@@ -89,10 +83,7 @@
         {
             get
             {
-                if (_tags == null)
-                {
-                    _tags = new Collection<PrincipalTagDto>();
-                }
+                _tags ??= new Collection<PrincipalTagDto>();
                 return _tags;
             }
             set => _tags = value;
@@ -105,10 +96,7 @@
         {
             get
             {
-                if (_properties == null)
-                {
-                    _properties = new Collection<PrincipalPropertyDto>();
-                }
+                _properties ??= new Collection<PrincipalPropertyDto>();
                 return _properties;
             }
             set => _properties = value;
@@ -121,10 +109,7 @@
         {
             get
             {
-                if (_claims == null)
-                {
-                    _claims = new Collection<PrincipalClaimDto>();
-                }
+                _claims ??= new Collection<PrincipalClaimDto>();
                 return _claims;
             }
             set => _claims = value;

@@ -1,6 +1,5 @@
 ﻿namespace App.Modules.Core.Infrastructure.NewFolder.Services
 {
-    using App.Base.Shared.Contracts;
     using App.Modules.Core.Substrate.Lifecycles;
     using App.Modules.Core.Substrate.Services;
 

@@ -2,7 +2,7 @@
 {
     using System;
     using System.Security.Claims;
-    using App.Base.Shared.Services;
+    using App.Modules.Core.Substrate.Services;
 
     /// <summary>
     /// Contract for an infrastructure service to 

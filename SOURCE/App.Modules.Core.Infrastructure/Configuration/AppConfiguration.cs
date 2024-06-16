@@ -1,9 +1,8 @@
-﻿using App.Base.Shared.Attributes;
-using App.Base.Shared.Constants;
-using App.Base.Shared.Models.Configuration;
-using App.Base.Shared.Models.Contracts;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Constants;
+using App.Modules.Core.Substrate.tmp.Models.Configuration;
 using System.Xml.Linq;
+using App.Modules.Core.Substrate.Models.Contracts;
 
 namespace App.Base.Infrastructure.Configuration
 {

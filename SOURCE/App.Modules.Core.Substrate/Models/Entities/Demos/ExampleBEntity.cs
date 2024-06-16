@@ -1,13 +1,14 @@
-﻿using App.Base.Shared.Attributes;
+﻿using App.Modules.Core.Substrate.tmp.Attributes;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
 
-namespace App.Base.Shared.Models.Entities.Demos
+namespace App.Modules.Core.Substrate.tmp.Models.Entities.Demos
 {
     /// <summary>
     /// A slighly more complex example entity,
     /// with a single navigable property
     /// </summary>
     [ForDemoOnly]
-    public class ExampleBEntity : 
+    public class ExampleBEntity :
         UntenantedAuditedRecordStatedTimestampedGuidIdEntityBase
     {
 
@@ -28,7 +29,7 @@ namespace App.Base.Shared.Models.Entities.Demos
         /// <summary>
         /// A single Property
         /// </summary>
-        public ExampleBReferenceTypeEntity SingleProperty {get;set;}
+        public ExampleBReferenceTypeEntity SingleProperty { get; set; }
 
     }
 }

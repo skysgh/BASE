@@ -2,7 +2,7 @@
 {
     /// <summary>
     /// API DTO for system 
-    /// <see cref="GeoInformationCountryRegion"/>
+    /// <c>GeoInformationCountryRegion</c>
     /// </summary>
     public class GeoInformationCountryRegionDto
     {

@@ -1,10 +1,10 @@
 ﻿// Extensions are always put in root namespace
 // for maximum usability from elsewhere:
 
-namespace App
+namespace App.Modules.Core.Substrate.tmp.ExtensionMethods
 {
     using System;
-    using App.Base.Shared.Factories;
+    using App.Modules.Core.Substrate.tmp.Factories;
 
     /// <summary>
     /// An extension to <see cref="Guid"/> objects

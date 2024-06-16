@@ -1,6 +1,7 @@
-﻿namespace App.Base.Shared.Models.ConfigurationSettings
+﻿namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
-    using App.Base.Shared.Attributes;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// Information recorded after the Application was
@@ -31,7 +32,7 @@
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias( Constants.ConfigurationKeys.AppCoreIDAAADClientId)]
+        [Alias( ConfigurationKeys.AppCoreIDAAADClientId)]
         
         public string? ClientId { get; set; }
 
@@ -42,7 +43,7 @@
         /// and have obtained an ApplicationId.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias(Constants.ConfigurationKeys.AppCoreIDAAADClientSecret)]
+        [Alias(ConfigurationKeys.AppCoreIDAAADClientSecret)]
         public string? ClientSecret { get; set; }
     }
 }

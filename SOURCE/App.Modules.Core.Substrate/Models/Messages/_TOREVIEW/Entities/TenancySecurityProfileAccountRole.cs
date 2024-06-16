@@ -1,7 +1,7 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
 
@@ -24,9 +24,11 @@
         /// <summary>
         /// Get/set the permissions
         /// </summary>
-        public ICollection<TenancySecurityProfilePermission> Permissions { get
+        public ICollection<TenancySecurityProfilePermission> Permissions
+        {
+            get
             {
-                return _permissions ?? (_permissions = new Collection<TenancySecurityProfilePermission>());
+                return _permissions ??= new Collection<TenancySecurityProfilePermission>();
             }
             set
             {
@@ -46,7 +48,7 @@
         {
             get
             {
-                return _permissionsAssignments ?? (_permissionsAssignments = new Collection<TenancySecurityProfileRoleTenancySecurityProfilePermissionAssignment>());
+                return _permissionsAssignments ??= new Collection<TenancySecurityProfileRoleTenancySecurityProfilePermissionAssignment>();
             }
             set
             {

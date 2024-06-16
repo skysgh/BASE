@@ -1,16 +1,17 @@
-namespace App.Base.Shared.Models.ConfigurationSettings
+namespace App.Modules.Core.Substrate.Models.ConfigurationSettings
 {
     using System;
-    using App.Base.Shared.Attributes;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Attributes;
+    using App.Modules.Core.Substrate.tmp.Constants;
 
     /// <summary>
     /// An immutable host configuration object 
     /// describing the Distributor of the application
     /// (distinct from the Creator) in many commercial cases.
     /// </summary>
-    /// <seealso cref="Modules.Core.Substrate.Models.Contracts.IHasName" />
-    /// <seealso cref="Modules.Core.Substrate.Models.Contracts.IHasDescription" />
+    /// <seealso cref="Contracts.IHasName" />
+    /// <seealso cref="Contracts.IHasDescription" />
     public class ApplicationDistributorInformationConfigurationSettings : IHostSettingsBasedConfigurationObject, IHasName , IHasDescription
     {
         /// <summary>
@@ -33,7 +34,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
 
 
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationProviderName)]
+        [Alias(ConfigurationKeys.AppCoreApplicationProviderName)]
         public string Name
         {
             get; set;
@@ -42,7 +43,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// <inheritdoc/>
 
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationProviderDescription)]
+        [Alias(ConfigurationKeys.AppCoreApplicationProviderDescription)]
         public string Description
         {
             get; set;
@@ -52,7 +53,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// The Url of the Site describing the Creator/Distributor
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationProviderSiteUrl)]
+        [Alias(ConfigurationKeys.AppCoreApplicationProviderSiteUrl)]
         public string? SiteUrl { get; set; } = string.Empty;
 
 
@@ -60,7 +61,7 @@ namespace App.Base.Shared.Models.ConfigurationSettings
         /// The Url of the Contact page describing the Creator/Distributor
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias(Constants.ConfigurationKeys.AppCoreApplicationProviderContactUrl)]
+        [Alias(ConfigurationKeys.AppCoreApplicationProviderContactUrl)]
         public string? ContactUrl { get; set; } = string.Empty;
     }
 }

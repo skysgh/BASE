@@ -1,6 +1,6 @@
 ﻿namespace App.Modules.Core.Infrastructure.NewFolder.Services
 {
-    using App.Base.Shared.Services;
+    using App.Modules.Core.Substrate.Services;
 
     /// <summary>
     /// Contract for a service to map the properties of

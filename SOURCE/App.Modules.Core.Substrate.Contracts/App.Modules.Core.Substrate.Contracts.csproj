@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
 	<RootNamespace>App.Modules.Core.Substrate</RootNamespace>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<Authors>$(AssemblyName)</Authors>
 	<Company>MachineBrains, Inc.</Company>
 	<Product>BASE</Product>
   </PropertyGroup>

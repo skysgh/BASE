@@ -1,5 +1,6 @@
-﻿using App.Base.Shared.Models.Entities;
-using App.Modules.Core.Substrate.Models.Contracts;
+﻿using App.Modules.Core.Substrate.Models.Contracts;
+using App.Modules.Core.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Models.Entities.TenancySpecific
+namespace App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     /// <summary>
     /// The Security Profile of a <see cref="Principal"/>
@@ -37,7 +38,7 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
         {
             get
             {
-                return _accountGroups ?? (_accountGroups = new Collection<PrincipalSecurityProfileRoleGroup>());
+                return _accountGroups ??= new Collection<PrincipalSecurityProfileRoleGroup>();
             }
             set
             {
@@ -58,7 +59,7 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
         {
             get
             {
-                return _roles ?? (_roles = new Collection<PrincipalSecurityProfileRole>());
+                return _roles ??= new Collection<PrincipalSecurityProfileRole>();
             }
             set
             {
@@ -78,7 +79,7 @@ namespace App.Base.Shared.Models.Entities.TenancySpecific
         {
             get
             {
-                return _permissionsAssignments ?? (_permissionsAssignments = new Collection<PrincipalSecurityProfile_Permission_Assignment>());
+                return _permissionsAssignments ??= new Collection<PrincipalSecurityProfile_Permission_Assignment>();
             }
             set
             {

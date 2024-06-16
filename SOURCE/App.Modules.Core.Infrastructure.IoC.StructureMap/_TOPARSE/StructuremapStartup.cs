@@ -15,7 +15,6 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using App.Core.Infrastructure.Initialization.DependencyResolution;
 using App.Host.ECSD.DependencyResolution;
 using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 using WebActivatorEx;

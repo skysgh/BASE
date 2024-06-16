@@ -1,7 +1,7 @@
 ﻿namespace App.Modules.Core.Interface.Models._TOPARSE.V0100
 {
-    using App.Base.Shared.Models.Entities;
     using App.Modules.Core.Substrate.Models.Contracts;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
@@ -13,7 +13,7 @@
     /// </summary>
     public class TenantedNavigationRouteDto : /* Avoid CONTRACTS on DTOs: UNDUE RISK OF INADVERTENT CHANGE */  IHasGuidId
     {
-        private ICollection<TenantedNavigationRouteDto> _children = new TenantedNavigationRouteDto[0];
+        private ICollection<TenantedNavigationRouteDto> _children = [];
         private Guid _id = Guid.Empty;
         private bool _enabled = false;
         private Guid _ownerFK = Guid.Empty;
@@ -80,7 +80,7 @@
         {
             get
             {
-                return _children ?? (_children = new Collection<TenantedNavigationRouteDto>());
+                return _children ??= new Collection<TenantedNavigationRouteDto>();
             }
         }
 

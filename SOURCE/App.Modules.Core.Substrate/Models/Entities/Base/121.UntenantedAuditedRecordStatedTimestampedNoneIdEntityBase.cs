@@ -1,4 +1,4 @@
-﻿namespace App.Base.Shared.Models.Entities
+﻿namespace App.Modules.Core.Substrate.tmp.Models.Entities.Base
 {
     using System;
     using System.ComponentModel.DataAnnotations;
@@ -27,8 +27,8 @@
     /// </para>
     /// </summary>
     [DataContract]
-    public abstract class UntenantedAuditedRecordStatedTimestampedNoneIdEntityBase 
-        : IHasTimestampRecordStateInRecordAuditability 
+    public abstract class UntenantedAuditedRecordStatedTimestampedNoneIdEntityBase
+        : IHasTimestampRecordStateInRecordAuditability
     {
 
 

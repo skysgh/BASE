@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.Base.Shared.Constants
+namespace App.Modules.Core.Substrate.tmp.Constants
 {
     /// <summary>
     /// A helper class to help build up
@@ -367,23 +367,23 @@ namespace App.Base.Shared.Constants
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationGeoIPServiceEnabled = SystemIntegrationKeyPrefix + "ipgeoconversionservice-Enabled";
+        public const string AppCoreIntegrationGeoIPServiceEnabled = SystemIntegrationKeyPrefix + $"ipgeoconversionservice-{DefaultConstants.Enabled}";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationGeoIPServiceBaseUri = SystemIntegrationKeyPrefix + "ipgeoconversionservice-Uri";
+        public const string AppCoreIntegrationGeoIPServiceBaseUri = SystemIntegrationKeyPrefix + $"ipgeoconversionservice-{DefaultConstants.Uri}";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationGeoIPServiceClientId = SystemIntegrationKeyPrefix + "ipgeoconversionservice-ClientId";
+        public const string AppCoreIntegrationGeoIPServiceClientId = SystemIntegrationKeyPrefix + $"ipgeoconversionservice-{DefaultConstants.Client}{DefaultConstants.Id}";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationGeoIPServiceClientSecret = SystemIntegrationKeyPrefix + "ipgeoconversionservice-ClientSecret";
+        public const string AppCoreIntegrationGeoIPServiceClientSecret = SystemIntegrationKeyPrefix + $"ipgeoconversionservice-{DefaultConstants.Client}Secret";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationGeoIPServiceClientMiscConfig = SystemIntegrationKeyPrefix + "ipgeoconversionservice-ClientMisc";
+        public const string AppCoreIntegrationGeoIPServiceClientMiscConfig = SystemIntegrationKeyPrefix + $"ipgeoconversionservice-{DefaultConstants.Client}Misc";
         // -----
 
 
@@ -392,27 +392,27 @@ namespace App.Base.Shared.Constants
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationService01Name = SystemIntegrationKeyPrefix + "Service01-Name";
+        public const string AppCoreIntegrationService01Name = SystemIntegrationKeyPrefix + $"{DefaultConstants.Sevice}01-{DefaultConstants.Name}";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationService01Enabled = SystemIntegrationKeyPrefix + "Service01-Enabled";
+        public const string AppCoreIntegrationService01Enabled = SystemIntegrationKeyPrefix + $"{DefaultConstants.Sevice}01-{DefaultConstants.Enabled}";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationService01BaseUri = SystemIntegrationKeyPrefix + "Service01-Uri";
+        public const string AppCoreIntegrationService01BaseUri = SystemIntegrationKeyPrefix + $"{DefaultConstants.Sevice}01-{DefaultConstants.Uri}";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationService01ClientId = SystemIntegrationKeyPrefix + "Service01-Client-Id";
+        public const string AppCoreIntegrationService01ClientId = SystemIntegrationKeyPrefix + $"{DefaultConstants.Sevice}01-{DefaultConstants.Client}-{DefaultConstants.Id}";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationService01ClientSecret = SystemIntegrationKeyPrefix + "Service01-Client-Secret";
+        public const string AppCoreIntegrationService01ClientSecret = SystemIntegrationKeyPrefix + $"{DefaultConstants.Sevice}01-{DefaultConstants.Client}-Secret";
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public const string AppCoreIntegrationService01MiscConfig = SystemIntegrationKeyPrefix + "Service01-Client-MiscConfig";
+        public const string AppCoreIntegrationService01MiscConfig = SystemIntegrationKeyPrefix + $"{DefaultConstants.Sevice}01-{DefaultConstants.Client}-MiscConfig";
 
         // // -----
         // // Some Misc Service (note that it does not prefix with Azure, as it is hosted somewhere else) / (Do not name as Default):

@@ -1,5 +1,4 @@
-﻿
-namespace App.Modules.Core.Shared.Constants
+﻿namespace App.Modules.Core.Substrate.tmp
 {
     /// <summary>
     /// Constants specific to this 
@@ -23,8 +22,8 @@ namespace App.Modules.Core.Shared.Constants
         /// in app settings
         /// (it's the same as the Base one).
         /// </summary>
-        public const string DbConnectionName = 
-            App.Base.Shared.Constants.ModuleConstants.DbConnectionStringName;
+        public const string DbConnectionName =
+            Constants.ModuleConstants.DbConnectionStringName;
 
     }
 }

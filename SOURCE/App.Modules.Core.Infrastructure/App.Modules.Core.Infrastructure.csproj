@@ -25,11 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\App.Modules.Core.Substrate.Contracts\App.Modules.Core.Substrate.Contracts.csproj" />
-    <ProjectReference Include="..\App.Modules.Core.Substrate\App.Modules.Core.Substrate.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="IoC\Initialiser\_TOPARSE\" />
     <Folder Include="NewFolder\" />
   </ItemGroup>
@@ -38,6 +33,11 @@
     <PackageReference Include="ICSharpCode.Decompiler" Version="8.2.0.7535" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Modules.Core.Substrate.Contracts\App.Modules.Core.Substrate.Contracts.csproj" />
+    <ProjectReference Include="..\App.Modules.Core.Substrate\App.Modules.Core.Substrate.csproj" />
   </ItemGroup>
 
 </Project>

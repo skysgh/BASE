@@ -1,6 +1,6 @@
-﻿namespace App.Modules.Core.Shared.Attributes
+﻿namespace App.Modules.Core.Substrate.tmp.Attributes
 {
-    using App.Base.Shared.Models.Entities;
+    using App.Modules.Core.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
     /// <summary>
     /// Attribute to attach to Models to *Hint* (it depends on additional factors too, but it's a start) 
