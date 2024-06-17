@@ -1,13 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-	  <RootNamespace>App.Modules.Core.Infrastructure</RootNamespace>
+	  <TargetFramework>net8.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
 	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<Company>MachineBrains, Inc.</Company>
-	<Product>BASE</Product>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Title>$(AssemblyName)</Title>
+	  <Copyright>Copyright $(Authors)</Copyright>
+	  <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	  <AnalysisLevel>preview-recommended</AnalysisLevel>
+	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
+	  <Company>MachineBrains, Inc.</Company>
+	  <Product>BASE</Product>
+	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -21,6 +28,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="_TOREVIEW\DbContexts\Implementations\_TOREVIEW\Class1.cs" />
+    <Compile Remove="_TOREVIEW\DbContexts\Implementations\_TOREVIEW\Class2.cs" />
     <Compile Remove="_TOREVIEW\DbContexts\Implementations\_TOREVIEW\ModuleDbContext.cs" />
     <Compile Remove="_TOREVIEW\_TOPARSE\Class1.cs" />
   </ItemGroup>
