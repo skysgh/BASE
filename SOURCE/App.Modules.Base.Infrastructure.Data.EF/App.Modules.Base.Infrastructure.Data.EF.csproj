@@ -17,7 +17,12 @@
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	<PropertyGroup>
+		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
+	</PropertyGroup>
+
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WarningLevel>9999</WarningLevel>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
@@ -47,6 +52,13 @@
   <ItemGroup>
     <Folder Include="_TOREVIEW\DbContexts\Implementations\_TOREVIEW\" />
     <Folder Include="_TOREVIEW\_TOPARSE\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Packaging\readme.nuget.md">
+      <PackagePath>\</PackagePath>
+      <Pack>true</Pack>
+    </None>
   </ItemGroup>
 
 </Project>

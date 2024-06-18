@@ -1,10 +1,10 @@
+// using System;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
+
 namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
 {
-    using System;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
-
     /// <summary>
     /// An immutable host configuration object 
     /// describing the Distributor of the application
@@ -12,7 +12,7 @@ namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
     /// </summary>
     /// <seealso cref="Contracts.IHasName" />
     /// <seealso cref="Contracts.IHasDescription" />
-    public class ApplicationDistributorInformationConfigurationSettings : IHostSettingsBasedConfigurationObject, IHasName , IHasDescription
+    public class ApplicationDistributorInformationConfigurationSettings : IHostSettingsBasedConfigurationObject, IHasName, IHasDescription
     {
         /// <summary>
         /// Constructor

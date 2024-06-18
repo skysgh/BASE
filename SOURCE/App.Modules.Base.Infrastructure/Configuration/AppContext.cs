@@ -13,7 +13,7 @@
         /// Gets the name of the machine under which process
         /// is running.
         /// </summary>
-        public string? MachineName;
+        public string? MachineName { get; set; }
 
         // =========|=========|=========|=========|=========|=========|
         // =========|=========|=========|=========|=========|=========|
@@ -21,11 +21,11 @@
         /// <summary>
         /// Gets the Network Domain Name under which the base process thread User is running.
         /// </summary>
-        public string? ThreadUserDomainName;
+        public string? ThreadUserDomainName { get; set; }
         /// <summary>
         /// Gets the base process thread User is running.
         /// </summary>
-        public string? ThreadUserName;
+        public string? ThreadUserName { get; set; }
 
         // =========|=========|=========|=========|=========|=========|
         // =========|=========|=========|=========|=========|=========|
@@ -33,19 +33,19 @@
         /// Gets the name of the OS Platform
         /// Example: <c>Win32NT</c>
         /// </summary>
-        public string? OSPlatform;
+        public string? OSPlatform { get; set; }
 
         /// <summary>
         /// Gets the version of the OS platform.
         /// Example: <c>10.0.19044.0</c>
         /// </summary>
-        public Version? OSPlatformVersion;
+        public Version? OSPlatformVersion { get; set; }
 
         /// <summary>
         /// Gets the version of the OS platform.
         /// Example: <c>Microsoft Windows NT 10.0.19044.0</c>
         /// </summary>
-        public string? OSPlatformVersionString;
+        public string? OSPlatformVersionString { get; set; }
 
         // =========|=========|=========|=========|=========|=========|
         // =========|=========|=========|=========|=========|=========|
@@ -54,7 +54,7 @@
         /// <summary>
         /// Chip Architecture Enumeration
         /// </summary>
-        public System.Runtime.InteropServices.Architecture Architecture;
+        public System.Runtime.InteropServices.Architecture Architecture { get; set; }
 
         // =========|=========|=========|=========|=========|=========|
         // =========|=========|=========|=========|=========|=========|
@@ -62,7 +62,7 @@
         /// <summary>
         /// Version of .NET
         /// </summary>
-        public Version? FrameworkVersion;
+        public Version? FrameworkVersion { get; set; }
 
         /// <summary>
         /// Displayable Title description of the Framwork
@@ -70,7 +70,7 @@
         /// eg: "NetCoreApp, Version=v2.1"
         /// </para>
         /// </summary>
-        public string? FrameworkTitle;
+        public string? FrameworkTitle { get; set; }
         // =========|=========|=========|=========|=========|=========|
         // =========|=========|=========|=========|=========|=========|
 
@@ -83,12 +83,12 @@
         /// (notice similarity to <see cref="BaseDirectoryPath"/>)
         /// </para>
         /// </summary>
-        public string? ProcessPath;
+        public string? ProcessPath { get; set; }
 
         /// <summary>
         /// Gets whether the Process is running as 64 bit.
         /// </summary>
-        public bool ProcessIs64;
+        public bool ProcessIs64 { get; set; }
 
         // =========|=========|=========|=========|=========|=========|
         // =========|=========|=========|=========|=========|=========|
@@ -102,22 +102,7 @@
         /// Example: <c>App.Service.Host.Web.Dev</c> (The *Host* Assembly)
         /// </para>
         /// </summary>
-        public string? ApplicationName
-        {
-            get
-            {
-                return _applicationName;
-            }
-            set
-            {
-                //if (!string.IsNullOrEmpty(_applicationName))
-                //{
-                //    new DevelopmentException($"Resetting {nameof(ApplicationName)}.");
-                //}
-                _applicationName = value;
-            }
-        }
-        private string? _applicationName;
+        public string? ApplicationName { get; set; }
 
 
         /// <summary>
@@ -128,10 +113,8 @@
         /// </summary>
         public string? ApplicationEnvironmentName
         {
-            get
-            {
-                return _applicationEnvironmentName;
-            }
+            get => _applicationEnvironmentName;
+#pragma warning disable IDE0027 // Use expression body for accessor
             set
             {
                 //if (!string.IsNullOrEmpty(_environmentName))
@@ -140,8 +123,11 @@
                 //}
                 _applicationEnvironmentName = value;
             }
+#pragma warning restore IDE0027 // Use expression body for accessor
         }
+#pragma warning disable IDE0032 // Use auto property
         private string? _applicationEnvironmentName;
+#pragma warning restore IDE0032 // Use auto property
 
         // =========|=========|=========|=========|=========|=========|
         // =========|=========|=========|=========|=========|=========|
@@ -154,15 +140,14 @@
         /// </summary>
         public string? ContentRootPath
         {
-            get
-            {
-                return _contentRootPath;
-            }
+            get => _contentRootPath;
             set
             {
                 if (!string.IsNullOrEmpty(_contentRootPath))
                 {
+#pragma warning disable CA2201 // Do not raise reserved exception types
                     throw new Exception($"Resetting {nameof(ContentRootPath)}.");
+#pragma warning restore CA2201 // Do not raise reserved exception types
                 }
                 _contentRootPath = value;
             }
@@ -187,7 +172,9 @@
             {
                 if (!string.IsNullOrEmpty(_BaseDirectoryPath))
                 {
+#pragma warning disable CA2201 // Do not raise reserved exception types
                     throw new Exception($"Resetting {nameof(BaseDirectoryPath)}.");
+#pragma warning restore CA2201 // Do not raise reserved exception types
                 }
                 _BaseDirectoryPath = value;
             }
@@ -203,16 +190,7 @@
         /// and wwwroot is updatable via Configuration, later.
         /// </para>
         /// </summary>
-        public string? WebRootPath
-        {
-            get => _webRootPath;
-            set
-            {
-                //It's ok to update (eg: from 'wwwroot' to 'www')
-                _webRootPath = value;
-            }
-        }
-        private string? _webRootPath;
+        public string? WebRootPath { get; set; }
 
         /// <summary>
         /// 
@@ -220,15 +198,7 @@
         /// Example: <c>"C:\REPOS\BASE.Jump.Dev\SOURCE\App.Host\MODULES"</c>
         /// </para>
         /// </summary>
-        public string? ModuleDirectoryPath
-        {
-            get => _moduleDirectoryPath;
-            set
-            {
-                _moduleDirectoryPath = value;
-            }
-        }
-        private string? _moduleDirectoryPath;
+        public string? ModuleDirectoryPath { get; set; }
 
         /// <summary>
         /// 
@@ -236,15 +206,6 @@
         /// Example: <c>"C:\REPOS\BASE.Jump.Dev\SOURCE\App.Service.Host\COMPONENTS"</c>
         /// </para>
         /// </summary>
-        public string? ComponentDirectoryPath
-        {
-            get => _componentDirectoryPath;
-            set
-            {
-                _componentDirectoryPath = value;
-            }
-        }
-        private string? _componentDirectoryPath;
-
+        public string? ComponentDirectoryPath { get; set; }
     }
 }

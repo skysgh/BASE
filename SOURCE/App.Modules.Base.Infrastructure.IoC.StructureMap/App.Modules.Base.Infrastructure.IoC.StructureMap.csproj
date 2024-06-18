@@ -17,8 +17,35 @@
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
 
+	<PropertyGroup>
+		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+    <Compile Remove="_TOPARSE\IoC\IModuleCore.cs" />
+    <Compile Remove="_TOPARSE\StructureMapDependencyScope.cs" />
+    <Compile Remove="_TOPARSE\StructureMapDependencyScopeFactory.cs" />
+    <Compile Remove="_TOPARSE\StructureMapScopeModule.cs" />
+    <Compile Remove="_TOPARSE\StructuremapStartup.cs" />
+    <Compile Remove="_TOPARSE\StructuremapWebApi.cs" />
+    <Compile Remove="_TOPARSE\StructureMapWebApiDependencyResolver.cs" />
+    <Compile Remove="_TOPARSE\StructureMapWebApiDependencyScope.cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="_TOPARSE\IoC\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Packaging\readme.nuget.md">
+      <PackagePath>\</PackagePath>
+      <Pack>true</Pack>
+    </None>
   </ItemGroup>
 
 </Project>

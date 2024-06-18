@@ -1,8 +1,8 @@
-﻿namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
-{
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
+﻿using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
 
+namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
+{
     /// <summary>
     /// Information recorded after the Application was
     /// registered in Azure.
@@ -17,7 +17,7 @@
     ///   * That's the Client Id
     /// </para>
     /// </summary>
-    public class AadApplicationRegistrationInformationConfigurationSettings: IKeyVaultBasedConfigurationObject
+    public class AadApplicationRegistrationInformationConfigurationSettings : IKeyVaultBasedConfigurationObject
     {
         /// <summary>
         /// Note that this is the ApplicationId that
@@ -32,8 +32,8 @@
         /// </para>
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.KeyVault)]
-        [Alias( ConfigurationKeys.AppCoreIDAAADClientId)]
-        
+        [Alias(ConfigurationKeys.AppCoreIDAAADClientId)]
+
         public string? ClientId { get; set; }
 
         /// <summary>
@@ -47,5 +47,3 @@
         public string? ClientSecret { get; set; }
     }
 }
-
-    

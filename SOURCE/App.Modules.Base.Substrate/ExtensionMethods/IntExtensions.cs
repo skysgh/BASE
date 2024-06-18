@@ -3,8 +3,6 @@
 
 namespace App.Modules.Base.Substrate.tmp.ExtensionMethods
 {
-    using System;
-
     /// <summary>
     /// Extension to Integer objects.
     /// </summary>
@@ -20,7 +18,7 @@ namespace App.Modules.Base.Substrate.tmp.ExtensionMethods
         /// <returns></returns>
         public static Guid ToGuid(this int value)
         {
-            var bytes = new byte[16];
+            byte[] bytes = new byte[16];
             BitConverter.GetBytes(value).CopyTo(bytes, 0);
             return new Guid(bytes);
         }

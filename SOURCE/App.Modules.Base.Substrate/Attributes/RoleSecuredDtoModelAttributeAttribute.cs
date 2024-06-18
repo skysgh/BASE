@@ -1,20 +1,18 @@
+// using System;
+
 namespace App.Modules.Base.Substrate.tmp.Attributes
 {
-    using System;
 
     /// <summary>
     /// TODO: Describe better
     /// </summary>
-    public class RoleSecuredDtoModelAttributeAttribute : Attribute
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    /// <param name="roles"></param>
+    [AttributeUsage(AttributeTargets.All)]
+    public class RoleSecuredDtoModelAttributeAttribute(string roles) : Attribute
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="roles"></param>
-        public RoleSecuredDtoModelAttributeAttribute(string roles)
-        {
-            Roles = roles;
-        }
 
         /// <summary>
         /// Get/set the Roles 
@@ -22,6 +20,6 @@ namespace App.Modules.Base.Substrate.tmp.Attributes
         /// TODO: Describe use better.
         /// </para>
         /// </summary>
-        public string Roles { get; set; }
+        public string Roles { get; set; } = roles;
     }
 }

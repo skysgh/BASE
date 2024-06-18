@@ -1,10 +1,10 @@
-﻿namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
-{
-    using System;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
+﻿// using System;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
 
+namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
+{
     /// <summary>
     /// An immutable host configuration object 
     /// describing the Application (ie, shows up on the header).
@@ -41,8 +41,8 @@
         /// The name.
         /// </value>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
-        [Alias (ConfigurationKeys.AppCoreApplicationName)]
-        public string Name { get;set; }
+        [Alias(ConfigurationKeys.AppCoreApplicationName)]
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets the description/byline of the Application.
@@ -52,6 +52,6 @@
         /// </value>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
         [Alias(ConfigurationKeys.AppCoreApplicationDescription)]
-        public string Description { get;set; }
+        public string Description { get; set; }
     }
 }

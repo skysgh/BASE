@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App
 {
@@ -24,9 +24,7 @@ namespace App
         /// <param name="prefix"></param>
         /// <returns></returns>
         public static bool GetAppModuleName(
-            this AssemblyName assemblyName, 
-            out string? result, 
-            out string? prefix)
+            this AssemblyName assemblyName, out string? result, out string? prefix)
         {
             string? name = assemblyName.Name;
             if (name == null)
@@ -35,6 +33,7 @@ namespace App
                 prefix = null;
                 return false;
             }
+#pragma warning disable CA1310 // Specify StringComparison for correctness
             if (!name.StartsWith("App."))
             {
                 //It's not following convention.
@@ -42,6 +41,7 @@ namespace App
                 prefix = null;
                 return false;
             }
+#pragma warning restore CA1310 // Specify StringComparison for correctness
             string[] parts = name.Split('.');
             if (parts[1] == "Modules")
             {

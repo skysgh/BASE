@@ -1,11 +1,9 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+﻿using App.Modules.Base.Substrate.Models.Contracts.Enums;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using System;
-    using App.Modules.Base.Substrate.Models.Contracts.Enums;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
-
-
     /// <summary>
     /// System entity (not exposed to the system's exterior) for
     /// a <see cref="Notification"/> message to a user.
@@ -54,7 +52,7 @@
         /// <summary>
         /// TODO: Describe better
         /// </summary>
-        public virtual string Class { get; set; }
+        public virtual string ClassName { get; set; }
 
         /// <summary>
         ///     Status whether Message has been read.
@@ -64,7 +62,7 @@
             get => DateTimeReadUtc.HasValue;
             set
             {
-                if (value == false)
+                if (!value)
                 {
                     DateTimeReadUtc = null;
                 }

@@ -17,7 +17,12 @@
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	<PropertyGroup>
+		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
+	</PropertyGroup>
+
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WarningLevel>9999</WarningLevel>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
@@ -37,6 +42,13 @@
     <ProjectReference Include="..\App.Modules.Base.Interfaces.Models\App.Modules.Base.Interfaces.Models.csproj" />
     <ProjectReference Include="..\App.Modules.Base.Substrate.Contracts\App.Modules.Base.Substrate.Contracts.csproj" />
     <ProjectReference Include="..\App.Modules.Base.Substrate\App.Modules.Base.Substrate.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Packaging\readme.nuget.md">
+      <PackagePath>\</PackagePath>
+      <Pack>true</Pack>
+    </None>
   </ItemGroup>
 
 </Project>

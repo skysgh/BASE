@@ -1,8 +1,11 @@
-﻿namespace App.Modules.Base.Infrastructure.NewFolder.Services
+﻿// using System;
+// using System.Security.Claims;
+// using App.Modules.Base.Substrate.Services;
+
+using System.Security.Claims;
+
+namespace App.Modules.Base.Infrastructure.NewFolder.Services
 {
-    using System;
-    using System.Security.Claims;
-    using App.Modules.Base.Substrate.Services;
 
     /// <summary>
     /// Contract for an infrastructure service to 

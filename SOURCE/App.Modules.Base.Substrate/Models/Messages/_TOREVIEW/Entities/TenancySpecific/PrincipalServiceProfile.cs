@@ -1,10 +1,10 @@
 ﻿using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
+//using System.Collections.Generic;
+// using System.Collections.ObjectModel;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
@@ -42,11 +42,9 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Tena
         /// up to multiple.
         /// </para>
         /// </summary>
-        public virtual ICollection<PrincipalServiceProfileServicePlanAllocation> ServicePlans
-        {
-            get { return _servicePlans ?? (_servicePlans = new Collection<PrincipalServiceProfileServicePlanAllocation>()); }
-        }
-        ICollection<PrincipalServiceProfileServicePlanAllocation>? _servicePlans;
+        public virtual ICollection<PrincipalServiceProfileServicePlanAllocation> ServicePlans => _servicePlans ??= [];
+
+        private ICollection<PrincipalServiceProfileServicePlanAllocation>? _servicePlans;
 
 
         /// <summary>
@@ -57,16 +55,10 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Tena
         /// associated to this <see cref="PrincipalServiceProfile"/>.
         /// </para>
         /// </summary>
-        public virtual ICollection<PrincipalServiceProfileServiceOfferingAllocation> Services
-        {
-            get
-            {
-                return _services ??
-                    (_services
-                    = new Collection<PrincipalServiceProfileServiceOfferingAllocation>());
-            }
-        }
-        ICollection<PrincipalServiceProfileServiceOfferingAllocation>? _services;
+        public virtual ICollection<PrincipalServiceProfileServiceOfferingAllocation> Services => _services
+                    ??= [];
+
+        private ICollection<PrincipalServiceProfileServiceOfferingAllocation>? _services;
 
     }
 

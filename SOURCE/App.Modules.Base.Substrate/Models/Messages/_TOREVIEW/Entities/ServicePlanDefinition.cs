@@ -1,7 +1,6 @@
 ﻿using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+// using System.Collections.ObjectModel;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
@@ -58,11 +57,9 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// The collection of Services that are part of this 
         /// Plan ('Free', 'Small', 'Enterprise', etc.)
         /// </summary>
-        public virtual ICollection<ServiceOfferingDefinition> ServiceAllocations
-        {
-            get { return _services ??= new Collection<ServiceOfferingDefinition>(); }
-        }
-        ICollection<ServiceOfferingDefinition>? _services;
+        public virtual ICollection<ServiceOfferingDefinition> ServiceAllocations => _services ??= [];
+
+        private ICollection<ServiceOfferingDefinition>? _services;
 
 
     }

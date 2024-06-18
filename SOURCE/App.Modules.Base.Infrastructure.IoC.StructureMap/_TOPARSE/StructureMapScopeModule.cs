@@ -12,6 +12,10 @@ namespace App.Host.ECSD.DependencyResolution
         {
         }
 
+        /// <summary>
+        /// Initializes the.
+        /// </summary>
+        /// <param name="context">The context.</param>
         public void Init(HttpApplication context)
         {
             context.BeginRequest += (sender, e) => StructuremapStartup.StructureMapDependencyScope.CreateNestedContainer();

@@ -1,12 +1,12 @@
 ﻿using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+// using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
+//using System;
+//using System.Collections.Generic;
+//using System.Collections.ObjectModel;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
@@ -36,14 +36,8 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Tena
         /// </summary>
         public ICollection<PrincipalSecurityProfileRoleGroup> AccountGroups
         {
-            get
-            {
-                return _accountGroups ??= new Collection<PrincipalSecurityProfileRoleGroup>();
-            }
-            set
-            {
-                _accountGroups = value;
-            }
+            get => _accountGroups ??= [];// new Collection<PrincipalSecurityProfileRoleGroup>();
+            set => _accountGroups = value;
         }
         /// <summary>
         /// TODO: Why public
@@ -57,15 +51,10 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Tena
         /// </summary>
         public ICollection<PrincipalSecurityProfileRole> Roles
         {
-            get
-            {
-                return _roles ??= new Collection<PrincipalSecurityProfileRole>();
-            }
-            set
-            {
-                _roles = value;
-            }
+            get => _roles ??= [];//new Collection<PrincipalSecurityProfileRole>();
+            set => _roles = value;
         }
+
         /// <summary>
         /// TODO: Why public
         /// </summary>
@@ -77,14 +66,8 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Tena
         /// </summary>
         public ICollection<PrincipalSecurityProfile_Permission_Assignment> PermissionsAssignments
         {
-            get
-            {
-                return _permissionsAssignments ??= new Collection<PrincipalSecurityProfile_Permission_Assignment>();
-            }
-            set
-            {
-                _permissionsAssignments = value;
-            }
+            get => _permissionsAssignments ??= [];//new Collection<PrincipalSecurityProfile_Permission_Assignment>();
+            set => _permissionsAssignments = value;
         }
         /// TODO: Why public
         public ICollection<PrincipalSecurityProfile_Permission_Assignment>? _permissionsAssignments;

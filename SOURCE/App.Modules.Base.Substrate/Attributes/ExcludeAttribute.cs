@@ -1,40 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace App.Modules.Base.Substrate.tmp.Attributes
+﻿namespace App.Modules.Base.Substrate.tmp.Attributes
 {
 
     /// <summary>
     /// Attribute to exclude something from being processed
     /// (ie, ignored)
     /// </summary>
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    /// <param name="reason"></param>
+    /// <exception cref="NotImplementedException"></exception>
     [AttributeUsage(AttributeTargets.All, Inherited = true, AllowMultiple = true)]
-    public class ExcludeAttribute : Attribute
+    public class ExcludeAttribute(string reason) : Attribute
     {
-        // See the attribute guidelines at 
-        //  http://go.microsoft.com/fwlink/?LinkId=85236
-        readonly string _reason;
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="reason"></param>
-        /// <exception cref="NotImplementedException"></exception>
-        public ExcludeAttribute(string reason)
-        {
-            _reason = reason;
-
-        }
-
         /// <summary>
         /// Reason Item is being excluded from processing.
         /// </summary>
-        public string Reason
-        {
-            get { return _reason; }
-        }
+        public string Reason { get; } = reason;
     }
 }

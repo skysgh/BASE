@@ -1,14 +1,14 @@
-﻿namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
-{
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
+﻿using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
 
+namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
+{
     /// <summary>
     /// An immutable host configuration object 
     /// describing the configuration of the 
     /// Application Insights service.
     /// </summary>
-    public class ApplicationInsightsConfigurationSettings: IKeyVaultBasedConfigurationObject
+    public class ApplicationInsightsConfigurationSettings : IKeyVaultBasedConfigurationObject
     {
 
         /// <summary>

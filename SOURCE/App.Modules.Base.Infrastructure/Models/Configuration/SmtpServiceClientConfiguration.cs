@@ -1,15 +1,13 @@
-﻿
+﻿using App.Modules.Base.Substrate.Models.ConfigurationSettings;
+using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
 
 namespace App.Modules.Base.Substrate.Models.Configuration.AppHost
 {
-    using App.Modules.Base.Substrate.Models.ConfigurationSettings;
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
-
     /// <summary>
     /// A Service Configuration package for the SMTP service.
     /// </summary>
-    public class SmtpServiceClientConfiguration: IHostSettingsBasedConfigurationObject
+    public class SmtpServiceClientConfiguration : IHostSettingsBasedConfigurationObject
     {
 
         /// <summary>

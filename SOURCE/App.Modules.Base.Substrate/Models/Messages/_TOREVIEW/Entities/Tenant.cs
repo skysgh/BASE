@@ -1,11 +1,12 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
 
     /// <summary>
@@ -91,7 +92,7 @@
         {
             get
             {
-                _claims ??= new Collection<TenantClaim>();
+                _claims ??= [];// new Collection<TenantClaim>();
                 return _claims;
             }
             set => _claims = value;

@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.Models.Contracts.Enums;
+using App.Modules.Base.Substrate.tmp.Factories;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.Models.Contracts.Enums;
-    using App.Modules.Base.Substrate.tmp.Factories;
-
     /// <summary>
     /// TODO: Describe better
     /// </summary>

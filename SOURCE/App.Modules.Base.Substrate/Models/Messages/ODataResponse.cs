@@ -1,7 +1,7 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages
-{
-    using System.Collections.Generic;
+﻿// using System.Collections.Generic;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages
+{
     /// <summary>
     /// TODO: Describe
     /// </summary>

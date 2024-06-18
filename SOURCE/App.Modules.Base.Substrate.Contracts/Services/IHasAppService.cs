@@ -1,7 +1,7 @@
+using App.Modules.Base.Substrate.Lifecycles;
+
 namespace App.Modules.Base.Substrate.Services
 {
-    using App.Modules.Base.Substrate.Lifecycles;
-
     /// <summary>
     /// Contract for all Application Services, no matter what module
     /// they are in.

@@ -1,12 +1,10 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+﻿// using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+{
     /// <summary>
     /// System entity (not exposed to the system's exterior) for
     /// The Principal within the System.
@@ -84,7 +82,7 @@
         {
             get
             {
-                _logins ??= new Collection<PrincipalLogin>();
+                _logins ??= [];
                 return _logins;
             }
             set => _logins = value;
@@ -100,7 +98,7 @@
         {
             get
             {
-                _tags ??= new Collection<PrincipalTag>();
+                _tags ??= [];
                 return _tags;
             }
             set => _tags = value;
@@ -118,7 +116,7 @@
         {
             get
             {
-                _properties ??= new Collection<PrincipalProperty>();
+                _properties ??= [];
                 return _properties;
             }
             set => _properties = value;
@@ -134,7 +132,7 @@
         {
             get
             {
-                _claims ??= new Collection<PrincipalClaim>();
+                _claims ??= [];
                 return _claims;
             }
             set => _claims = value;
@@ -153,7 +151,7 @@
         {
             get
             {
-                _roles ??= new Collection<SystemRole>();
+                _roles ??= [];
                 return _roles;
             }
             set => _roles = value;

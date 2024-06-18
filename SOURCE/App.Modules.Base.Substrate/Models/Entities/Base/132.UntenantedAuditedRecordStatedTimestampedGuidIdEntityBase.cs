@@ -1,10 +1,9 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
-{
-    using System;
-    using System.Runtime.Serialization;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Factories;
+﻿using System.Runtime.Serialization;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Factories;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
+{
     /// <summary>
     /// <para>
     /// Note that this Base runs parrallel to

@@ -1,13 +1,14 @@
-﻿// Extensions are always put in root namespace
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+using System.Globalization;
+using System.Reflection;
+
+// Extensions are always put in root namespace
 // for maximum usability from elsewhere:
 
 namespace App
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Reflection;
-
     /// <summary>
     /// Extension methods to the Assembly type.
     /// </summary>
@@ -23,19 +24,20 @@ namespace App
         /// <returns></returns>
         /// <c>DevelopmentException</c>
         public static IEnumerable<Assembly> GetRelatedAppModuleAssemblies(
-            this Assembly assembly, 
-            IEnumerable<Assembly> assemblies)
+            this Assembly assembly, IEnumerable<Assembly> assemblies)
         {
 
             if (!GetAppModuleName(assembly, out string? result, out string? prefix))
             {
+#pragma warning disable CA2201 // Do not raise reserved exception types
                 throw new Exception("Assembly given has no discernible prefix.");
+#pragma warning restore CA2201 // Do not raise reserved exception types
             }
 
-            var tmp = assemblies.ToArray();
+            Assembly[] tmp = assemblies.ToArray();
 
             return tmp
-                .Where(a => a.GetName()!.Name!.StartsWith(prefix!))
+                .Where(a => a.GetName()!.Name!.StartsWith(prefix!, ignoreCase: true, CultureInfo.InvariantCulture))
                 .OrderByDescending(x => x.GetReferencedAssemblies().Length);
         }
 
@@ -47,13 +49,13 @@ namespace App
         /// </summary>
         /// <param name="assembly"></param>
         /// <returns></returns>
-        public static string? GetAppModuleName (this Assembly assembly) {
-
-
+        public static string? GetAppModuleName(this Assembly assembly)
+        {
+#pragma warning disable IDE0059 // Unnecessary assignment of a value
             GetAppModuleName(assembly, out string? result, out string? prefix);
+#pragma warning restore IDE0059 // Unnecessary assignment of a value
 
             return result;
-
         }
 
         /// <summary>
@@ -115,7 +117,7 @@ namespace App
         public static bool ContainsType(this Assembly assembly, Type type)
         {
 
-            return (type.Assembly == assembly);
+            return type.Assembly == assembly;
         }
     }
 }

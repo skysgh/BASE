@@ -1,7 +1,7 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Attributes
-{
-    using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+﻿using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
+namespace App.Modules.Base.Substrate.tmp.Attributes
+{
     /// <summary>
     /// Attribute to attach to Models to *Hint* (it depends on additional factors too, but it's a start) 
     /// as to the risks associated to exposure.
@@ -10,7 +10,9 @@
     /// Construtor
     /// </remarks>
     /// <param name="dataClassification"></param>
+#pragma warning disable CA1711 // Identifiers should not have incorrect suffix
     public class DataClassificationAttribute(NZDataClassification dataClassification)
+#pragma warning restore CA1711 // Identifiers should not have incorrect suffix
     {
 
         /// <summary>

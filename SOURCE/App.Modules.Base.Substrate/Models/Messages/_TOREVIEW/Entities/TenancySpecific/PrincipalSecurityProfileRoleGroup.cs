@@ -1,11 +1,12 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
-{
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
+﻿// using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+//using System;
+//using System.Collections.Generic;
+//using System.Collections.ObjectModel;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+{
     /// <summary>
     /// A Group of Roles
     /// </summary>
@@ -39,14 +40,8 @@
         /// </summary>
         public ICollection<PrincipalSecurityProfileRoleGroup> AccountGroups
         {
-            get
-            {
-                return _accountGroups ??= [];
-            }
-            set
-            {
-                _accountGroups = value;
-            }
+            get => _accountGroups ??= [];
+            set => _accountGroups = value;
         }
         /// <summary>
         /// TODO: Why public?
@@ -59,14 +54,8 @@
         /// </summary>
         public ICollection<PrincipalSecurityProfileRole> Roles
         {
-            get
-            {
-                return _roles ?? (_roles = new Collection<PrincipalSecurityProfileRole>());
-            }
-            set
-            {
-                _roles = value;
-            }
+            get => _roles ??= [];
+            set => _roles = value;
         }
 
         /// <summary>

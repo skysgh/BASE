@@ -1,11 +1,12 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Collections.ObjectModel;
+// using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+{
     /// <summary>
     ///  System entity (not exposed to the system's exterior) for
     ///  describing a <see cref="Principal"/> session of multiple 
@@ -80,7 +81,7 @@
         {
             get
             {
-                _operations ??= new Collection<SessionOperation>();
+                _operations ??= [];
                 return _operations;
             }
             set => _operations = value;

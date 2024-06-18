@@ -1,15 +1,17 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
-{
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+﻿using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+{
     /// <summary>
     /// A Permission to assign to a Tenancy Security Profile
     /// <para>
     /// TODO: Improve documentation to explain purpose
     /// </para>
     /// </summary>
+#pragma warning disable CA1711 // Identifiers should not have incorrect suffix
     public class TenancySecurityProfilePermission : TenantFKAuditedRecordStatedTimestampedGuidIdEntityBase, IHasTitleAndDescription
+#pragma warning restore CA1711 // Identifiers should not have incorrect suffix
     {
         /// <summary>
         /// The Title of the Permission

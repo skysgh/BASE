@@ -1,7 +1,5 @@
 ﻿namespace App.Modules.Base.Substrate.Models.Contracts
 {
-    using System;
-
     /// <summary>
     /// Contract for associating a 
     /// <c>Principal</c> to 

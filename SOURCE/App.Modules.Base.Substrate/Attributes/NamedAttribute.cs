@@ -1,25 +1,20 @@
-﻿using System;
-
-namespace App.Modules.Base.Substrate.tmp.Attributes
+﻿namespace App.Modules.Base.Substrate.tmp.Attributes
 {
     /// <summary>
     /// Attribute to uniquely Key Types
     /// </summary>
-    public class KeyAttribute : Attribute
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    /// <param name="key"></param>
+    [AttributeUsage(AttributeTargets.Property)]
+    public class KeyAttribute(string key) : Attribute
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="key"></param>
-        public KeyAttribute(string key)
-        {
-            Key = key;
-        }
 
         /// <summary>
         /// The unique key.
         /// </summary>
-        public string Key { get; set; }
+        public string Key { get; set; } = key;
 
     }
 }

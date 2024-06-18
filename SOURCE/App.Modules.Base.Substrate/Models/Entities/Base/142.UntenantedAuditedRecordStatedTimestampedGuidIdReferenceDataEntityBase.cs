@@ -1,8 +1,7 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
-{
-    using System;
-    using App.Modules.Base.Substrate.Models.Contracts;
+﻿using App.Modules.Base.Substrate.Models.Contracts;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
+{
     /// <summary>
     /// <para>
     /// Note that this Base runs parrallel to

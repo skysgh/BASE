@@ -1,7 +1,7 @@
-﻿namespace App.Modules.Base.Infrastructure.NewFolder.Services
-{
-    using System;
+﻿// using System;
 
+namespace App.Modules.Base.Infrastructure.NewFolder.Services
+{
     /// <summary>
     /// Contract for an infrastructure service to
     /// return UTC based DateTimeOffset (not just UTC DateTime, 

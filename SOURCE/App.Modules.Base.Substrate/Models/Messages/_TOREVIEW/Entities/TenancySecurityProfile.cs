@@ -1,11 +1,12 @@
-﻿using App.Modules.Base.Substrate.Models.Contracts;
+﻿// using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+// using System;
+// using System.Collections.Generic;
+// using System.Collections.ObjectModel;
+// using System.Linq;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
@@ -36,14 +37,8 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// </summary>
         public ICollection<TenancySecurityProfileRoleGroup> AccountGroups
         {
-            get
-            {
-                return _accountGroups ??= new Collection<TenancySecurityProfileRoleGroup>();
-            }
-            set
-            {
-                _accountGroups = value;
-            }
+            get => _accountGroups ??= [];
+            set => _accountGroups = value;
         }
         /// <summary>
         /// TODO: Is Public required?
@@ -57,14 +52,8 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// </summary>
         public ICollection<TenancySecurityProfileAccountRole> Roles
         {
-            get
-            {
-                return _roles ??= new Collection<TenancySecurityProfileAccountRole>();
-            }
-            set
-            {
-                _roles = value;
-            }
+            get => _roles ??= [];
+            set => _roles = value;
         }
         /// <summary>
         /// TODO: Is this Public needed?
@@ -78,14 +67,8 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// </summary>
         public ICollection<TenancySecurityProfileTenancySecurityProfilePermissionAssignment> PermissionsAssignments
         {
-            get
-            {
-                return _permissionsAssignments ??= new Collection<TenancySecurityProfileTenancySecurityProfilePermissionAssignment>();
-            }
-            set
-            {
-                _permissionsAssignments = value;
-            }
+            get => _permissionsAssignments ??= [];
+            set => _permissionsAssignments = value;
         }
         /// <summary>
         /// TODO: Is this public needed?

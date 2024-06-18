@@ -1,7 +1,6 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Factories
+﻿// using System;
+namespace App.Modules.Base.Substrate.tmp.Factories
 {
-    using System;
-
     /// <summary>
     /// Enumeration of ways to develop a Guid
     /// </summary>
@@ -68,22 +67,22 @@
         /// <returns></returns>
         public static Guid NewGuid(SequentialGuidType guidType)
         {
-            var randomBytes = new byte[10];
+            byte[] randomBytes = new byte[10];
             _random.NextBytes(randomBytes);
 
             //private static readonly RNGCryptoServiceProvider _rng = new RNGCryptoServiceProvider();
             //_rng.GetBytes(randomBytes);
 
 
-            var timestamp = DateTime.UtcNow.Ticks / 10000L;
-            var timestampBytes = BitConverter.GetBytes(timestamp);
+            long timestamp = DateTime.UtcNow.Ticks / 10000L;
+            byte[] timestampBytes = BitConverter.GetBytes(timestamp);
 
             if (BitConverter.IsLittleEndian)
             {
                 Array.Reverse(timestampBytes);
             }
 
-            var guidBytes = new byte[16];
+            byte[] guidBytes = new byte[16];
 
             switch (guidType)
             {

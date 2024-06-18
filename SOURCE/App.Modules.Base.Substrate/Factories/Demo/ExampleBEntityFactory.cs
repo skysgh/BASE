@@ -29,7 +29,7 @@ namespace App.Modules.Base.Substrate.tmp.Factories.Demo
             ExampleBReferenceTypeEntity categoryRecord = ExampleCEntityFactory.Build(index);
 
 
-            var result = new ExampleBEntity()
+            ExampleBEntity result = new()
             {
                 //Timestamp
                 RecordState = RecordPersistenceState.Active,

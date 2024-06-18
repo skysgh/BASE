@@ -1,9 +1,9 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
-{
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
-    using System;
+﻿using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+//using System;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+{
     /// <summary>
     /// The assignment of a Tenancy Permission to Tenancy Role.
     /// </summary>

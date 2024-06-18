@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App.Modules.Base.Substrate.tmp.ExtensionMethods
 {
@@ -22,8 +22,9 @@ namespace App.Modules.Base.Substrate.tmp.ExtensionMethods
         public static bool Contains(this string text, string value,
             StringComparison stringComparison = StringComparison.CurrentCultureIgnoreCase)
         {
-            if (text == null || value == null) return false;
-            return text.Contains(value, stringComparison);
+#pragma warning disable IDE0075 // Simplify conditional expression
+            return text == null || value == null ? false : text.Contains(value, stringComparison);
+#pragma warning restore IDE0075 // Simplify conditional expression
         }
 
 
@@ -34,10 +35,14 @@ namespace App.Modules.Base.Substrate.tmp.ExtensionMethods
         /// <returns></returns>
         public static string SimplePluralise(this string text)
         {
+#pragma warning disable IDE0046 // Convert to conditional expression
             if (text.LastOrDefault(' ') == 'y')
             {
+#pragma warning disable IDE0057 // Use range operator
                 return $"{text.Substring(0, text.Length - 1)}ies";
+#pragma warning restore IDE0057 // Use range operator
             }
+#pragma warning restore IDE0046 // Convert to conditional expression
             return text + 's';
         }
     }

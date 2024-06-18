@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Collections.ObjectModel;
+// using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using System.Collections.ObjectModel;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
 
     /// <summary>
     /// A single element within a Navigation Map used by user interfaces.
@@ -56,13 +57,7 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// <summary>
         /// Child/nested routes.
         /// </summary>
-        public ICollection<TenantedNavigationRoute> Chilldren
-        {
-            get
-            {
-                return _children ??= new Collection<TenantedNavigationRoute>();
-            }
-        }
+        public ICollection<TenantedNavigationRoute> Chilldren => _children ??= [];// new Collection<TenantedNavigationRoute>();
 
         private ICollection<TenantedNavigationRoute>? _children;
 

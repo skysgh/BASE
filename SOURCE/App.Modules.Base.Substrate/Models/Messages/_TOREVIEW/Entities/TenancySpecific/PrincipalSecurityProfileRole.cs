@@ -1,10 +1,10 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
-{
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
+﻿using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+// using System.Collections.Generic;
+// using System.Collections.ObjectModel;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+{
     /// <summary>
     /// A Role that can be assigned to a Principal's Security Profile.
     /// <para>
@@ -28,14 +28,8 @@
         /// </summary>
         public ICollection<PrincipalSecurityProfilePermission> Permissions
         {
-            get
-            {
-                return _permissions ??= new Collection<PrincipalSecurityProfilePermission>();
-            }
-            set
-            {
-                _permissions = value;
-            }
+            get => _permissions ??= [];//new Collection<PrincipalSecurityProfilePermission>();
+            set => _permissions = value;
         }
         /// <summary>
         /// TODO: Why Public?
@@ -55,19 +49,15 @@
         /// </summary>
         public ICollection<PrincipalSecurityProfileRolePrincipalSecurityProfilePermissionAssignment> PermissionsAssignments
         {
-            get
-            {
-                return _permissionsAssignments ??= new Collection<PrincipalSecurityProfileRolePrincipalSecurityProfilePermissionAssignment>();
-            }
-            set
-            {
-                _permissionsAssignments = value;
-            }
+            get => _permissionsAssignments ??= [];//new Collection<PrincipalSecurityProfileRolePrincipalSecurityProfilePermissionAssignment>();
+            set => _permissionsAssignments = value;
         }
         /// <summary>
         /// TODO: Why Public?
         /// </summary>
+#pragma warning disable CA1051 // Do not declare visible instance fields
         public ICollection<PrincipalSecurityProfileRolePrincipalSecurityProfilePermissionAssignment>? _permissionsAssignments;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
     }
 

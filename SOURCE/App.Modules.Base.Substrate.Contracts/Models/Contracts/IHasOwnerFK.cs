@@ -1,7 +1,5 @@
 ﻿namespace App.Modules.Base.Substrate.Models.Contracts
 {
-    using System;
-
     /// <summary>
     /// Contract to apply to System Entities
     /// to return the record Id that they belong to.

@@ -1,11 +1,11 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
-{
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
+﻿using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+//using System;
+//using System.Collections.Generic;
+//using System.Collections.ObjectModel;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+{
     /// <summary>
     /// A nestable Group of Roles,
     /// attachable to a Tenancy Security Profile.
@@ -46,14 +46,8 @@
         /// </summary>
         public ICollection<TenancySecurityProfileRoleGroup> AccountGroups
         {
-            get
-            {
-                return _accountGroups ??= new Collection<TenancySecurityProfileRoleGroup>();
-            }
-            set
-            {
-                _accountGroups = value;
-            }
+            get => _accountGroups ??= [];//new Collection<TenancySecurityProfileRoleGroup>();
+            set => _accountGroups = value;
         }
         /// <summary>
         /// TODO: Why public?
@@ -66,14 +60,8 @@
         /// </summary>
         public ICollection<TenancySecurityProfileAccountRole> Roles
         {
-            get
-            {
-                return _roles ??= new Collection<TenancySecurityProfileAccountRole>();
-            }
-            set
-            {
-                _roles = value;
-            }
+            get => _roles ??= [];//new Collection<TenancySecurityProfileAccountRole>();
+            set => _roles = value;
         }
         /// <summary>
         /// TODO: Why public?

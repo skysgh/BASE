@@ -1,8 +1,5 @@
 ﻿namespace App.Modules.Base.Substrate.Models.Contracts
 {
-    using System;
-
-
     /// <summary>
     /// Contract for persistable system entities
     /// to include basic values in the record.

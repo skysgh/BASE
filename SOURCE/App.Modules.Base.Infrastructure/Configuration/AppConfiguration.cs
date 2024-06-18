@@ -1,7 +1,7 @@
 ﻿using App.Modules.Base.Substrate.tmp.Attributes;
 using App.Modules.Base.Substrate.tmp.Constants;
 using App.Modules.Base.Substrate.tmp.Models.Configuration;
-using System.Xml.Linq;
+//using System.Xml.Linq;
 using App.Modules.Base.Substrate.Models.Contracts;
 
 namespace App.Base.Infrastructure.Configuration
@@ -56,15 +56,9 @@ namespace App.Base.Infrastructure.Configuration
         /// Sub Directories associated to this application
         /// where to look for Components
         /// </summary>
-        public Directories Directories
-        {
-            get
-            {
-                return _directories ??= new Directories();
-            }
+        public Directories Directories => _directories ??= new Directories();
 
-        }
-        Directories? _directories;
+        private Directories? _directories;
 
         /// <summary>
         /// Child collection of Application Settings
@@ -203,9 +197,7 @@ namespace App.Base.Infrastructure.Configuration
         /// for in Host subdomains
         /// (eg: <c>'st.www.sometenant.someservice.tld'</c>)
         /// </summary>
-        public string[] Defaults { get => defaults; set => defaults = value; }
-        private string[] defaults = [];
-
+        public string[] Defaults { get; set; } = [];
     }
 
 
@@ -245,15 +237,14 @@ namespace App.Base.Infrastructure.Configuration
         /// Strip off <see cref="WWWMediaId"/>
         /// if it is present.
         /// </summary>
-        public bool EnforceWWWMediaId { get; set; } = false;
+        public bool EnforceWWWMediaId { get; set; }
 
 
         /// <summary>
         /// List of default SubDomains to resolve 
         /// Host settings for (eg: 'www.sometenancy.someservice.tld')
         /// </summary>
-        public string[] Defaults { get => defaults; set => defaults = value; }
-        private string[] defaults = [];
+        public string[] Defaults { get; set; } = [];
     }
 
 
@@ -411,7 +402,7 @@ namespace App.Base.Infrastructure.Configuration
         /// Default is <c>"wwwroot"</c>.
         /// </para>
         /// </summary>
-        public string WwwRootDirectory = "wwwroot";
+        public string WwwRootDirectory { get; set; } = "wwwroot";
 
         /// <summary>
         /// The MODULES Directory

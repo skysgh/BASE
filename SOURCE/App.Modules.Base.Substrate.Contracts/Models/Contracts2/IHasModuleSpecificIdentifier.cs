@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using App.Modules.Base.Substrate.IoC;
+﻿using App.Modules.Base.Substrate.IoC;
 
 namespace App.Modules.Base.Substrate.Models.Contracts2
 {

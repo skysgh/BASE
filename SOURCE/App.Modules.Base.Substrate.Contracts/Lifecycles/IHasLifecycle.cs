@@ -1,7 +1,7 @@
+using App.Modules.Base.Substrate.Services;
+
 namespace App.Modules.Base.Substrate.Lifecycles
 {
-    using App.Modules.Base.Substrate.Services;
-
     /// <summary>
     /// A non-functional interface to hint 
     /// as to the default IoC lifespan of the implementor.

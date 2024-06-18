@@ -1,14 +1,14 @@
-﻿// Extensions are always put in root namespace
+﻿// using System;
+// using System.Linq;
+using System.Reflection;
+using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Models.Configuration;
+
+// Extensions are always put in root namespace
 // for maximum usability from elsewhere:
 
 namespace App
 {
-    using System;
-    using System.Linq;
-    using System.Reflection;
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Models.Configuration;
-
     /// <summary>
     /// Extensions to Types.
     /// </summary>
@@ -61,7 +61,7 @@ namespace App
         public static string? GetKey(this Type type, bool inherit = false)
         {
             // Use aliases first, as they can be richer, if there are any:
-            var aliasAttribute = 
+            KeyAttribute? aliasAttribute =
                 type.GetCustomAttribute<KeyAttribute>(inherit);
 
             return aliasAttribute?.Key;
@@ -76,10 +76,11 @@ namespace App
         /// </summary>
         /// <param name="type"></param>
         /// <returns></returns>
-        public static string? GetConfigurationObjectName (this Type type)
+        public static string? GetConfigurationObjectName(this Type type)
         {
-            string? result=null;
-            var fi = type.GetField("Name", System.Reflection.BindingFlags.Static | BindingFlags.Public);
+            string? result = null;
+            FieldInfo? fi =
+                type.GetField("Name", System.Reflection.BindingFlags.Static | BindingFlags.Public);
             if (fi != null)
             {
                 result = fi.GetValue(null) as string;
@@ -102,11 +103,11 @@ namespace App
         /// <param name="type"></param>
         /// <param name="inherit"></param>
         /// <returns></returns>
-        public static T? GetCustomAttribute<T>(this Type type, bool inherit=true) where T:Attribute
+        public static T? GetCustomAttribute<T>(this Type type, bool inherit = true) where T : Attribute
         {
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             T result = (T)type.GetCustomAttributes(
-                typeof(T), 
+                typeof(T),
                 inherit)
                 .FirstOrDefault();
 #pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
@@ -134,13 +135,13 @@ namespace App
         /// <param name="assemblies"></param>
         /// <returns></returns>
         public static IEnumerable<Type> GetInstantiableDescendentTypes(
-            this Type type, 
+            this Type type,
             IEnumerable<Assembly> assemblies)
         {
-            var results = new List<Type>();
-            foreach (var assembly in assemblies)
+            List<Type> results = [];
+            foreach (Assembly assembly in assemblies)
             {
-                var resultSet = assembly.GetInstantiableTypesImplementing(type);
+                IEnumerable<Type>? resultSet = assembly.GetInstantiableTypesImplementing(type);
                 if (resultSet == null)
                 {
                     continue;

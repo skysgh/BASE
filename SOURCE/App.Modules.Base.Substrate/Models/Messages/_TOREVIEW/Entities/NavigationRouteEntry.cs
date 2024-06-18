@@ -1,11 +1,9 @@
+// using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-
     /// <summary>
     /// An untenanted (ie, Universal/App) Navigation route entry.
     /// <see cref="TenantedNavigationRoute"/>
@@ -66,13 +64,7 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// <summary>
         /// Collection of children/nested Routes
         /// </summary>
-        public ICollection<NavigationRoute> Chilldren
-        {
-            get
-            {
-                return _children ??= new Collection<NavigationRoute>();
-            }
-        }
+        public ICollection<NavigationRoute> Chilldren => _children ??= [];
 
         private ICollection<NavigationRoute>? _children;
 

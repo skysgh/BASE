@@ -1,7 +1,5 @@
 ﻿namespace App.Modules.Base.Substrate.Models.Contracts
 {
-    using System;
-
     /// <summary>
     /// Contract for entities that track when they were created.
     /// <para>

@@ -1,9 +1,9 @@
 ﻿using App.Modules.Base.Substrate.tmp.Models.Messages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App.Base.Infrastructure.Configuration
 {
@@ -15,31 +15,18 @@ namespace App.Base.Infrastructure.Configuration
         /// <summary>
         /// Context information of Application
         /// </summary>
-        public static AppContext Context
-        {
-            get => _context;
-        }
-        private readonly static AppContext _context = new();
+        public static AppContext Context { get; } = new();
 
         /// <summary>
         /// Configuration of Application
         /// </summary>
-        public static AppConfiguration Configuration
-        {
-            get => _configuration; 
-        }
-        private readonly static AppConfiguration _configuration = new();
+        public static AppConfiguration Configuration { get; } = new();
 
 
         /// <summary>
         /// Log of initialisation steps.
         /// </summary>
-        public static AppInitialisationLog StartupLog
-        {
-            get => _startupLog;
-        }
-        private readonly static AppInitialisationLog _startupLog = new();
+        public static AppInitialisationLog StartupLog { get; } = new();
 
-        
     }
 }

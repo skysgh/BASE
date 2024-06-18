@@ -1,14 +1,14 @@
-﻿namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
-{
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
+﻿using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
 
+namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
+{
     /// <summary>
     /// An immutable host configuration object 
     /// describing the configuration of 
     /// EF CodeFirst.
     /// </summary>
-    public class CodeFirstMigrationConfigurationSettings: IHostSettingsBasedConfigurationObject
+    public class CodeFirstMigrationConfigurationSettings : IHostSettingsBasedConfigurationObject
     {
         /// <summary>
         /// Attach the debugger to Code First

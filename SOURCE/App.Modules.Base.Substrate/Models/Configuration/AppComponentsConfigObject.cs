@@ -148,9 +148,7 @@ namespace App.Modules.Base.Substrate.tmp.Models.Configuration
         /// for in Host subdomains
         /// (eg: <c>'st.www.sometenant.someservice.tld'</c>)
         /// </summary>
-        public string[] Defaults { get => defaults; set => defaults = value; }
-        private string[] defaults = [];
-
+        public string[] Defaults { get; set; } = [];
     }
 
     /// <summary>
@@ -186,15 +184,16 @@ namespace App.Modules.Base.Substrate.tmp.Models.Configuration
         /// Strip off <see cref="WWWMediaId"/>
         /// if it is present.
         /// </summary>
+#pragma warning disable CA1805 // Do not initialize unnecessarily
         public bool EnforceWWWMediaId { get; set; } = false;
+#pragma warning restore CA1805 // Do not initialize unnecessarily
 
 
         /// <summary>
         /// List of default SubDomains to resolve 
         /// Host settings for (eg: 'www.sometenancy.someservice.tld')
         /// </summary>
-        public string[] Defaults { get => defaults; set => defaults = value; }
-        private string[] defaults = [];
+        public string[] Defaults { get; set; } = [];
     }
 
 
@@ -246,15 +245,9 @@ namespace App.Modules.Base.Substrate.tmp.Models.Configuration
         /// Sub Directories associated to this application
         /// where to look for Components
         /// </summary>
-        public Directories Directories
-        {
-            get
-            {
-                return _directories ??= new Directories();
-            }
+        public Directories Directories => _directories ??= new Directories();
 
-        }
-        Directories _directories;
+        private Directories _directories;
     }
 
     /// <summary>
@@ -395,11 +388,11 @@ namespace App.Modules.Base.Substrate.tmp.Models.Configuration
         /// <summary>
         /// The MODULES Directory ("MODULES")
         /// </summary>
-        public string ModulesSubDirectory { get; set; } = DefaultConstants.Module.SimplePluralise().ToUpper();
+        public string ModulesSubDirectory { get; set; } = DefaultConstants.Module.SimplePluralise().ToUpper(System.Globalization.CultureInfo.InvariantCulture);
 
         /// <summary>
         /// The MODULES Directory ("COMPONENTS")
         /// </summary>
-        public string ComponentsSubDirectory { get; set; } = DefaultConstants.Component.SimplePluralise().ToUpper();
+        public string ComponentsSubDirectory { get; set; } = DefaultConstants.Component.SimplePluralise().ToUpper(System.Globalization.CultureInfo.InvariantCulture);
     }
 }

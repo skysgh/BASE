@@ -1,15 +1,12 @@
 ﻿using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+// using System.Collections.Generic;
+// using System.Collections.ObjectModel;
+// using System.Linq;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {
-
-
-
     /// <summary>
     /// The Service Profile (ie Subscription)
     /// to which a <c>Plan</c> plan is associated.
@@ -40,11 +37,9 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// up to multiple.
         /// </para>
         /// </summary>
-        public virtual ICollection<TenantServiceProfileServicePlanAllocation> ServicePlans
-        {
-            get { return _servicePlans ?? (_servicePlans = new Collection<TenantServiceProfileServicePlanAllocation>()); }
-        }
-        ICollection<TenantServiceProfileServicePlanAllocation>? _servicePlans;
+        public virtual ICollection<TenantServiceProfileServicePlanAllocation> ServicePlans => _servicePlans ??= [];
+
+        private ICollection<TenantServiceProfileServicePlanAllocation>? _servicePlans;
 
 
         /// <summary>
@@ -55,11 +50,9 @@ namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
         /// associated to this <see cref="TenantServiceProfile"/>.
         /// </para>
         /// </summary>
-        public virtual ICollection<TenantServiceProfileServiceOfferingAllocation> Services
-        {
-            get { return _services ?? (_services = new Collection<TenantServiceProfileServiceOfferingAllocation>()); }
-        }
-        ICollection<TenantServiceProfileServiceOfferingAllocation>? _services;
+        public virtual ICollection<TenantServiceProfileServiceOfferingAllocation> Services => _services ??= [];
+
+        private ICollection<TenantServiceProfileServiceOfferingAllocation>? _services;
 
     }
 

@@ -1,9 +1,7 @@
+using App.Modules.Base.Substrate.Models.Contracts;
+
 namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
 {
-    using System;
-    using App.Modules.Base.Substrate.Models.Contracts;
-
-
     /// <summary>
     /// Base abstract class for Mutable 
     /// Reference data. 

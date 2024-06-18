@@ -17,16 +17,21 @@
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
 
+	<PropertyGroup>
+		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
+	</PropertyGroup>
+
+
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 		<WarningLevel>9999</WarningLevel>
-		<NoWarn>1701;1702;8618</NoWarn>
+		<NoWarn>1701;1702;8618;1051;CA1051;CA1707</NoWarn>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 		<WarningLevel>9999</WarningLevel>
-		<NoWarn>1701;1702;8618</NoWarn>
+		<NoWarn>1701;1702;8618;1051;CA1051;CA1707</NoWarn>
 	</PropertyGroup>  
 
 
@@ -49,5 +54,18 @@
   <ItemGroup>
     <ProjectReference Include="..\App.Modules.Base.Substrate.Contracts\App.Modules.Base.Substrate.Contracts.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<!-- Used for nuget packaging.-->
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Packaging\readme.nuget.md">
+	    <PackagePath>\</PackagePath>
+	    <Pack>true</Pack>
+	  </None>
+	</ItemGroup>
+
 
 </Project>

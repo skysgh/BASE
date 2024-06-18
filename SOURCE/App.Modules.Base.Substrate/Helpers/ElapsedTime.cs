@@ -46,15 +46,7 @@
         {
             get
             {
-                DateTimeOffset now;
-                if (End != null)
-                {
-                    now = (DateTimeOffset)End;
-                }
-                else
-                {
-                    now = DateTimeOffset.UtcNow;
-                }
+                DateTimeOffset now = End != null ? (DateTimeOffset)End : DateTimeOffset.UtcNow;
                 return now.Subtract(Start);
             }
         }
@@ -85,10 +77,13 @@
                 {
                     return $"{elapsed.TotalMinutes} mins, {elapsed.TotalSeconds} secs";
                 }
+#pragma warning disable IDE0046 // Convert to conditional expression
                 if (elapsed.TotalHours < 1)
                 {
                     return $"{elapsed.TotalMinutes} mins";
                 }
+#pragma warning restore IDE0046 // Convert to conditional expression
+
                 return $"{elapsed.TotalHours} hours, {elapsed.TotalMinutes} mins";
             }
 

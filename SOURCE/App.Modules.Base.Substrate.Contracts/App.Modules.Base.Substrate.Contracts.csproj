@@ -15,9 +15,14 @@
 	  <Company>MachineBrains, Inc.</Company>
 	  <Product>BASE</Product>
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Host\MODULES\</BaseOutputPath>-->
+	  <PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	<PropertyGroup>
+		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <WarningLevel>9999</WarningLevel>
   </PropertyGroup>
@@ -27,8 +32,12 @@
     <WarningLevel>9999</WarningLevel>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="tmp\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="tmp\" />
+	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="Packaging\readme.nuget.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	
 </Project>

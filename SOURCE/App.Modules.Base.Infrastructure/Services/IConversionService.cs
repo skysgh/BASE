@@ -1,8 +1,8 @@
-﻿namespace App.Modules.Base.Infrastructure.NewFolder.Services
-{
-    using System;
-    using App.Modules.Base.Substrate.Services;
+﻿// using System;
+using App.Modules.Base.Substrate.Services;
 
+namespace App.Modules.Base.Infrastructure.NewFolder.Services
+{
     /// <summary>
     /// Contract for an Infrastructure Service to 
     ///     to convert types to alternate types.

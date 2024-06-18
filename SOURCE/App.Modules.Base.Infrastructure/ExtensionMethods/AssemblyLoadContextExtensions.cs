@@ -121,8 +121,7 @@
 //                assemblyPath: path, 
 //                logFailure:
 //                 delegate (string txt)
-//                {
-                    
+//                {                    
 //                    Console.WriteLine("ERROR: Could not retrieve assembly from file. Error: " + txt);
 //                }, includeExeFiles: true))
 //            {

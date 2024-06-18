@@ -1,11 +1,9 @@
-﻿
+﻿using App.Modules.Base.Substrate.Models.ConfigurationSettings;
+using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
 
 namespace App.Modules.Base.Substrate.Models.Configuration.AppHost
 {
-    using App.Modules.Base.Substrate.Models.ConfigurationSettings;
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
-
     /// <summary>
     /// Configurer for the <c>IScaniiMalwareService</c>
     /// </summary>
@@ -20,8 +18,7 @@ namespace App.Modules.Base.Substrate.Models.Configuration.AppHost
     /// to hydrate implmentations of 
     /// <see cref="IHostSettingsBasedConfigurationObject"/></para>
     /// </remarks>
-    public class ScaniiHostConfiguration: 
-        IHostSettingsBasedConfigurationObject
+    public class ScaniiHostConfiguration : IHostSettingsBasedConfigurationObject
     {
         /// <summary>
         /// The Service Credential Key 

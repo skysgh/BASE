@@ -1,6 +1,7 @@
-﻿namespace App.Modules.Base.Infrastructure.NewFolder.Services.Base
+﻿// using App.Modules.Base.Infrastructure.NewFolder.Services;
+
+namespace App.Modules.Base.Infrastructure.NewFolder.Services.Base
 {
-    using App.Modules.Base.Infrastructure.NewFolder.Services;
 
     /// <summary>
     /// Abstract base classs for all Core Infrastructure Services.

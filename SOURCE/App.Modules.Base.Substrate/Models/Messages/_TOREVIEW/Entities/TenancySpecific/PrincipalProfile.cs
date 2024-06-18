@@ -1,13 +1,13 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-    using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
-    using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Collections.ObjectModel;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+//using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
+using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+{
     /// <summary>
     /// The profile (not same as Security Profile) of a Principal.
     /// </summary>
@@ -61,7 +61,7 @@
         {
             get
             {
-                _tags ??= new Collection<PrincipalProfileTag>();
+                _tags ??= [];// new Collection<PrincipalProfileTag>();
                 return _tags;
             }
             set => _tags = value;
@@ -78,7 +78,7 @@
         {
             get
             {
-                _properties ??= new Collection<PrincipalProfileProperty>();
+                _properties ??= [];// new Collection<PrincipalProfileProperty>();
                 return _properties;
             }
             set => _properties = value;
@@ -92,7 +92,7 @@
         {
             get
             {
-                _claims ??= new Collection<PrincipalProfileClaim>();
+                _claims ??= [];// new Collection<PrincipalProfileClaim>();
                 return _claims;
             }
             set => _claims = value;

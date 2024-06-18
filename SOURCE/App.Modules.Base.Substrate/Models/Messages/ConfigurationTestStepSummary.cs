@@ -1,9 +1,9 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages
-{
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Factories;
-    using App.Modules.Base.Substrate.tmp.Models.Messages.Enums;
+﻿using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Factories;
+using App.Modules.Base.Substrate.tmp.Models.Messages.Enums;
 
+namespace App.Modules.Base.Substrate.tmp.Models.Messages
+{
     /// <summary>
     /// A model to hold the results of a 
     /// self assessement of integration, etc.

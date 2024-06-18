@@ -1,13 +1,19 @@
 namespace App.Modules.Base.Substrate.tmp.Attributes
 {
-    using System;
-
     /// <summary>
     /// Attribute to decorate the properties of 
     /// Service Configuration objects, to hint
     /// as to where to retrieve information from.
     /// </summary>
-    public class ConfigurationSettingSource : Attribute
+    /// <remarks>
+    /// Attribute Constructor, used to define where it's safe to 
+    /// look for information.
+    /// </remarks>
+    /// <param name="source"></param>
+    [AttributeUsage(AttributeTargets.All)]
+#pragma warning disable CA1710 // Identifiers should have correct suffix
+    public class ConfigurationSettingSource(ConfigurationSettingSource.SourceType source) : Attribute
+#pragma warning restore CA1710 // Identifiers should have correct suffix
     {
         /// <summary>
         /// The source to look for the settings value within.
@@ -71,16 +77,6 @@ namespace App.Modules.Base.Substrate.tmp.Attributes
         /// <summary>
         /// TODO: Improve documentation
         /// </summary>
-        public SourceType Source { get; private set; }
-
-        /// <summary>
-        /// Attribute Constructor, used to define where it's safe to 
-        /// look for information.
-        /// </summary>
-        /// <param name="source"></param>
-        public ConfigurationSettingSource(SourceType source)
-        {
-            Source = source;
-        }
+        public SourceType Source { get; private set; } = source;
     }
 }

@@ -1,11 +1,11 @@
-﻿using App.Modules.Base.Infrastructure.NewFolder.Services;
+﻿// using App.Modules.Base.Infrastructure.NewFolder.Services;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+// using System.Security.Policy;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App.Modules.Base.Infrastructure.NewFolder.Services.Implementations
 {
@@ -14,17 +14,13 @@ namespace App.Modules.Base.Infrastructure.NewFolder.Services.Implementations
     /// <see cref="IResourceRouteManagementService"/>
     /// to rewrite requests as necessary.
     /// </summary>
-    public class ResourceRouteManagementService : IResourceRouteManagementService
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    public class ResourceRouteManagementService(ILogger<ResourceRouteManagementService> logger) : IResourceRouteManagementService
     {
-        private readonly ILogger<ResourceRouteManagementService> _logger;
+        private readonly ILogger<ResourceRouteManagementService> _logger = logger;
 
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        public ResourceRouteManagementService(ILogger<ResourceRouteManagementService> logger)
-        {
-            _logger = logger;
-        }
         /// <inheritdoc/>
         public string? Rewrite(string? resourceRoute)
         {
@@ -36,7 +32,7 @@ namespace App.Modules.Base.Infrastructure.NewFolder.Services.Implementations
             if (resourceRoute!.Contains("/api/rest/host/v1/toberewritten"))
             {
                 // rewrite and continue processing
-                var newResourceRoute = "/api/rest/Host/v1/HostLayerExampleAEntity";
+                string newResourceRoute = "/api/rest/Host/v1/HostLayerExampleAEntity";
                 _logger.LogTrace($"Rewriting Url ({resourceRoute}) to ({newResourceRoute})");
                 resourceRoute = newResourceRoute;
             }

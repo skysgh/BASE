@@ -1,6 +1,7 @@
-﻿namespace App.Modules.Base.Infrastructure.NewFolder.Services
+﻿// using App.Modules.Base.Substrate.Services;
+
+namespace App.Modules.Base.Infrastructure.NewFolder.Services
 {
-    using App.Modules.Base.Substrate.Services;
 
     /// <summary>
     /// Contract for a service to map the properties of

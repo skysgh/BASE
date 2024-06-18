@@ -1,9 +1,10 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
-{
-    using System;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+﻿//using System;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
 
+
+namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+{
     /// <summary>
     ///     A file persisted
     /// </summary>
@@ -129,7 +130,9 @@
                 if (string.IsNullOrWhiteSpace(value))
                 {
                     // ReSharper disable LocalizableElement
+#pragma warning disable CA2208 // Instantiate argument exceptions correctly
                     throw new ArgumentException("String is Null or Empty.", nameof(Value));
+#pragma warning restore CA2208 // Instantiate argument exceptions correctly
                     // ReSharper restore LocalizableElement
                 }
                 _name = value;

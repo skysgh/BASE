@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace App.Modules.Base.Substrate.tmp.Models.CacheItems
+﻿namespace App.Modules.Base.Substrate.tmp.Models.CacheItems
 {
     /// <summary>
     /// Cacheable information about a Tenancy

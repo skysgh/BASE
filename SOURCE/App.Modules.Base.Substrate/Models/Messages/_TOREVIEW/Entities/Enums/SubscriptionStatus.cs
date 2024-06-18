@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums
+﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums
 {
     /// <summary>
     /// <para>

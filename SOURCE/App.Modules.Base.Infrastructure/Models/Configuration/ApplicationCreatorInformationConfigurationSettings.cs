@@ -1,10 +1,10 @@
+// using System;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.tmp.Attributes;
+using App.Modules.Base.Substrate.tmp.Constants;
+
 namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
 {
-    using System;
-    using App.Modules.Base.Substrate.Models.Contracts;
-    using App.Modules.Base.Substrate.tmp.Attributes;
-    using App.Modules.Base.Substrate.tmp.Constants;
-
     /// <summary>
     /// An immutable host configuration object 
     /// describing the Creator of the application
@@ -16,17 +16,11 @@ namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
     /// </summary>
     /// <seealso cref="Contracts.IHasName" />
     /// <seealso cref="Contracts.IHasDescription" />
-    public class ApplicationCreatorInformationConfigurationSettings : IHostSettingsBasedConfigurationObject,  IHasName, IHasDescription
+    public class ApplicationCreatorInformationConfigurationSettings : IHostSettingsBasedConfigurationObject, IHasName, IHasDescription
     {
-
-        Guid _id = Guid.Empty;
-        string _name = string.Empty;
-        string _description = string.Empty;
-        string _siteUrl = string.Empty;
-        string _contactUrl = string.Empty;
-
         /// <summary>
-        /// Initializes a new instance of the <see cref="ApplicationCreatorInformationConfigurationSettings"/> class.
+        /// Initializes a new instance of the 
+        /// <see cref="ApplicationCreatorInformationConfigurationSettings"/> class.
         /// </summary>
         public ApplicationCreatorInformationConfigurationSettings()
         {
@@ -39,11 +33,7 @@ namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
         /// to configure it...
         /// </para>
         /// </summary>
-        public Guid Id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
+        public Guid Id { get; set; } = Guid.Empty;
 
         /// <summary>
         /// The name of the Application Creator
@@ -53,22 +43,14 @@ namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
         [Alias(ConfigurationKeys.AppCoreApplicationCreatorName)]
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
+        public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// The Description of the System Creator.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
         [Alias(ConfigurationKeys.AppCoreApplicationCreatorDescription)]
-        public string Description
-        {
-            get { return _description; }
-            set { _description = value; }
-        }
+        public string Description { get; set; } = string.Empty;
 
         /// <summary>
         /// The Url for the System Creator's general Website.
@@ -78,21 +60,13 @@ namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
         [Alias(ConfigurationKeys.AppCoreApplicationCreatorSiteUrl)]
-        public string SiteUrl
-        {
-            get { return _siteUrl; }
-            set { _siteUrl = value; }
-        }
+        public string SiteUrl { get; set; } = string.Empty;
 
         /// <summary>
         /// The Url for the System Creator's ContactUs page.
         /// </summary>
         [ConfigurationSettingSource(ConfigurationSettingSource.SourceType.AppSetting)]
         [Alias(ConfigurationKeys.AppCoreApplicationCreatorContactUrl)]
-        public string ContactUrl
-        {
-            get { return _contactUrl; }
-            set { _contactUrl = value; }
-        }
+        public string ContactUrl { get; set; } = string.Empty;
     }
 }

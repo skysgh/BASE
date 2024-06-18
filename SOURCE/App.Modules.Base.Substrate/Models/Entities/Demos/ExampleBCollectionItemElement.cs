@@ -1,10 +1,5 @@
 ﻿using App.Modules.Base.Substrate.tmp.Attributes;
 using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using App.Modules.Base.Substrate.Models.Contracts;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Entities.Demos

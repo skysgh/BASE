@@ -1,6 +1,5 @@
 ﻿using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using System;
 
 namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
 {

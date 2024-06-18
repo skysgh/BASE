@@ -3,7 +3,7 @@
 //    public abstract class UntenantedCustomIdReferenceDataBase<TId> : UntenantedTimestampedAuditedRecordStatedCustomIdEntityBase<TId>, IHasEnabled, IHasDisplayOrderHint
 //    {
 
-  
+
 
 //        public virtual bool Enabled { get; set; }
 

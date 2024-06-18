@@ -1,11 +1,11 @@
 ﻿using App.Modules.Base.Substrate.tmp.Attributes;
 using App.Modules.Base.Substrate.tmp.ExtensionMethods;
 using App.Modules.Base.Substrate.tmp.Models.Entities.Demos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+// using System.Text;
+// using System.Threading.Tasks;
 using App.Modules.Base.Substrate.Models.Contracts.Enums;
 
 namespace App.Modules.Base.Substrate.tmp.Factories.Demo
@@ -28,7 +28,7 @@ namespace App.Modules.Base.Substrate.tmp.Factories.Demo
         /// <param name="index"></param>
         public static ExampleAEntity Build(int index)
         {
-            var result = new ExampleAEntity()
+            ExampleAEntity result = new()
             {
                 RecordState = RecordPersistenceState.Active,
                 Id = index.ToGuid(),

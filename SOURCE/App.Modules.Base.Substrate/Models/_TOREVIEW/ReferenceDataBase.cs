@@ -1,5 +1,5 @@
-﻿//namespace App.Modules.Base.Substrate.Models.Entities
-//{
+﻿// namespace App.Modules.Base.Substrate.Models.Entities
+// {
 //    using App.Modules.Base.Substrate.Factories;
 
 //    public class ReferenceDataBase : UntenantedTimestampedAuditedRecordStatedGuidIdEntityBase, IHasEnabled, IHasIsResourced,
