@@ -4,7 +4,7 @@
 // using System.Text;
 // using System.Threading.Tasks;
 
-namespace App.Modules.Base.Substrate.tmp.ExtensionMethods
+namespace App.Modules.Base.Substrate.ExtensionMethods
 {
     /// <summary>
     /// Extensions to Strings

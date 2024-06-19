@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Initialisation
+﻿namespace App.Modules.Base.Substrate.Initialisation
 {
     /// <summary>
     /// Class implemented by Configurers

@@ -1,8 +1,9 @@
-﻿using App.Modules.Base.Substrate.tmp.Factories;
+﻿using App.Modules.Base.Substrate.Factories;
+
 
 // Extensions are always put in root namespace
 // for maximum usability from elsewhere:
-namespace App.Modules.Base.Substrate.tmp.ExtensionMethods
+namespace App.Modules.Base.Substrate.ExtensionMethods
 {
 
     /// <summary>

@@ -1,7 +1,7 @@
 ﻿using App.Modules.Base.Substrate.Models.Contracts.Enums;
-using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Base.Substrate.Models.Entities.Base;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages
+namespace App.Modules.Base.Substrate.Models.Messages
 {
     /// <summary>
     /// System entity (not exposed to the system's exterior) for

@@ -1,11 +1,12 @@
-﻿using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+﻿using App.Modules.Base.Substrate.Models.Entities.Base;
+
 // using System.Collections.Generic;
 // using System.Collections.ObjectModel;
 // using System.Linq;
 // using System.Text;
 // using System.Threading.Tasks;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+namespace App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     /// The Service Profile (ie Subscription)

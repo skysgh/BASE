@@ -1,6 +1,6 @@
 ﻿// namespace App.Modules.Base.Substrate.Models.Configuration.AppHost
 // {
-//     using App.Modules.Base.Substrate.tmp.Attributes;
+//     using App.Modules.Base.Substrate.Attributes;
 //     using App.Modules.Base.Substrate.Models.ConfigurationSettings;
 
 //     public class Service03Configuration: IHostSettingsBasedConfigurationObject

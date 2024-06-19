@@ -1,8 +1,8 @@
-﻿using App.Modules.Base.Substrate.Models.Contracts;
+﻿using App.Modules.Base.Substrate.Factories;
+using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.Models.Contracts.Enums;
-using App.Modules.Base.Substrate.tmp.Factories;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+namespace App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     /// TODO: Describe better

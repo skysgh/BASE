@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+		<PropertyGroup>
 	  <TargetFramework>net8.0</TargetFramework>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
@@ -8,7 +12,7 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>$(AssemblyName)</Title>
 	  <Copyright>Copyright $(Authors)</Copyright>
-	  <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
 	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	  <AnalysisLevel>preview-recommended</AnalysisLevel>
 	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
@@ -17,9 +21,6 @@
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
 
-	<PropertyGroup>
-		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
-	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WarningLevel>9999</WarningLevel>

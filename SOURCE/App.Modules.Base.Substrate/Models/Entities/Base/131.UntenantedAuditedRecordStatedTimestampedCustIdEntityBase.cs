@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using App.Modules.Base.Substrate.Models.Contracts;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
+namespace App.Modules.Base.Substrate.Models.Entities.Base
 {
     /// <summary>
     /// <para>

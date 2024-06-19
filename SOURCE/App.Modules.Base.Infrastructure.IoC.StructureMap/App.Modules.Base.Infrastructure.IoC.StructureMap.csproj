@@ -8,7 +8,7 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>$(AssemblyName)</Title>
 	  <Copyright>Copyright $(Authors)</Copyright>
-	  <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
 	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	  <AnalysisLevel>preview-recommended</AnalysisLevel>
 	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
@@ -16,11 +16,6 @@
 	  <Product>BASE</Product>
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
-
-	<PropertyGroup>
-		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
-	</PropertyGroup>
-
 
 	<ItemGroup>
     <Compile Remove="_TOPARSE\IoC\IModuleCore.cs" />

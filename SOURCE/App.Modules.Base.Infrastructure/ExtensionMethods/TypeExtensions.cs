@@ -1,8 +1,9 @@
 ﻿// using System;
 // using System.Linq;
 using System.Reflection;
-using App.Modules.Base.Substrate.tmp.Attributes;
-using App.Modules.Base.Substrate.tmp.Models.Configuration;
+using App.Modules.Base.Substrate.Attributes;
+using App.Modules.Base.Substrate.Models.Configuration;
+
 
 // Extensions are always put in root namespace
 // for maximum usability from elsewhere:

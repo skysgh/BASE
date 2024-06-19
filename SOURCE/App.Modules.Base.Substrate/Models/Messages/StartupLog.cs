@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages
+namespace App.Modules.Base.Substrate.Models.Messages
 {
     /// <summary>
     /// Running Log of what has been instantiated 

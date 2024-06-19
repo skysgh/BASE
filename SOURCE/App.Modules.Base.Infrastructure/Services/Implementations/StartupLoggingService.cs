@@ -1,5 +1,5 @@
 ﻿using App.Base.Infrastructure.Configuration;
-using App.Modules.Base.Substrate.tmp.Models.Messages;
+using App.Modules.Base.Substrate.Models.Messages;
 using Microsoft.Extensions.Logging;
 // using System;
 // using System.Collections.Generic;
@@ -40,7 +40,11 @@ namespace App.Modules.Base.Infrastructure.NewFolder.Services.Implementations
         public void LogMessage(LogLevel logLevel, string message)
         {
             AppInformation.StartupLog.Journal.Add(message);
+#pragma warning disable CA1848 // Use the LoggerMessage delegates
+#pragma warning disable CA2254 // Template should be a static expression
             _logger!.Log(logLevel, message);
+#pragma warning restore CA2254 // Template should be a static expression
+#pragma warning restore CA1848 // Use the LoggerMessage delegates
         }
     }
 }

@@ -1,12 +1,16 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Collections.ObjectModel;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Collections.ObjectModel;
 using App.Modules.Base.Substrate.Models.Contracts;
-using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-//using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
-using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+using App.Modules.Base.Substrate.Models.Entities.Base;
+// using App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities;
+using App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities.Enums;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+
+
+// using App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities;
+
+namespace App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     /// <summary>
     /// The profile (not same as Security Profile) of a Principal.

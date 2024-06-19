@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App.Modules.Base.Substrate.Models.Messages
 {
@@ -30,7 +30,7 @@ namespace App.Modules.Base.Substrate.Models.Messages
         public GeoInformation(GeoInformationCountryRegion countryRegion, string? iPAddress)
         {
             CountryRegion = countryRegion;
-            IPAddress = iPAddress??String.Empty;
+            IPAddress = iPAddress ?? String.Empty;
         }
 
         /// <summary>

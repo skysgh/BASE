@@ -1,8 +1,8 @@
-﻿//using System;
+﻿// using System;
 using App.Modules.Base.Substrate.Models.Contracts;
-using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+using App.Modules.Base.Substrate.Models.Entities.Base;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+namespace App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     /// <summary>
     /// A Property on the Property of a Principal

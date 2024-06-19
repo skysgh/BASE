@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+// using System.Text;
+// using System.Threading.Tasks;
 
 namespace App.Modules.Base.Application.Interfaces.APIs.Services
 {
@@ -17,7 +17,7 @@ namespace App.Modules.Base.Application.Interfaces.APIs.Services
         /// Example method
         /// </summary>
         /// <returns></returns>
-        bool Do();
+        bool DoSomething();
 
         /// <summary>
         /// Example method

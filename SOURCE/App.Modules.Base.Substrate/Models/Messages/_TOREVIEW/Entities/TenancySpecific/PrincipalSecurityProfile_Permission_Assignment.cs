@@ -1,8 +1,9 @@
-﻿using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+﻿using App.Modules.Base.Substrate.Models.Entities.Base;
+using App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities.Enums;
+
 // using System;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+namespace App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     /// <summary>
     /// Assignment of a Permission to a Principal's Security Profile.

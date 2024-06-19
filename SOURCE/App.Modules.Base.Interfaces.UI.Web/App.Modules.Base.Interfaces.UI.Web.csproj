@@ -1,4 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
   <PropertyGroup>
 	  <TargetFramework>net8.0</TargetFramework>
@@ -8,7 +13,7 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>$(AssemblyName)</Title>
 	  <Copyright>Copyright $(Authors)</Copyright>
-	  <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
 	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	  <AnalysisLevel>preview-recommended</AnalysisLevel>
 	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
@@ -16,11 +21,6 @@
 	  <Product>BASE</Product>
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
-
-	<PropertyGroup>
-		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
-	</PropertyGroup>
-
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WarningLevel>9999</WarningLevel>
@@ -31,11 +31,6 @@
     <WarningLevel>9999</WarningLevel>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\App.Modules.Base.Application\App.Modules.Base.Application.csproj" />

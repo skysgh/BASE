@@ -1,9 +1,9 @@
-﻿using App.Modules.Base.Substrate.tmp.Attributes;
-using App.Modules.Base.Substrate.tmp.ExtensionMethods;
-using App.Modules.Base.Substrate.tmp.Models.Entities.Demos;
+﻿using App.Modules.Base.Substrate.Attributes;
 using App.Modules.Base.Substrate.Models.Contracts.Enums;
+using App.Modules.Base.Substrate.ExtensionMethods;
+using App.Modules.Base.Substrate.Models.Entities.Demos;
 
-namespace App.Modules.Base.Substrate.tmp.Factories.Demo
+namespace App.Modules.Base.Substrate.Factories.Demo
 {
     /// <summary>
     /// Static Factory to develop simple

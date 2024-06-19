@@ -1,8 +1,8 @@
-﻿using App.Modules.Base.Substrate.tmp.Attributes;
-using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+﻿using App.Modules.Base.Substrate.Attributes;
 using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.Models.Entities.Base;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Entities.Demos
+namespace App.Modules.Base.Substrate.Models.Entities.Demos
 {
     /// <summary>
     /// Example of an Item in a list that belongs

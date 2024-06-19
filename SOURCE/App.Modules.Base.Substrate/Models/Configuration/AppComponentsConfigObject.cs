@@ -1,9 +1,9 @@
-﻿using App.Modules.Base.Substrate.Models.Contracts;
-using App.Modules.Base.Substrate.tmp.Attributes;
-using App.Modules.Base.Substrate.tmp.Constants;
-using App.Modules.Base.Substrate.tmp.ExtensionMethods;
+﻿using App.Modules.Base.Substrate.Constants;
+using App.Modules.Base.Substrate.ExtensionMethods;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.Attributes;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Configuration
+namespace App.Modules.Base.Substrate.Models.Configuration
 {
     /// <summary>
     /// Configuration object to host

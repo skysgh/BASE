@@ -1,8 +1,8 @@
 ﻿using System.Runtime.Serialization;
+using App.Modules.Base.Substrate.Factories;
 using App.Modules.Base.Substrate.Models.Contracts;
-using App.Modules.Base.Substrate.tmp.Factories;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
+namespace App.Modules.Base.Substrate.Models.Entities.Base
 {
     /// <summary>
     /// <para>

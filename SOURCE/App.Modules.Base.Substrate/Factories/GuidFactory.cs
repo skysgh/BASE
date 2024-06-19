@@ -1,5 +1,5 @@
 ﻿// using System;
-namespace App.Modules.Base.Substrate.tmp.Factories
+namespace App.Modules.Base.Substrate.Factories
 {
     /// <summary>
     /// Enumeration of ways to develop a Guid

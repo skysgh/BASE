@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿// using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace App.Modules.Base.Substrate.Models.Messages
@@ -29,10 +29,7 @@ namespace App.Modules.Base.Substrate.Models.Messages
         /// a list of <see cref="AzureMapsResponseAddress"/>.
         /// </summary>
         [JsonPropertyName("addresses")]
-        public List<AzureMapsResponseAddress> Addresses
-        {
-            get { return _addresses ?? (_addresses = new List<AzureMapsResponseAddress>()); }
-        }
+        public List<AzureMapsResponseAddress> Addresses => _addresses ??= []; //new List<AzureMapsResponseAddress>()
 
         private List<AzureMapsResponseAddress>? _addresses;
     }
@@ -43,8 +40,6 @@ namespace App.Modules.Base.Substrate.Models.Messages
     /// </summary>
     public class AzureMapsSearchResponseResult
     {
-        private string _type=string.Empty;
-        private string _score=string.Empty;
         private AzureMapsResponseAddress? _address;
         private AzureMapResponsePosition? _position;
 
@@ -52,26 +47,26 @@ namespace App.Modules.Base.Substrate.Models.Messages
         /// The Type of response.
         /// </summary>
         [JsonPropertyName("results")]
-        string Type { get => _type; set => _type = value; }
+        public string Type { get; set; } = string.Empty;
 
 
         /// <summary>
         /// The response score.
         /// </summary>
         [JsonPropertyName("score")]
-        string Score { get => _score; set => _score = value; }
+        public string Score { get; set; } = string.Empty;
 
         /// <summary>
         /// The Response <see cref="AzureMapsResponseAddress"/>
         /// </summary>
         [JsonPropertyName("address")]
-        public AzureMapsResponseAddress Address { get => _address??new AzureMapsResponseAddress(); set => _address = value; }
+        public AzureMapsResponseAddress Address { get => _address ??= new(); set => _address = value; }
 
         /// <summary>
         /// The response <see cref="AzureMapResponsePosition"/>
         /// </summary>
         [JsonPropertyName("position")]
-        public AzureMapResponsePosition Position { get { return _position??new  AzureMapResponsePosition(); } set => _position = value; }
+        public AzureMapResponsePosition Position { get => _position ??= new(); set => _position = value; }
     }
 
     /// <summary>
@@ -79,20 +74,18 @@ namespace App.Modules.Base.Substrate.Models.Messages
     /// </summary>
     public class AzureMapResponsePosition
     {
-        private string latitude=string.Empty;
-        private string longitude=string.Empty;
 
         /// <summary>
         /// Latitude
         /// </summary>
         [JsonPropertyName("lat")]
-        public string Latitude { get => latitude; set => latitude = value; }
+        public string Latitude { get; set; } = string.Empty;
 
         /// <summary>
         /// Longitude
         /// </summary>
         [JsonPropertyName("lon")]
-        public string Longitude { get => longitude; set => longitude = value; }
+        public string Longitude { get; set; } = string.Empty;
     }
 
 
@@ -101,7 +94,7 @@ namespace App.Modules.Base.Substrate.Models.Messages
     /// </summary>
     public class AzureMapsResponseAddress
     {
-        private string? freeFormAddress=String.Empty;
+        private string? freeFormAddress = String.Empty;
         private string? postalCodeExtended = String.Empty;
         private string? postalCode = String.Empty;
         private string? countryCode = String.Empty;
@@ -116,17 +109,17 @@ namespace App.Modules.Base.Substrate.Models.Messages
         private string? countrySecondarySubdivision;
         private string? countrySubdivision = String.Empty;
         private string? country = String.Empty;
-        private string[] routeNumbers=new string[0];
+
         /// <summary>
         /// Address Building Number
         /// </summary>
         [JsonPropertyName("buildingNumber")]
-        public string BuildingNumber { get => buildingNumber??String.Empty; set => buildingNumber = value; }
+        public string BuildingNumber { get => buildingNumber ??= String.Empty; set => buildingNumber = value; }
         /// <summary>
         /// Address Street number
         /// </summary>
         [JsonPropertyName("streetNumber")]
-        public string StreetNumber { get => streetNumber??String.Empty; set => streetNumber = value; }
+        public string StreetNumber { get => streetNumber ??= String.Empty; set => streetNumber = value; }
 
         /// <summary>
         /// Address Street
@@ -142,7 +135,7 @@ namespace App.Modules.Base.Substrate.Models.Messages
         /// Address Street name and Number
         /// </summary>
         [JsonPropertyName("streetNameAndNumber")]
-        public string StreetNameAndNumber { get => streetNameAndNumber??String.Empty; set => streetNameAndNumber = value; }
+        public string StreetNameAndNumber { get => streetNameAndNumber ??= String.Empty; set => streetNameAndNumber = value; }
         /// <summary>
         /// Address Municipality Subdivision
         /// </summary>
@@ -202,19 +195,13 @@ namespace App.Modules.Base.Substrate.Models.Messages
         /// Address Extended Free Form Address
         /// </summary>
         [JsonPropertyName("freeformAddressExtended")]
-        public string ExtendedFreeFormAddress
-        {
-            get
-            {
-                return this.FreeFormAddress + ", " + this.Country;
-            }
-        }
+        public string ExtendedFreeFormAddress => this.FreeFormAddress + ", " + this.Country;
 
         /// <summary>
         /// Address Route numbers
         /// </summary>
         [JsonPropertyName("routeNumbers")]
-        public string[] RouteNumbers { get => routeNumbers; set => routeNumbers = value; }
+        public string[] RouteNumbers { get; set; } = [];
     }
 
 

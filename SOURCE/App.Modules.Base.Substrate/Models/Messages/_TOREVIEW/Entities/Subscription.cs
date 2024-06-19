@@ -1,5 +1,5 @@
-﻿//using App.Modules.Base.Substrate.Models.Entities.Enums;
-//using System;
+﻿// using App.Modules.Base.Substrate.Models.Entities.Enums;
+// using System;
 
 //namespace App.Modules.Base.Substrate.Models.Entities
 //{

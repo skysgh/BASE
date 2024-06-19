@@ -1,7 +1,8 @@
-using System.Diagnostics;
-//using App.Host.Models;
+// using System.Diagnostics;
+// using App.Host.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+// using Microsoft.Extensions.Logging;
 
 namespace App.Host.Controllers
 {
@@ -9,18 +10,15 @@ namespace App.Host.Controllers
     /// Test Controller
     /// </summary>
     /// <seealso cref="Microsoft.AspNetCore.Mvc.Controller" />
-    public class Home2Controller : Controller
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="Home2Controller"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger.</param>
+    public class Home2Controller(ILogger<Home2Controller> logger) : Controller
     {
-        private readonly ILogger<Home2Controller> _logger;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Home2Controller"/> class.
-        /// </summary>
-        /// <param name="logger">The logger.</param>
-        public Home2Controller(ILogger<Home2Controller> logger)
-        {
-            _logger = logger;
-        }
+#pragma warning disable IDE0052 // Remove unread private members
+        private readonly ILogger<Home2Controller> _logger = logger;
+#pragma warning restore IDE0052 // Remove unread private members
 
         /// <summary>
         /// Returns default View associated to this Controller.

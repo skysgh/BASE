@@ -10,6 +10,4 @@
         /// </summary>
         string Title { get; set; }
     }
-
-
 }

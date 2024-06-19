@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.Models.Contracts.Enums;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Entities.Base
+namespace App.Modules.Base.Substrate.Models.Entities.Base
 {
     /// <summary>
     /// Abstract base class of entities.

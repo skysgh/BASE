@@ -8,7 +8,7 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>$(AssemblyName)</Title>
 	  <Copyright>Copyright $(Authors)</Copyright>
-	  <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
 	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	  <AnalysisLevel>preview-recommended</AnalysisLevel>
 	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
@@ -16,11 +16,6 @@
 	  <Product>BASE</Product>
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
-
-	<PropertyGroup>
-		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
-	</PropertyGroup>
-
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
@@ -36,16 +31,8 @@
 
 
   <ItemGroup>
-    <Folder Include="tmp\" />
     <Folder Include="NewFolder\" />
     <Folder Include="Services\" />
-  </ItemGroup>
-	  
-  
-
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
   </ItemGroup>
 	  
   
@@ -57,11 +44,7 @@
 
 	<ItemGroup>
 		<!-- Used for nuget packaging.-->
-		<None Include="README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Update="Packaging\readme.nuget.md">
+		<None Update="Packaging\readme.nuget.md">
 	    <PackagePath>\</PackagePath>
 	    <Pack>true</Pack>
 	  </None>

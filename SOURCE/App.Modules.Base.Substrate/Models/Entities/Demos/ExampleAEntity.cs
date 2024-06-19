@@ -1,9 +1,9 @@
-﻿using App.Modules.Base.Substrate.Models.Contracts;
+﻿using App.Modules.Base.Substrate.Factories;
+using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.Models.Contracts.Enums;
-using App.Modules.Base.Substrate.tmp.Attributes;
-using App.Modules.Base.Substrate.tmp.Factories;
+using App.Modules.Base.Substrate.Attributes;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Entities.Demos
+namespace App.Modules.Base.Substrate.Models.Entities.Demos
 {
     /// <summary>
     /// Internal Simple (no Children) Demo Entity

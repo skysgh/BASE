@@ -8,7 +8,7 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>$(AssemblyName)</Title>
 	  <Copyright>Copyright $(Authors)</Copyright>
-	  <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
 	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 	  <AnalysisLevel>preview-recommended</AnalysisLevel>
 	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
@@ -16,11 +16,6 @@
 	  <Product>BASE</Product>
 	  <!--<BaseOutputPath>..\..\..\..\SOURCE\App.Host\MODULES\</BaseOutputPath>-->
   </PropertyGroup>
-
-	<PropertyGroup>
-		<PackageReadmeFile>Packaging/readme.nuget.md</PackageReadmeFile>
-	</PropertyGroup>
-
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
@@ -45,8 +40,7 @@
 
   <ItemGroup>
     <PackageReference Include="ICSharpCode.Decompiler" Version="8.2.0.7535" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>

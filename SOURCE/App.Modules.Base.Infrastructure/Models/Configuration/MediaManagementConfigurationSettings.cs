@@ -1,6 +1,6 @@
 ﻿// using App.Modules.Base.Substrate.Models.Configuration;
-using App.Modules.Base.Substrate.tmp.Attributes;
-using App.Modules.Base.Substrate.tmp.Constants;
+using App.Modules.Base.Substrate.Attributes;
+using App.Modules.Base.Substrate.Constants;
 
 namespace App.Modules.Base.Substrate.Models.ConfigurationSettings
 {

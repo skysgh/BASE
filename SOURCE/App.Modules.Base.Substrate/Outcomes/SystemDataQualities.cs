@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Outcomes
+﻿namespace App.Modules.Base.Substrate.Outcomes
 {
     /// <summary>
     /// Qualities of the data managed by a system.

@@ -1,7 +1,7 @@
 ﻿using App.Modules.Base.Substrate.Models.Contracts;
 using App.Modules.Base.Substrate.Models.Contracts.Enums;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities
+namespace App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities
 {
     /// <summary>
     /// System entity (not exposed to the system's exterior) for

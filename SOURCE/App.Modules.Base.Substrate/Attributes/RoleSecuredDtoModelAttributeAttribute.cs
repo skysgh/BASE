@@ -1,6 +1,6 @@
 // using System;
 
-namespace App.Modules.Base.Substrate.tmp.Attributes
+namespace App.Modules.Base.Substrate.Attributes
 {
 
     /// <summary>

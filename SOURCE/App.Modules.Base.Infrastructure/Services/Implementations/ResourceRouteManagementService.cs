@@ -33,7 +33,11 @@ namespace App.Modules.Base.Infrastructure.NewFolder.Services.Implementations
             {
                 // rewrite and continue processing
                 string newResourceRoute = "/api/rest/Host/v1/HostLayerExampleAEntity";
-                _logger.LogTrace($"Rewriting Url ({resourceRoute}) to ({newResourceRoute})");
+#pragma warning disable CA1848 // Use the LoggerMessage delegates
+#pragma warning disable CA1727 // Use PascalCase for named placeholders
+                _logger.LogTrace("Rewriting Url ({resourceRoute}) to ({newResourceRoute})", resourceRoute, newResourceRoute);
+#pragma warning restore CA1727 // Use PascalCase for named placeholders
+#pragma warning restore CA1848 // Use the LoggerMessage delegates
                 resourceRoute = newResourceRoute;
             }
 

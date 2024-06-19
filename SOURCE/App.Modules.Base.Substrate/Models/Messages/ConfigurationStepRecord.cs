@@ -1,8 +1,8 @@
-﻿using App.Modules.Base.Substrate.Models.Contracts;
-using App.Modules.Base.Substrate.tmp.Factories;
-using App.Modules.Base.Substrate.tmp.Models.Messages.Enums;
+﻿using App.Modules.Base.Substrate.Factories;
+using App.Modules.Base.Substrate.Models.Contracts;
+using App.Modules.Base.Substrate.Models.Messages.Enums;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages
+namespace App.Modules.Base.Substrate.Models.Messages
 {
     /// <summary>
     /// A record of a configuration step that was undertaken.

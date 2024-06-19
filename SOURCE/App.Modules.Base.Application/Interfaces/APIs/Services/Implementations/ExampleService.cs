@@ -1,4 +1,4 @@
-﻿using App.Modules.Base.Application.Interfaces.APIs.Services;
+﻿// using App.Modules.Base.Application.Interfaces.APIs.Services;
 
 namespace App.Modules.Base.Application.Interfaces.APIs.Services.Implementations
 {
@@ -6,7 +6,7 @@ namespace App.Modules.Base.Application.Interfaces.APIs.Services.Implementations
     public class ExampleService : IExampleService
     {
         /// <inheritdoc/>
-        public bool Do()
+        public bool DoSomething()
         {
             return true;
         }

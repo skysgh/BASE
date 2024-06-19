@@ -1,7 +1,7 @@
-﻿using App.Modules.Base.Substrate.tmp.Attributes;
-using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
+﻿using App.Modules.Base.Substrate.Models.Entities.Base;
+using App.Modules.Base.Substrate.Attributes;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Entities.Demos
+namespace App.Modules.Base.Substrate.Models.Entities.Demos
 {
     /// <summary>
     /// A demonstration of a Reference Type Entity

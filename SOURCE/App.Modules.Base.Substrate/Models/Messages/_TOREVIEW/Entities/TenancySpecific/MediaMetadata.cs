@@ -1,9 +1,13 @@
-﻿//using System;
-using App.Modules.Base.Substrate.tmp.Models.Entities.Base;
-//using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities;
-using App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.Enums;
+﻿// using System;
+using App.Modules.Base.Substrate.Models.Entities.Base;
+// using App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities;
+using App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities.Enums;
 
-namespace App.Modules.Base.Substrate.tmp.Models.Messages._TOREVIEW.Entities.TenancySpecific
+
+
+// using App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities;
+
+namespace App.Modules.Base.Substrate.Models.Messages._TOREVIEW.Entities.TenancySpecific
 {
     /// <summary>
     /// A descriptor of Media uploaded by end users (to a StorageAccount)

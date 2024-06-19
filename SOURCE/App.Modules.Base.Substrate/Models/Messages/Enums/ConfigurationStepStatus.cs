@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Models.Messages.Enums
+﻿namespace App.Modules.Base.Substrate.Models.Messages.Enums
 {
     /// <summary>
     /// The completion state of the Configuration Step

@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Base.Substrate.tmp.Constants
+﻿namespace App.Modules.Base.Substrate.Constants
 {
     /// <summary>
     /// Collection of constants related to

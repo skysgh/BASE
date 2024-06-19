@@ -1,6 +1,6 @@
-﻿using App.Modules.Base.Substrate.tmp.Outcomes;
+﻿using App.Modules.Base.Substrate.Outcomes;
 
-namespace App.Modules.Base.Substrate.tmp.Attributes
+namespace App.Modules.Base.Substrate.Attributes
 {
     /// <summary>
     /// The System, Data, In Use Qualities addressed.

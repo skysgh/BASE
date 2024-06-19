@@ -4,7 +4,7 @@
 // using System.Text;
 // using System.Threading.Tasks;
 
-namespace App.Modules.Base.Substrate.tmp.Outcomes
+namespace App.Modules.Base.Substrate.Outcomes
 {
     /// <summary>
     /// TODO: Define

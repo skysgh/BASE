@@ -1,4 +1,4 @@
-﻿namespace App.Modules.Base.Substrate.tmp
+﻿namespace App.Modules.Base.Substrate
 {
     /// <summary>
     /// Constants specific to this 
@@ -23,7 +23,7 @@
         /// (it's the same as the Base one).
         /// </summary>
         public const string DbConnectionName =
-            Constants.ModuleConstants.DbConnectionStringName;
+            Substrate.Constants.ModuleConstants.DbConnectionStringName;
 
     }
 }
